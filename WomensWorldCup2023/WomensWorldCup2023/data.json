@@ -1,0 +1,531 @@
+[
+    {
+        "name" : "Eden Park",
+        "city" : "Auckland",
+        "latitude" : -36.87481208922987,
+        "longitude" : 174.7447541218587,
+        "matches" : [
+            {
+                "date" : "20 July 2023",
+                "homeTeam" : "New Zealand",
+                "awayTeam" : "Norway",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "22 July 2023",
+                "homeTeam" : "USA",
+                "awayTeam" : "Vietnam",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "24 July 2023",
+                "homeTeam" : "Italy",
+                "awayTeam" : "Argentina",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "26 July 2023",
+                "homeTeam" : "Spain",
+                "awayTeam" : "Zambia",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "29 July 2023",
+                "homeTeam" : "France",
+                "awayTeam" : "Brazil",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "30 July 2023",
+                "homeTeam" : "Norway",
+                "awayTeam" : "Philippines",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "1 August 2023",
+                "homeTeam" : "Portugal",
+                "awayTeam" : "USA",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "5 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            },
+            {
+                "date" : "11 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Quarter final"
+            },
+            {
+                "date" : "13 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Semi final"
+            }
+        ]
+    },
+    {
+        "name" : "Wellington Regional Stadium",
+        "city" : "Wellington",
+        "latitude" : -41.27279938925024,
+        "longitude" : 174.78592986082674,
+        "matches" : [
+            {
+                "date" : "21 July 2023",
+                "homeTeam" : "Spain",
+                "awayTeam" : "Costa Rica",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "23 July 2023",
+                "homeTeam" : "Sweden",
+                "awayTeam" : "South Africa",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "25 July 2023",
+                "homeTeam" : "New Zealand",
+                "awayTeam" : "Philippines",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "27 July 2023",
+                "homeTeam" : "USA",
+                "awayTeam" : "Netherlands",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "29 July 2023",
+                "homeTeam" : "Sweden",
+                "awayTeam" : "Italy",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "31 July 2023",
+                "homeTeam" : "Japan",
+                "awayTeam" : "Spain",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "2 August 2023",
+                "homeTeam" : "South Africa",
+                "awayTeam" : "Italy",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "5 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            },
+            {
+                "date" : "11 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Quarter final"
+            }
+        ]
+    },
+    {
+        "name" : "Waikato Stadium",
+        "city" : "Hamilton",
+        "latitude" : -37.781343021361735,
+        "longitude" : 175.26953602624053,
+        "matches" : [
+            {
+                "date" : "22 July 2023",
+                "homeTeam" : "Zambia",
+                "awayTeam" : "Japan",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "25 July 2023",
+                "homeTeam" : "Switzerland",
+                "awayTeam" : "Norway",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "27 July 2023",
+                "homeTeam" : "Portugal",
+                "awayTeam" : "Vietnam",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "31 July 2023",
+                "homeTeam" : "Costa Rica",
+                "awayTeam" : "Zambia",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "2 August 2023",
+                "homeTeam" : "Argentina",
+                "awayTeam" : "Sweden",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            }
+        ]
+    },
+    {
+        "name" : "Forsyth Barr Stadium",
+        "city" : "Dunedin",
+        "latitude" : -45.86939243273119,
+        "longitude" : 170.52450794194937,
+        "matches" : [
+            {
+                "date" : "21 July 2023",
+                "homeTeam" : "Philippines",
+                "awayTeam" : "Switzerland",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "23 July 2023",
+                "homeTeam" : "Netherlands",
+                "awayTeam" : "Portugal",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "26 July 2023",
+                "homeTeam" : "Japan",
+                "awayTeam" : "Costa Rica",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "28 July 2023",
+                "homeTeam" : "Argentina",
+                "awayTeam" : "South Africa",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "30 July 2023",
+                "homeTeam" : "Switzerland",
+                "awayTeam" : "New Zealand",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "1 August 2023",
+                "homeTeam" : "Vietnam",
+                "awayTeam" : "Netherlands",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            }
+        ]
+    },
+    {
+        "name" : "Sydney Football Stadium",
+        "city" : "Sydney",
+        "latitude" : -33.88884879764356,
+        "longitude" : 151.22536400007758,
+        "matches" : [
+            {
+                "date" : "23 July 2023",
+                "homeTeam" : "France",
+                "awayTeam" : "Jamaica",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "25 July 2023",
+                "homeTeam" : "Colombia",
+                "awayTeam" : "Korea Republic",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "28 July 2023",
+                "homeTeam" : "England",
+                "awayTeam" : "Denmark",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "30 July 2023",
+                "homeTeam" : "Germany",
+                "awayTeam" : "Colombia",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "2 August 2023",
+                "homeTeam" : "Panama",
+                "awayTeam" : "France",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "6 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            }
+        ]
+    },
+    {
+        "name" : "Stadium Australia",
+        "city" : "Sydney",
+        "latitude" : -33.846973003750826,
+        "longitude" : 151.06342422608282,
+        "matches" : [
+            {
+                "date" : "20 July 2023",
+                "homeTeam" : "Australia",
+                "awayTeam" : "Republic of Ireland",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "7 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            },
+            {
+                "date" : "12 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Quarter final"
+            },
+            {
+                "date" : "16 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Semi final"
+            },
+            {
+                "date" : "19 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Final"
+            }
+        ]
+    },
+    {
+        "name" : "Perth Rectangular Stadium",
+        "city" : "Perth",
+        "latitude" : -31.945603698893525,
+        "longitude" : 115.86999004321214,
+        "matches" : [
+            {
+                "date" : "22 July 2023",
+                "homeTeam" : "Denmark",
+                "awayTeam" : "China PR",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "26 July 2023",
+                "homeTeam" : "Canada",
+                "awayTeam" : "Republic of Ireland",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "29 July 2023",
+                "homeTeam" : "Panama",
+                "awayTeam" : "Jamaica",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "1 August 2023",
+                "homeTeam" : "Haiti",
+                "awayTeam" : "Denmark",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "3 August 2023",
+                "homeTeam" : "Morocco",
+                "awayTeam" : "Colombia",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            }
+        ]
+    },
+    {
+        "name" : "AAMI Park",
+        "city" : "Melbourne",
+        "latitude" : -37.82497942976216,
+        "longitude" : 144.98399657413466,
+        "matches" : [
+            {
+                "date" : "21 July 2023",
+                "homeTeam" : "Nigeria",
+                "awayTeam" : "Canada",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "24 July 2023",
+                "homeTeam" : "Germany",
+                "awayTeam" : "Morocco",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "31 July 2023",
+                "homeTeam" : "Canada",
+                "awayTeam" : "Australia",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "2 August 2023",
+                "homeTeam" : "Jamaica",
+                "awayTeam" : "Brazil",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "6 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            },
+            {
+                "date" : "8 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            }
+        ]
+    },
+    {
+        "name" : "Hindmarsh Stadium",
+        "city" : "Adelaide",
+        "latitude" : -34.9071356043337,
+        "longitude" : 138.56886756845122,
+        "matches" : [
+            {
+                "date" : "24 July 2023",
+                "homeTeam" : "Brazil",
+                "awayTeam" : "Panama",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "28 July 2023",
+                "homeTeam" : "China PR",
+                "awayTeam" : "Haiti",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "30 July 2023",
+                "homeTeam" : "Korea Republic",
+                "awayTeam" : "Morocco",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "1 August 2023",
+                "homeTeam" : "China PR",
+                "awayTeam" : "England",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "8 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            }
+        ]
+    },
+    {
+        "name" : "Lang Park",
+        "city" : "Brisbane",
+        "latitude" : -27.464635544224954,
+        "longitude" : 153.0095311970194,
+        "matches" : [
+            {
+                "date" : "22 July 2023",
+                "homeTeam" : "England",
+                "awayTeam" : "Haiti",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "27 July 2023",
+                "homeTeam" : "Australia",
+                "awayTeam" : "Nigeria",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "31 July 2023",
+                "homeTeam" : "Republic of Ireland",
+                "awayTeam" : "Nigeria",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "3 August 2023",
+                "homeTeam" : "Korea Republic",
+                "awayTeam" : "Germany",
+                "score" : "? - ?",
+                "tournamentStage" : "Group stage"
+            },
+            {
+                "date" : "7 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Round of 16"
+            },
+            {
+                "date" : "12 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Quarter final"
+            },
+            {
+                "date" : "19 August 2023",
+                "homeTeam" : "TBA",
+                "awayTeam" : "TBA",
+                "score" : "? - ?",
+                "tournamentStage" : "Third place"
+            }
+        ]
+    }
+]
+

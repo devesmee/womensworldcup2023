@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */; };
+		7B23E3BD2A45B0D400267C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BC2A45B0D400267C59 /* Assets.xcassets */; };
+		7B23E3C02A45B0D400267C59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BF2A45B0D400267C59 /* Preview Assets.xcassets */; };
+		7B23E3C82A45B14C00267C59 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3C72A45B14C00267C59 /* Countries.swift */; };
+		7B23E3CA2A45B15500267C59 /* TournamentStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3C92A45B15500267C59 /* TournamentStage.swift */; };
+		7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3CB2A45B15B00267C59 /* Match.swift */; };
+		7B23E3CE2A45B16200267C59 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3CD2A45B16200267C59 /* Stadium.swift */; };
+		7B23E3D12A45B17F00267C59 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D02A45B17F00267C59 /* MapView.swift */; };
+		7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D22A45B18700267C59 /* StadiumInfo.swift */; };
+		7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D42A45B18F00267C59 /* MatchListRow.swift */; };
+		7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D62A45B19800267C59 /* StadiumDetailView.swift */; };
+		7B23E3DA2A45B28500267C59 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D92A45B28500267C59 /* Array.swift */; };
+		7B23E3DC2A45B3F300267C59 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3DB2A45B3F300267C59 /* data.json */; };
+		7B23E3DF2A45DDD900267C59 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomensWorldCup2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensWorldCup2023App.swift; sourceTree = "<group>"; };
+		7B23E3BC2A45B0D400267C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B23E3BF2A45B0D400267C59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B23E3C72A45B14C00267C59 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		7B23E3C92A45B15500267C59 /* TournamentStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentStage.swift; sourceTree = "<group>"; };
+		7B23E3CB2A45B15B00267C59 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		7B23E3CD2A45B16200267C59 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
+		7B23E3D02A45B17F00267C59 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7B23E3D22A45B18700267C59 /* StadiumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumInfo.swift; sourceTree = "<group>"; };
+		7B23E3D42A45B18F00267C59 /* MatchListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListRow.swift; sourceTree = "<group>"; };
+		7B23E3D62A45B19800267C59 /* StadiumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailView.swift; sourceTree = "<group>"; };
+		7B23E3D92A45B28500267C59 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		7B23E3DB2A45B3F300267C59 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		7B23E3DD2A45DCCE00267C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B23E3B22A45B0D100267C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B23E3AC2A45B0D100267C59 = {
+			isa = PBXGroup;
+			children = (
+				7B23E3B72A45B0D100267C59 /* WomensWorldCup2023 */,
+				7B23E3B62A45B0D100267C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B23E3B62A45B0D100267C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B23E3B72A45B0D100267C59 /* WomensWorldCup2023 */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */,
+				7B23E3DD2A45DCCE00267C59 /* Info.plist */,
+				7B23E3D82A45B27C00267C59 /* Extensions */,
+				7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */,
+				7B23E3C62A45B13700267C59 /* Models */,
+				7B23E3CF2A45B16800267C59 /* Views */,
+				7B23E3BC2A45B0D400267C59 /* Assets.xcassets */,
+				7B23E3DB2A45B3F300267C59 /* data.json */,
+				7B23E3BE2A45B0D400267C59 /* Preview Content */,
+			);
+			path = WomensWorldCup2023;
+			sourceTree = "<group>";
+		};
+		7B23E3BE2A45B0D400267C59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3BF2A45B0D400267C59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B23E3C62A45B13700267C59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3C72A45B14C00267C59 /* Countries.swift */,
+				7B23E3C92A45B15500267C59 /* TournamentStage.swift */,
+				7B23E3CB2A45B15B00267C59 /* Match.swift */,
+				7B23E3CD2A45B16200267C59 /* Stadium.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B23E3CF2A45B16800267C59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3D02A45B17F00267C59 /* MapView.swift */,
+				7B23E3D22A45B18700267C59 /* StadiumInfo.swift */,
+				7B23E3D42A45B18F00267C59 /* MatchListRow.swift */,
+				7B23E3D62A45B19800267C59 /* StadiumDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B23E3D82A45B27C00267C59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3D92A45B28500267C59 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B23E3B42A45B0D100267C59 /* WomensWorldCup2023 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B23E3C32A45B0D400267C59 /* Build configuration list for PBXNativeTarget "WomensWorldCup2023" */;
+			buildPhases = (
+				7B23E3B12A45B0D100267C59 /* Sources */,
+				7B23E3B22A45B0D100267C59 /* Frameworks */,
+				7B23E3B32A45B0D100267C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WomensWorldCup2023;
+			productName = WomensWorldCup2023;
+			productReference = 7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B23E3AD2A45B0D100267C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7B23E3B42A45B0D100267C59 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 7B23E3B02A45B0D100267C59 /* Build configuration list for PBXProject "WomensWorldCup2023" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B23E3AC2A45B0D100267C59;
+			productRefGroup = 7B23E3B62A45B0D100267C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B23E3B42A45B0D100267C59 /* WomensWorldCup2023 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B23E3B32A45B0D100267C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B23E3C02A45B0D400267C59 /* Preview Assets.xcassets in Resources */,
+				7B23E3DC2A45B3F300267C59 /* data.json in Resources */,
+				7B23E3DF2A45DDD900267C59 /* Launch Screen.storyboard in Resources */,
+				7B23E3BD2A45B0D400267C59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B23E3B12A45B0D100267C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B23E3D12A45B17F00267C59 /* MapView.swift in Sources */,
+				7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */,
+				7B23E3CE2A45B16200267C59 /* Stadium.swift in Sources */,
+				7B23E3CA2A45B15500267C59 /* TournamentStage.swift in Sources */,
+				7B23E3C82A45B14C00267C59 /* Countries.swift in Sources */,
+				7B23E3DA2A45B28500267C59 /* Array.swift in Sources */,
+				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
+				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
+				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
+				7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B23E3C12A45B0D400267C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B23E3C22A45B0D400267C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B23E3C42A45B0D400267C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WomensWorldCup2023/Preview Content\"";
+				DEVELOPMENT_TEAM = 5K4669DNRP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WomensWorldCup2023/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devesmee.WomensWorldCup2023;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B23E3C52A45B0D400267C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WomensWorldCup2023/Preview Content\"";
+				DEVELOPMENT_TEAM = 5K4669DNRP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WomensWorldCup2023/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devesmee.WomensWorldCup2023;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B23E3B02A45B0D100267C59 /* Build configuration list for PBXProject "WomensWorldCup2023" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B23E3C12A45B0D400267C59 /* Debug */,
+				7B23E3C22A45B0D400267C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B23E3C32A45B0D400267C59 /* Build configuration list for PBXNativeTarget "WomensWorldCup2023" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B23E3C42A45B0D400267C59 /* Debug */,
+				7B23E3C52A45B0D400267C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B23E3AD2A45B0D100267C59 /* Project object */;
+}
