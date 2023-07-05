@@ -6,15 +6,32 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct StadiumInfo: View {
     let stadium: Stadium
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(stadium.name)
-                .resizable()
-                .frame(height: 200)
+
+            ZStack(alignment: .topTrailing) {
+                Image(stadium.name)
+                    .resizable()
+                    .frame(height: 200)
+
+                Button {
+                    self.generateCarRoute()
+
+                } label: {
+                    Image(systemName: "car.circle.fill")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(Color("Orange"))
+                        .background(Color("Blue"))
+                }
+                .clipShape(Circle())
+                .padding(10)
+            }
 
             Rectangle()
                 .fill(Color("Blue").opacity(0.7))
@@ -29,6 +46,12 @@ struct StadiumInfo: View {
             }
             .padding(.bottom, 5)
         }
+    }
+
+    private func generateCarRoute() {
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: stadium.coordinate, addressDictionary:nil))
+        mapItem.name = stadium.name
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving])
     }
 }
 
