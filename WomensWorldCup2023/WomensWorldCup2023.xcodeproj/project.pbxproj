@@ -19,7 +19,7 @@
 		7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D42A45B18F00267C59 /* MatchListRow.swift */; };
 		7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D62A45B19800267C59 /* StadiumDetailView.swift */; };
 		7B23E3DA2A45B28500267C59 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3D92A45B28500267C59 /* Array.swift */; };
-		7B23E3DC2A45B3F300267C59 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3DB2A45B3F300267C59 /* data.json */; };
+		7B23E3DC2A45B3F300267C59 /* stadiums.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3DB2A45B3F300267C59 /* stadiums.json */; };
 		7B23E3DF2A45DDD900267C59 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		7B23E3D42A45B18F00267C59 /* MatchListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListRow.swift; sourceTree = "<group>"; };
 		7B23E3D62A45B19800267C59 /* StadiumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailView.swift; sourceTree = "<group>"; };
 		7B23E3D92A45B28500267C59 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		7B23E3DB2A45B3F300267C59 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		7B23E3DB2A45B3F300267C59 /* stadiums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stadiums.json; sourceTree = "<group>"; };
 		7B23E3DD2A45DCCE00267C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +79,7 @@
 				7B23E3C62A45B13700267C59 /* Models */,
 				7B23E3CF2A45B16800267C59 /* Views */,
 				7B23E3BC2A45B0D400267C59 /* Assets.xcassets */,
-				7B23E3DB2A45B3F300267C59 /* data.json */,
+				7B32AD072A556F1900C1EFFD /* JSON data */,
 				7B23E3BE2A45B0D400267C59 /* Preview Content */,
 			);
 			path = WomensWorldCup2023;
@@ -121,6 +121,14 @@
 				7B23E3D92A45B28500267C59 /* Array.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B32AD072A556F1900C1EFFD /* JSON data */ = {
+			isa = PBXGroup;
+			children = (
+				7B23E3DB2A45B3F300267C59 /* stadiums.json */,
+			);
+			path = "JSON data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B23E3C02A45B0D400267C59 /* Preview Assets.xcassets in Resources */,
-				7B23E3DC2A45B3F300267C59 /* data.json in Resources */,
+				7B23E3DC2A45B3F300267C59 /* stadiums.json in Resources */,
 				7B23E3DF2A45DDD900267C59 /* Launch Screen.storyboard in Resources */,
 				7B23E3BD2A45B0D400267C59 /* Assets.xcassets in Resources */,
 			);

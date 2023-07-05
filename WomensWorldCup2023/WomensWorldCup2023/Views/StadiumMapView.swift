@@ -1,5 +1,5 @@
 //
-//  MapView.swift
+//  StadiumMapView.swift
 //  WomensWorldCup2023
 //
 //  Created by Esmee Kluijtmans on 23/06/2023.
@@ -8,9 +8,9 @@
 import SwiftUI
 import MapKit
 
-struct MapView: View {
+struct StadiumMapView: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -30, longitude: 146), span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70))
-    private let stadiums: [Stadium]
+    private var stadiums: [Stadium] = []
 
     var body: some View {
         NavigationView {
@@ -31,24 +31,23 @@ struct MapView: View {
     }
 
     init() {
-        if let path = Bundle.main.path(forResource: "data", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "stadiums", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decodedData = try JSONDecoder().decode([Stadium].self, from: data)
                 self.stadiums = decodedData
                 return
             } catch {
-                print("Something went wrong when fetching data")
-                print(error)
+                print("Something went wrong when fetching data:")
+                print(error.localizedDescription)
             }
         }
-        self.stadiums = []
     }
 }
 
-struct MapView_Previews: PreviewProvider {
+struct StadiumMapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        StadiumMapView()
     }
 }
 
