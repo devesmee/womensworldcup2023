@@ -29,7 +29,7 @@ struct StadiumMapView: View {
             .navigationDestination(for: Stadium.self) { stadium in
                 StadiumDetailView(stadium: stadium)
             }
-            .navigationTitle("Stadium explorer")
+            .navigationTitle("Stadiums")
             .background(Color("Yellow"))
         }
     }

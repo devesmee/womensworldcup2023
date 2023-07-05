@@ -11,7 +11,7 @@ import SwiftUI
 struct WomensWorldCup2023App: App {
     var body: some Scene {
         WindowGroup {
-            StadiumMapView()
+            ContentView()
         }
     }
 }
