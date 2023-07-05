@@ -51,6 +51,12 @@ struct MatchListRow: View {
             }
         }
         .listRowBackground(Color("Yellow"))
+        .alignmentGuide(.listRowSeparatorLeading) { dimensions in
+            dimensions[.leading]
+        }
+        .alignmentGuide(.listRowSeparatorTrailing) { dimensions in
+            dimensions[.trailing]
+        }
     }
 }
 
