@@ -24,6 +24,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Groups", systemImage: "list.number")
                 }
+            TeamsOverviewView()
+                .tabItem {
+                    Label("Teams", systemImage: "tshirt")
+                }
             StadiumMapView()
                 .tabItem {
                     Label("Stadiums", systemImage: "sportscourt")

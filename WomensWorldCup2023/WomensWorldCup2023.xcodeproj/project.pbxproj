@@ -26,6 +26,7 @@
 		7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD0C2A558E2200C1EFFD /* MatchesOverviewView.swift */; };
 		7B32AD132A558E7500C1EFFD /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD122A558E7500C1EFFD /* ARView.swift */; };
 		7B32AD152A558EA300C1EFFD /* GroupsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */; };
+		7B32AD182A55B20600C1EFFD /* TeamsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		7B32AD0C2A558E2200C1EFFD /* MatchesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesOverviewView.swift; sourceTree = "<group>"; };
 		7B32AD122A558E7500C1EFFD /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsOverviewView.swift; sourceTree = "<group>"; };
+		7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOverviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				7B32AD0A2A558DBB00C1EFFD /* ContentView.swift */,
 				7B32AD0E2A558E3900C1EFFD /* Matches tab */,
 				7B32AD102A558E5100C1EFFD /* Groups tab */,
+				7B32AD162A55B1E900C1EFFD /* Teams tab */,
 				7B32AD0F2A558E4100C1EFFD /* Stadiums tab */,
 				7B32AD112A558E5C00C1EFFD /* AR tab */,
 			);
@@ -176,6 +179,14 @@
 				7B32AD122A558E7500C1EFFD /* ARView.swift */,
 			);
 			path = "AR tab";
+			sourceTree = "<group>";
+		};
+		7B32AD162A55B1E900C1EFFD /* Teams tab */ = {
+			isa = PBXGroup;
+			children = (
+				7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */,
+			);
+			path = "Teams tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
 				7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */,
+				7B32AD182A55B20600C1EFFD /* TeamsOverviewView.swift in Sources */,
 				7B32AD152A558EA300C1EFFD /* GroupsOverviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
