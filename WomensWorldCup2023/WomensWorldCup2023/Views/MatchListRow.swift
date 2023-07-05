@@ -11,9 +11,13 @@ struct MatchListRow: View {
     let match: Match
 
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 5) {
             Text(match.date)
-                .font(.callout.italic())
+                .font(.callout)
+            if let groupText = match.group?.fullText() {
+                Text(groupText)
+                    .font(.callout.italic())
+            }
             ZStack {
                 HStack {
                     Spacer()
@@ -51,7 +55,7 @@ struct MatchListRow: View {
 }
 
 struct MatchListRow_Previews: PreviewProvider {
-    static let exampleMatch = Match(date: "20 July 2023", homeTeam: Countries.newZealand, awayTeam: Countries.norway, score: "? - ?", tournamentStage: .groupStage)
+    static let exampleMatch = Match(date: "20 July 2023", homeTeam: Countries.newZealand, awayTeam: Countries.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
 
     static var previews: some View {
         MatchListRow(match: exampleMatch)

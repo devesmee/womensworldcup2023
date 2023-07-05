@@ -14,12 +14,14 @@ struct Match: Identifiable, Decodable {
     let awayTeam: Countries
     let score: String
     let tournamentStage: TournamentStage
+    let group: Group?
 
-    init(date: String, homeTeam: Countries, awayTeam: Countries, score: String, tournamentStage: TournamentStage) {
+    init(date: String, homeTeam: Countries, awayTeam: Countries, score: String, tournamentStage: TournamentStage, group: Group?) {
         self.date = date
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam
         self.score = score
         self.tournamentStage = tournamentStage
+        self.group = group
     }
 }
