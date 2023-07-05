@@ -33,7 +33,10 @@ struct StadiumMapView: View {
                     Image(systemName: "arrow.counterclockwise.circle.fill")
                         .resizable()
                         .frame(width: 50, height: 50)
+                        .foregroundColor(Color("Orange"))
+                        .background(Color("Blue"))
                 }
+                .clipShape(Circle())
                 .padding(10)
 
             }
