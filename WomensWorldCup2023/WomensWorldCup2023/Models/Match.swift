@@ -10,13 +10,13 @@ import Foundation
 struct Match: Identifiable, Decodable {
     let id = UUID()
     let date: String
-    let homeTeam: Countries
-    let awayTeam: Countries
+    let homeTeam: Country
+    let awayTeam: Country
     let score: String
     let tournamentStage: TournamentStage
     let group: Group?
 
-    init(date: String, homeTeam: Countries, awayTeam: Countries, score: String, tournamentStage: TournamentStage, group: Group? = nil) {
+    init(date: String, homeTeam: Country, awayTeam: Country, score: String, tournamentStage: TournamentStage, group: Group? = nil) {
         self.date = date
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam

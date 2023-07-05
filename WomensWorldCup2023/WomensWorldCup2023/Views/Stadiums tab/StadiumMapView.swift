@@ -61,8 +61,8 @@ struct StadiumMapView: View {
         if let path = Bundle.main.path(forResource: "stadiums", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedData = try JSONDecoder().decode([Stadium].self, from: data)
-                self.stadiums = decodedData
+                let decodedStadiums = try JSONDecoder().decode([Stadium].self, from: data)
+                self.stadiums = decodedStadiums
                 return
             } catch {
                 print("Something went wrong when fetching data:")

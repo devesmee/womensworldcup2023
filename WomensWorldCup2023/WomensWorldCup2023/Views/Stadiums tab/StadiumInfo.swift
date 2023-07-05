@@ -56,7 +56,7 @@ struct StadiumInfo: View {
 }
 
 struct StadiumInfo_Previews: PreviewProvider {
-    static let exampleMatch = Match(date: "20 July 2023", homeTeam: Countries.newZealand, awayTeam: Countries.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    static let exampleMatch = Match(date: "20 July 2023", homeTeam: Country.newZealand, awayTeam: Country.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
     static let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: 36.87481208922987, longitude: -174.7447541218587, matches: [exampleMatch])
 
     static var previews: some View {
