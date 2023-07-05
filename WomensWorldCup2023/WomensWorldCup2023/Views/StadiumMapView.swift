@@ -11,12 +11,13 @@ import MapKit
 struct StadiumMapView: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -30, longitude: 146), span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70))
     private var stadiums: [Stadium] = []
+    @State private var path: [Stadium] = []
 
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $path) {
             Map(coordinateRegion: $mapRegion, annotationItems: stadiums) { stadium in
                 MapAnnotation(coordinate: stadium.coordinate) {
-                    NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
+                    NavigationLink(value: stadium) {
                         Image("logo_rounded")
                             .resizable()
                             .scaledToFit()
@@ -24,6 +25,9 @@ struct StadiumMapView: View {
                             .clipShape(Circle())
                     }
                 }
+            }
+            .navigationDestination(for: Stadium.self) { stadium in
+                StadiumDetailView(stadium: stadium)
             }
             .navigationTitle("Stadium explorer")
             .background(Color("Yellow"))

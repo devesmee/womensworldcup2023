@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-struct Stadium: Identifiable, Decodable {
+struct Stadium: Identifiable, Decodable, Hashable {
     let id = UUID()
     let name: String
     let city: String
@@ -38,5 +38,13 @@ struct Stadium: Identifiable, Decodable {
         self.longitude = longitude
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.matches = matches
+    }
+
+    static func == (lhs: Stadium, rhs: Stadium) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
