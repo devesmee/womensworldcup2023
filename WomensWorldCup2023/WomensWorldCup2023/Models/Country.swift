@@ -5,7 +5,7 @@
 //  Created by Esmee Kluijtmans on 14/07/2023.
 //
 
-struct Country {
+struct Country: Decodable {
     let country: CountryEnum
     let matchesPlayed: Int
     let goalDifference: Int
