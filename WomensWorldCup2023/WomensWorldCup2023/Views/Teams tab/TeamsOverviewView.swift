@@ -119,8 +119,8 @@ struct TeamsOverviewView: View {
         if let path = Bundle.main.path(forResource: "countries", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedCountries = try JSONDecoder().decode(Countries.self, from: data)
-                let sortedCountries = decodedCountries.countries.sortedByAlphabet
+                let decodedCountries = try JSONDecoder().decode([Country].self, from: data)
+                let sortedCountries = decodedCountries.sortedByAlphabet
                 self.countries = sortedCountries
                 return
             } catch {
