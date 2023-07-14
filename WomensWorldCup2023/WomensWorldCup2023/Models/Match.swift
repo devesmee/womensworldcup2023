@@ -8,7 +8,7 @@
 import Foundation
 
 struct Match: Identifiable, Decodable {
-    let id = UUID()
+    var id = UUID()
     let date: String
     let homeTeam: Country
     let awayTeam: Country

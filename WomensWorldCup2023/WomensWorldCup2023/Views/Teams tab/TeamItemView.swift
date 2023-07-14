@@ -15,18 +15,17 @@ struct TeamItemView: View {
             Image(country.rawValue)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 50, height: 50)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
             Text(country.rawValue)
                 .fontWeight(.semibold)
-                .frame(width: 100)
-                .multilineTextAlignment(.leading)
+                .lineLimit(1)
         }
     }
 }
 
 struct TeamItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamItemView(country: .australia)
+        TeamItemView(country: .ireland)
     }
 }
