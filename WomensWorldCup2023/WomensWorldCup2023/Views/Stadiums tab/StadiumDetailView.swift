@@ -37,6 +37,28 @@ struct StadiumDetailView: View {
                     }
                 }
 
+                if !matches.roundOf16.isEmpty {
+                    Section(header: HStack {
+                        Text("Round of 16")
+                            .font(.headline)
+                            .foregroundColor(Color("Yellow"))
+                            .padding()
+                        Spacer()
+                    }
+                    .background(Color("Red"))
+                    .listRowInsets(EdgeInsets(
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 0))
+                    ) {
+                        ForEach(matches.roundOf16, id: \.id) {
+                            match in
+                            MatchListRow(match: match)
+                        }
+                    }
+                }
+
                 if !matches.quarterFinal.isEmpty {
                     Section(header: HStack {
                         Text("Quarter final")
@@ -45,7 +67,7 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Red"))
+                    .background(Color("Pink"))
                     .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
@@ -67,7 +89,7 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Pink"))
+                    .background(Color("Blue"))
                     .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
@@ -89,7 +111,7 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Blue"))
+                    .background(Color("Green"))
                     .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
@@ -111,7 +133,7 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Green"))
+                    .background(Color("Orange"))
                     .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,

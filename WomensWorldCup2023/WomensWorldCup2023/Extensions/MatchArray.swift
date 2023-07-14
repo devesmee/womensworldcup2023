@@ -12,6 +12,10 @@ extension Array where Element == Match {
         filter { $0.tournamentStage == .groupStage }
     }
 
+    var roundOf16: [Match] {
+        filter { $0.tournamentStage == .round16 }
+    }
+
     var quarterFinal: [Match] {
         filter { $0.tournamentStage == .quarterFinal }
     }
