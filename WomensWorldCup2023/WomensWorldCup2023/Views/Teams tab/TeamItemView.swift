@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TeamItemView: View {
-    let country: Country
+    let country: CountryEnum
 
     var body: some View {
         VStack(alignment: .center) {

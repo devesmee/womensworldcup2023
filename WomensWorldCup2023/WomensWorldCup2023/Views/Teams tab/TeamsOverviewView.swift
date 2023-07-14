@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TeamsOverviewView: View {
-    private var countries: [Country] = []
+    private var countries: [CountryEnum] = []
 
     var body: some View {
         NavigationStack {
@@ -119,7 +119,7 @@ struct TeamsOverviewView: View {
         if let path = Bundle.main.path(forResource: "countries", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedCountries = try JSONDecoder().decode([Country].self, from: data)
+                let decodedCountries = try JSONDecoder().decode([CountryEnum].self, from: data)
                 let sortedCountries = decodedCountries.sortedByAlphabet
                 self.countries = sortedCountries
                 return

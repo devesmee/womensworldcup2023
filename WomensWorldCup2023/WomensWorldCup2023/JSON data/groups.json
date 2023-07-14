@@ -1,0 +1,234 @@
+[
+    {
+        "groupName": "A",
+        "teams": [
+            {
+                "country": "New Zealand",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Norway",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Philippines",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Switzerland",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "B",
+        "teams": [
+            {
+                "country": "Australia",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Canada",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Nigeria",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Republic of Ireland",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "C",
+        "teams": [
+            {
+                "country": "Costa Rica",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Japan",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Spain",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Zambia",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "D",
+        "teams": [
+            {
+                "country": "China PR",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Denmark",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "England",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Haiti",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "E",
+        "teams": [
+            {
+                "country": "Netherlands",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Portugal",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "USA",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Vietnam",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "F",
+        "teams": [
+            {
+                "country": "Brazil",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "France",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Jamaica",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Panama",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "G",
+        "teams": [
+            {
+                "country": "Argentina",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Italy",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "South Africa",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Sweden",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    },
+    {
+        "groupName": "H",
+        "teams": [
+            {
+                "country": "Colombia",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Germany",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Korea Republic",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            },
+            {
+                "country": "Morocco",
+                "matchesPlayed": 0,
+                "goalDifference": 0,
+                "points": 0
+            }
+        ]
+    }
+]
