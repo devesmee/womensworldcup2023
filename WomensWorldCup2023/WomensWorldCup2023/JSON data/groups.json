@@ -4,27 +4,27 @@
         "teams": [
             {
                 "country": "New Zealand",
-                "matchesPlayed": 0,
+                "matchesPlayed": 3,
                 "goalDifference": 0,
-                "points": 0
+                "points": 4
             },
             {
                 "country": "Norway",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 5,
+                "points": 4
             },
             {
                 "country": "Philippines",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -7,
+                "points": 3
             },
             {
                 "country": "Switzerland",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 2,
+                "points": 5
             }
         ]
     },
@@ -33,26 +33,26 @@
         "teams": [
             {
                 "country": "Australia",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 4,
+                "points": 6
             },
             {
                 "country": "Canada",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -3,
+                "points": 4
             },
             {
                 "country": "Nigeria",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 1,
+                "points": 5
             },
             {
                 "country": "Republic of Ireland",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
+                "matchesPlayed": 3,
+                "goalDifference": -2,
                 "points": 0
             }
         ]
@@ -62,27 +62,27 @@
         "teams": [
             {
                 "country": "Costa Rica",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
+                "matchesPlayed": 3,
+                "goalDifference": -7,
                 "points": 0
             },
             {
                 "country": "Japan",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 11,
+                "points": 9
             },
             {
                 "country": "Spain",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 4,
+                "points": 6
             },
             {
                 "country": "Zambia",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -8,
+                "points": 3
             }
         ]
     },
@@ -91,27 +91,27 @@
         "teams": [
             {
                 "country": "China PR",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -5,
+                "points": 3
             },
             {
                 "country": "Denmark",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 2,
+                "points": 6
             },
             {
                 "country": "England",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 9,
+                "points": 7
             },
             {
                 "country": "Haiti",
-                "matchesPlayed": 0,
+                "matchesPlayed": 3,
                 "goalDifference": 0,
-                "points": 0
+                "points": -4
             }
         ]
     },
@@ -120,26 +120,26 @@
         "teams": [
             {
                 "country": "Netherlands",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 8,
+                "points": 7
             },
             {
                 "country": "Portugal",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 1,
+                "points": 4
             },
             {
                 "country": "USA",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 3,
+                "points": 5
             },
             {
                 "country": "Vietnam",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
+                "matchesPlayed": 3,
+                "goalDifference": -12,
                 "points": 0
             }
         ]
@@ -149,26 +149,26 @@
         "teams": [
             {
                 "country": "Brazil",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 3,
+                "points": 4
             },
             {
                 "country": "France",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 4,
+                "points": 7
             },
             {
                 "country": "Jamaica",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 1,
+                "points": 5
             },
             {
                 "country": "Panama",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
+                "matchesPlayed": 3,
+                "goalDifference": -8,
                 "points": 0
             }
         ]
@@ -178,27 +178,27 @@
         "teams": [
             {
                 "country": "Argentina",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -3,
+                "points": 1
             },
             {
                 "country": "Italy",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -5,
+                "points": 3
             },
             {
                 "country": "South Africa",
-                "matchesPlayed": 0,
+                "matchesPlayed": 3,
                 "goalDifference": 0,
-                "points": 0
+                "points": 4
             },
             {
                 "country": "Sweden",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 8,
+                "points": 9
             }
         ]
     },
@@ -207,27 +207,27 @@
         "teams": [
             {
                 "country": "Colombia",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": 2,
+                "points": 6
             },
             {
                 "country": "Germany",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
+                "matchesPlayed": 3,
+                "goalDifference": 4,
                 "points": 0
             },
             {
                 "country": "Korea Republic",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -3,
+                "points": 1
             },
             {
                 "country": "Morocco",
-                "matchesPlayed": 0,
-                "goalDifference": 0,
-                "points": 0
+                "matchesPlayed": 3,
+                "goalDifference": -4,
+                "points": 6
             }
         ]
     }
