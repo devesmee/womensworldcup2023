@@ -29,10 +29,12 @@
 		7B32AD182A55B20600C1EFFD /* TeamsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */; };
 		7B32AD1A2A55B3E100C1EFFD /* TeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */; };
 		7B32AD1C2A55B5A100C1EFFD /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B32AD1B2A55B5A100C1EFFD /* countries.json */; };
-		7B32AD202A55B84900C1EFFD /* CountriesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD1F2A55B84900C1EFFD /* CountriesArray.swift */; };
+		7B32AD202A55B84900C1EFFD /* CountryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */; };
 		7B9BC9772A617BA30082CF5C /* groups.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B9BC9762A617BA30082CF5C /* groups.json */; };
 		7B9BC97A2A617E500082CF5C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC9792A617E500082CF5C /* Group.swift */; };
 		7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC97B2A617F1F0082CF5C /* Country.swift */; };
+		7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA385F2A7D27A400440F31 /* GroupView.swift */; };
+		7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38612A7D288100440F31 /* GroupArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,10 +62,12 @@
 		7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOverviewView.swift; sourceTree = "<group>"; };
 		7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamItemView.swift; sourceTree = "<group>"; };
 		7B32AD1B2A55B5A100C1EFFD /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
-		7B32AD1F2A55B84900C1EFFD /* CountriesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesArray.swift; sourceTree = "<group>"; };
+		7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryArray.swift; sourceTree = "<group>"; };
 		7B9BC9762A617BA30082CF5C /* groups.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groups.json; sourceTree = "<group>"; };
 		7B9BC9792A617E500082CF5C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		7B9BC97B2A617F1F0082CF5C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7BFA385F2A7D27A400440F31 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		7BFA38612A7D288100440F31 /* GroupArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				7B23E3D92A45B28500267C59 /* MatchArray.swift */,
-				7B32AD1F2A55B84900C1EFFD /* CountriesArray.swift */,
+				7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */,
+				7BFA38612A7D288100440F31 /* GroupArray.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */,
+				7BFA385F2A7D27A400440F31 /* GroupView.swift */,
 			);
 			path = "Groups tab";
 			sourceTree = "<group>";
@@ -290,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B32AD062A556D8300C1EFFD /* GroupEnum.swift in Sources */,
+				7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */,
 				7B23E3D12A45B17F00267C59 /* StadiumMapView.swift in Sources */,
+				7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */,
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,
 				7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */,
 				7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */,
@@ -300,7 +308,7 @@
 				7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */,
 				7B23E3C82A45B14C00267C59 /* CountryEnum.swift in Sources */,
 				7B32AD1A2A55B3E100C1EFFD /* TeamItemView.swift in Sources */,
-				7B32AD202A55B84900C1EFFD /* CountriesArray.swift in Sources */,
+				7B32AD202A55B84900C1EFFD /* CountryArray.swift in Sources */,
 				7B23E3DA2A45B28500267C59 /* MatchArray.swift in Sources */,
 				7B32AD132A558E7500C1EFFD /* ARView.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
