@@ -35,6 +35,7 @@
 		7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC97B2A617F1F0082CF5C /* Country.swift */; };
 		7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA385F2A7D27A400440F31 /* GroupView.swift */; };
 		7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38612A7D288100440F31 /* GroupArray.swift */; };
+		7BFA38642A7D34E500440F31 /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38632A7D34E500440F31 /* GroupRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		7B9BC97B2A617F1F0082CF5C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		7BFA385F2A7D27A400440F31 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		7BFA38612A7D288100440F31 /* GroupArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupArray.swift; sourceTree = "<group>"; };
+		7BFA38632A7D34E500440F31 /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */,
 				7BFA385F2A7D27A400440F31 /* GroupView.swift */,
+				7BFA38632A7D34E500440F31 /* GroupRow.swift */,
 			);
 			path = "Groups tab";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				7B32AD062A556D8300C1EFFD /* GroupEnum.swift in Sources */,
 				7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */,
+				7BFA38642A7D34E500440F31 /* GroupRow.swift in Sources */,
 				7B23E3D12A45B17F00267C59 /* StadiumMapView.swift in Sources */,
 				7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */,
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,

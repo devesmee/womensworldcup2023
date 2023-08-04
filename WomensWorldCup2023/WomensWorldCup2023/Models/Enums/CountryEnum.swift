@@ -41,4 +41,8 @@ enum CountryEnum: String, Decodable {
     case vietnam = "Vietnam"
     case zambia = "Zambia"
     case unknown = "TBA"
+
+    var name: String {
+        return self.rawValue
+    }
 }

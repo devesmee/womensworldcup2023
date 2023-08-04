@@ -11,13 +11,22 @@ struct GroupsOverviewView: View {
     private var groups: [Group] = []
 
     var body: some View {
-        ZStack {
-            Color("Yellow").ignoresSafeArea()
-            VStack {
-                ForEach(groups, id: \.groupName) { group in
-                    GroupView(group: group)
+        NavigationStack {
+            ScrollView {
+                ZStack {
+                    Color("Yellow").ignoresSafeArea()
+                    VStack(spacing: 30) {
+                        ForEach(groups, id: \.groupName) { group in
+                            GroupView(group: group)
+                        }
+                        .cornerRadius(20)
+                    }
+                    .padding(.horizontal)
                 }
+                .padding([.top, .bottom])
             }
+            .background(Color("Yellow"))
+            .navigationTitle("Groups")
         }
     }
 
