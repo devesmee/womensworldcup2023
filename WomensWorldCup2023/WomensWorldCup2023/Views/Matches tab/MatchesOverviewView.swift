@@ -11,9 +11,24 @@ struct MatchesOverviewView: View {
     private var matches: [Match] = []
 
     var body: some View {
-        ZStack {
-            Color("Yellow").ignoresSafeArea()
-            Text("Matches")
+        NavigationStack {
+            ScrollView {
+                ZStack {
+                    Color("Yellow").ignoresSafeArea()
+                    VStack(spacing: 25) {
+                        ForEach(matches) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: false,
+                                showTournamentStage: true
+                            )
+                        }
+                    }
+                    .padding(.horizontal)
+                }
+            }
+            .background(Color("Yellow"))
+            .navigationTitle("Matches")
         }
     }
 

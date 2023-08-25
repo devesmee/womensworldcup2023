@@ -9,13 +9,22 @@ import SwiftUI
 
 struct MatchListRow: View {
     let match: Match
+    let showDate: Bool
+    let showTournamentStage: Bool
 
     var body: some View {
         VStack(spacing: 5) {
-            Text(match.date.dayMonthYear)
-                .font(.callout)
+            if showDate {
+                Text(match.date.dayMonthYear)
+                    .font(.callout)
+            }
+
             if let groupText = match.group?.fullText() {
                 Text(groupText)
+                    .font(.callout.italic())
+            }
+            if showTournamentStage && match.group == nil {
+                Text(match.tournamentStage.rawValue)
                     .font(.callout.italic())
             }
             ZStack {
@@ -64,6 +73,6 @@ struct MatchListRow_Previews: PreviewProvider {
     static let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
 
     static var previews: some View {
-        MatchListRow(match: exampleMatch)
+        MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false)
     }
 }

@@ -33,6 +33,6 @@ extension Array where Element == Match {
     }
 
     var sortedByDate: [Match] {
-        sorted(by: { $0.date > $1.date })
+        sorted(by: { $0.date < $1.date })
     }
 }
