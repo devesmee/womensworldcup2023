@@ -1,0 +1,498 @@
+[
+    {
+        "date" : "20-07-2023",
+        "homeTeam" : "New Zealand",
+        "awayTeam" : "Norway",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "22-07-2023",
+        "homeTeam" : "USA",
+        "awayTeam" : "Vietnam",
+        "score" : "3 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "24-07-2023",
+        "homeTeam" : "Italy",
+        "awayTeam" : "Argentina",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "26-07-2023",
+        "homeTeam" : "Spain",
+        "awayTeam" : "Zambia",
+        "score" : "5 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "29-07-2023",
+        "homeTeam" : "France",
+        "awayTeam" : "Brazil",
+        "score" : "2 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "30-07-2023",
+        "homeTeam" : "Norway",
+        "awayTeam" : "Philippines",
+        "score" : "6 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "01-08-2023",
+        "homeTeam" : "Portugal",
+        "awayTeam" : "USA",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "05-08-202",
+        "homeTeam" : "Switzerland",
+        "awayTeam" : "Spain",
+        "score" : "1 - 5",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "11-08-2023",
+        "homeTeam" : "Japan",
+        "awayTeam" : "Sweden",
+        "score" : "1 - 2",
+        "tournamentStage" : "Quarter final"
+    },
+    {
+        "date" : "15-08-2023",
+        "homeTeam" : "Spain",
+        "awayTeam" : "Sweden",
+        "score" : "2 - 1",
+        "tournamentStage" : "Semi final"
+    },
+    {
+        "date" : "21-07-2023",
+        "homeTeam" : "Spain",
+        "awayTeam" : "Costa Rica",
+        "score" : "3 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "23-07-2023",
+        "homeTeam" : "Sweden",
+        "awayTeam" : "South Africa",
+        "score" : "2 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "25-07-2023",
+        "homeTeam" : "New Zealand",
+        "awayTeam" : "Philippines",
+        "score" : "0 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "27-07-2023",
+        "homeTeam" : "USA",
+        "awayTeam" : "Netherlands",
+        "score" : "1 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "29-07-2023",
+        "homeTeam" : "Sweden",
+        "awayTeam" : "Italy",
+        "score" : "5 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "31-07-2023",
+        "homeTeam" : "Japan",
+        "awayTeam" : "Spain",
+        "score" : "4 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "02-08-2023",
+        "homeTeam" : "South Africa",
+        "awayTeam" : "Italy",
+        "score" : "3 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "05-08-2023",
+        "homeTeam" : "Japan",
+        "awayTeam" : "Norway",
+        "score" : "3 - 1",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "11-08-2023",
+        "homeTeam" : "Spain",
+        "awayTeam" : "Netherlands",
+        "score" : "2 - 1",
+        "tournamentStage" : "Quarter final"
+    },
+    {
+        "date" : "22-07-2023",
+        "homeTeam" : "Zambia",
+        "awayTeam" : "Japan",
+        "score" : "0 - 5",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "25-07-2023",
+        "homeTeam" : "Switzerland",
+        "awayTeam" : "Norway",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "27-07-2023",
+        "homeTeam" : "Portugal",
+        "awayTeam" : "Vietnam",
+        "score" : "2 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "31-07-2023",
+        "homeTeam" : "Costa Rica",
+        "awayTeam" : "Zambia",
+        "score" : "1 - 3",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "02-08-2023",
+        "homeTeam" : "Argentina",
+        "awayTeam" : "Sweden",
+        "score" : "0 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "21-07-2023",
+        "homeTeam" : "Philippines",
+        "awayTeam" : "Switzerland",
+        "score" : "0 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "23-07-2023",
+        "homeTeam" : "Netherlands",
+        "awayTeam" : "Portugal",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "26-07-2023",
+        "homeTeam" : "Japan",
+        "awayTeam" : "Costa Rica",
+        "score" : "2 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "C"
+    },
+    {
+        "date" : "28-07-2023",
+        "homeTeam" : "Argentina",
+        "awayTeam" : "South Africa",
+        "score" : "2 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "G"
+    },
+    {
+        "date" : "30-07-2023",
+        "homeTeam" : "Switzerland",
+        "awayTeam" : "New Zealand",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "A"
+    },
+    {
+        "date" : "01-08-2023",
+        "homeTeam" : "Vietnam",
+        "awayTeam" : "Netherlands",
+        "score" : "0 - 7",
+        "tournamentStage" : "Group stage",
+        "group" : "E"
+    },
+    {
+        "date" : "23-07-2023",
+        "homeTeam" : "France",
+        "awayTeam" : "Jamaica",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "25-07-2023",
+        "homeTeam" : "Colombia",
+        "awayTeam" : "Korea Republic",
+        "score" : "2 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "28-07-2023",
+        "homeTeam" : "England",
+        "awayTeam" : "Denmark",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "30-07-2023",
+        "homeTeam" : "Germany",
+        "awayTeam" : "Colombia",
+        "score" : "1 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "02-08-2023",
+        "homeTeam" : "Panama",
+        "awayTeam" : "France",
+        "score" : "3 - 6",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "06-08-2023",
+        "homeTeam" : "Netherlands",
+        "awayTeam" : "South Africa",
+        "score" : "2 - 0",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "20-07-2023",
+        "homeTeam" : "Australia",
+        "awayTeam" : "Republic of Ireland",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "07-08-2023",
+        "homeTeam" : "Australia",
+        "awayTeam" : "Denmark",
+        "score" : "2 - 0",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "12-08-2023",
+        "homeTeam" : "England",
+        "awayTeam" : "Colombia",
+        "score" : "2 - 1",
+        "tournamentStage" : "Quarter final"
+    },
+    {
+        "date" : "16-08-2023",
+        "homeTeam" : "Australia",
+        "awayTeam" : "England",
+        "score" : "1 - 3",
+        "tournamentStage" : "Semi final"
+    },
+    {
+        "date" : "20-08-2023",
+        "homeTeam" : "Spain",
+        "awayTeam" : "England",
+        "score" : "1 - 0",
+        "tournamentStage" : "Final"
+    },
+    {
+        "date" : "22-07-2023",
+        "homeTeam" : "Denmark",
+        "awayTeam" : "China PR",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "26-07-2023",
+        "homeTeam" : "Canada",
+        "awayTeam" : "Republic of Ireland",
+        "score" : "2 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "29-07-2023",
+        "homeTeam" : "Panama",
+        "awayTeam" : "Jamaica",
+        "score" : "0 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "01-08-2023",
+        "homeTeam" : "Haiti",
+        "awayTeam" : "Denmark",
+        "score" : "0 - 2",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "03-08-2023",
+        "homeTeam" : "Morocco",
+        "awayTeam" : "Colombia",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "21-07-2023",
+        "homeTeam" : "Nigeria",
+        "awayTeam" : "Canada",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "24-07-2023",
+        "homeTeam" : "Germany",
+        "awayTeam" : "Morocco",
+        "score" : "6 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "31-07-2023",
+        "homeTeam" : "Canada",
+        "awayTeam" : "Australia",
+        "score" : "0 - 4",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "02-08-2023",
+        "homeTeam" : "Jamaica",
+        "awayTeam" : "Brazil",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "06-08-2023",
+        "homeTeam" : "Sweden",
+        "awayTeam" : "USA",
+        "score" : "0 (5) - 0 (4)",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "08-08-2023",
+        "homeTeam" : "Colombia",
+        "awayTeam" : "Jamaica",
+        "score" : "1 - 0",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "24-07-2023",
+        "homeTeam" : "Brazil",
+        "awayTeam" : "Panama",
+        "score" : "4 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "F"
+    },
+    {
+        "date" : "28-07-2023",
+        "homeTeam" : "China PR",
+        "awayTeam" : "Haiti",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "30-07-2023",
+        "homeTeam" : "Korea Republic",
+        "awayTeam" : "Morocco",
+        "score" : "0 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "01-08-2023",
+        "homeTeam" : "China PR",
+        "awayTeam" : "England",
+        "score" : "1 - 6",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "08-08-2023",
+        "homeTeam" : "France",
+        "awayTeam" : "Morocco",
+        "score" : "4 - 0",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "22-07-2023",
+        "homeTeam" : "England",
+        "awayTeam" : "Haiti",
+        "score" : "1 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "D"
+    },
+    {
+        "date" : "27-07-2023",
+        "homeTeam" : "Australia",
+        "awayTeam" : "Nigeria",
+        "score" : "2 - 3",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "31-07-2023",
+        "homeTeam" : "Republic of Ireland",
+        "awayTeam" : "Nigeria",
+        "score" : "0 - 0",
+        "tournamentStage" : "Group stage",
+        "group" : "B"
+    },
+    {
+        "date" : "03-08-2023",
+        "homeTeam" : "Korea Republic",
+        "awayTeam" : "Germany",
+        "score" : "1 - 1",
+        "tournamentStage" : "Group stage",
+        "group" : "H"
+    },
+    {
+        "date" : "07-08-2023",
+        "homeTeam" : "England",
+        "awayTeam" : "Nigeria",
+        "score" : "0 (4) - 0 (2)",
+        "tournamentStage" : "Round of 16"
+    },
+    {
+        "date" : "12-08-2023",
+        "homeTeam" : "Australia",
+        "awayTeam" : "France",
+        "score" : "0 (7) - 0 (6)",
+        "tournamentStage" : "Quarter final"
+    },
+    {
+        "date" : "19-08-2023",
+        "homeTeam" : "Sweden",
+        "awayTeam" : "Australia",
+        "score" : "2 - 0",
+        "tournamentStage" : "Third place"
+    }
+]

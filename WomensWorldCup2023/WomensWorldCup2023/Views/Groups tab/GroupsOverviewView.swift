@@ -31,12 +31,8 @@ struct GroupsOverviewView: View {
     }
 
     init() {
-        self.setNavigationTitleColor()
+        self.setNavigationTitleColour()
         self.loadGroupsData()
-    }
-
-    private func setNavigationTitleColor() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color("Blue"))]
     }
 
     private mutating func loadGroupsData() {

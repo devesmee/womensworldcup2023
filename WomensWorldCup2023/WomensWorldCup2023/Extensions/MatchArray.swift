@@ -31,4 +31,8 @@ extension Array where Element == Match {
     var final: [Match] {
         filter { $0.tournamentStage == .final }
     }
+
+    var sortedByDate: [Match] {
+        sorted(by: { $0.date > $1.date })
+    }
 }
