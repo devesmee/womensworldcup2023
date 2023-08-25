@@ -12,7 +12,7 @@ struct MatchListRow: View {
 
     var body: some View {
         VStack(spacing: 5) {
-            Text(match.date)
+            Text(match.date.dayMonthYear)
                 .font(.callout)
             if let groupText = match.group?.fullText() {
                 Text(groupText)
@@ -61,7 +61,7 @@ struct MatchListRow: View {
 }
 
 struct MatchListRow_Previews: PreviewProvider {
-    static let exampleMatch = Match(date: "20 July 2023", homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    static let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
 
     static var previews: some View {
         MatchListRow(match: exampleMatch)

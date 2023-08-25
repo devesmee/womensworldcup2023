@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B20D6ED2A98C9F500DDB1C9 /* DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B20D6EC2A98C9F500DDB1C9 /* DateString.swift */; };
 		7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */; };
 		7B23E3BD2A45B0D400267C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BC2A45B0D400267C59 /* Assets.xcassets */; };
 		7B23E3C02A45B0D400267C59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BF2A45B0D400267C59 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B20D6EC2A98C9F500DDB1C9 /* DateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateString.swift; sourceTree = "<group>"; };
 		7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomensWorldCup2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensWorldCup2023App.swift; sourceTree = "<group>"; };
 		7B23E3BC2A45B0D400267C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				7B23E3D92A45B28500267C59 /* MatchArray.swift */,
 				7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */,
 				7BFA38612A7D288100440F31 /* GroupArray.swift */,
+				7B20D6EC2A98C9F500DDB1C9 /* DateString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				7B23E3CA2A45B15500267C59 /* TournamentStage.swift in Sources */,
 				7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */,
 				7B23E3C82A45B14C00267C59 /* CountryEnum.swift in Sources */,
+				7B20D6ED2A98C9F500DDB1C9 /* DateString.swift in Sources */,
 				7B32AD1A2A55B3E100C1EFFD /* TeamItemView.swift in Sources */,
 				7B32AD202A55B84900C1EFFD /* CountryArray.swift in Sources */,
 				7B23E3DA2A45B28500267C59 /* MatchArray.swift in Sources */,
