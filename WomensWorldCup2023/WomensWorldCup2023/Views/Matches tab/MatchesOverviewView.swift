@@ -19,21 +19,24 @@ struct MatchesOverviewView: View {
                     DateScrollbarView(dates: sortedUniqueDates, selectedDate: $selectedDate)
                         .padding(.horizontal)
                     ScrollViewReader { scrollReader in
-                        ScrollView {
-                            VStack(spacing: 25) {
-                                ForEach(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
+                        List(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
                                     MatchDateSectionView(date: date, matches: matches.forDate( date: date))
-                                    .id(date)
-                                }
-                            }
+                                        .id(date)
+                                        .listRowInsets(EdgeInsets(
+                                            top: 0,
+                                            leading: 0,
+                                            bottom: 0,
+                                            trailing: 0))
                         }
-                        .padding(.bottom)
+                        .scrollContentBackground(.hidden)
+                        .listStyle(.plain)
                         .onChange(of: selectedDate) { _ in
                             withAnimation {
                                 scrollReader.scrollTo(selectedDate, anchor: .top)
                             }
                         }
                     }
+                    .background(Color("Yellow"))
                 }
             }
             .background(Color("Yellow"))

@@ -30,9 +30,11 @@ struct MatchDateSectionView: View {
                     showDate: false,
                     showTournamentStage: true
                 )
+                .padding(.bottom)
             }
             .padding(.horizontal)
         }
+        .background(Color("Yellow"))
     }
 }
 
