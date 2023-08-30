@@ -10,6 +10,7 @@
 		7B20D6ED2A98C9F500DDB1C9 /* DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B20D6EC2A98C9F500DDB1C9 /* DateString.swift */; };
 		7B20D6F02A98CD2F00DDB1C9 /* matches.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B20D6EF2A98CD2F00DDB1C9 /* matches.json */; };
 		7B20D6F22A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B20D6F12A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift */; };
+		7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B20D6F32A98DC9300DDB1C9 /* DateScrollbarView.swift */; };
 		7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */; };
 		7B23E3BD2A45B0D400267C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BC2A45B0D400267C59 /* Assets.xcassets */; };
 		7B23E3C02A45B0D400267C59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B23E3BF2A45B0D400267C59 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		7B20D6EC2A98C9F500DDB1C9 /* DateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateString.swift; sourceTree = "<group>"; };
 		7B20D6EF2A98CD2F00DDB1C9 /* matches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = matches.json; sourceTree = "<group>"; };
 		7B20D6F12A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNavigationTitleColour.swift; sourceTree = "<group>"; };
+		7B20D6F32A98DC9300DDB1C9 /* DateScrollbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollbarView.swift; sourceTree = "<group>"; };
 		7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomensWorldCup2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B23E3B82A45B0D100267C59 /* WomensWorldCup2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensWorldCup2023App.swift; sourceTree = "<group>"; };
 		7B23E3BC2A45B0D400267C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				7B32AD0C2A558E2200C1EFFD /* MatchesOverviewView.swift */,
+				7B20D6F32A98DC9300DDB1C9 /* DateScrollbarView.swift */,
 			);
 			path = "Matches tab";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				7B32AD202A55B84900C1EFFD /* CountryArray.swift in Sources */,
 				7B23E3DA2A45B28500267C59 /* MatchArray.swift in Sources */,
 				7B32AD132A558E7500C1EFFD /* ARView.swift in Sources */,
+				7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
