@@ -9,19 +9,20 @@ import SwiftUI
 
 struct MatchesOverviewView: View {
     private var matches: [Match] = []
+    private var sortedUniqueDates: [Date] = []
     @State private var selectedDate: Date?
 
     var body: some View {
         NavigationStack {
             ZStack {
                 VStack {
-                    DateScrollbarView(dates: matches.sortedUniqueDates, selectedDate: $selectedDate)
+                    DateScrollbarView(dates: sortedUniqueDates, selectedDate: $selectedDate)
                         .padding(.horizontal)
                     ScrollViewReader { scrollReader in
                         ScrollView {
                             VStack(spacing: 25) {
                                 Color("Yellow").ignoresSafeArea()
-                                ForEach(matches.sortedUniqueDates, id: \.timeIntervalSince1970) { date in
+                                ForEach(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
                                     MatchDateSectionView(date: date, matches: matches.forDate( date: date))
                                     .id(date)
                                 }
@@ -49,6 +50,8 @@ struct MatchesOverviewView: View {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path))
                 let decodedMatches = try JSONDecoder().decode([Match].self, from: data)
                 self.matches = decodedMatches.sortedByDate
+                self.sortedUniqueDates = self.matches.sortedUniqueDates
+                self._selectedDate = State(initialValue: self.sortedUniqueDates.first)
                 return
             } catch {
                 print("Something went wrong when fetching data:")
