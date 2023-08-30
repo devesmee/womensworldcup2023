@@ -12,85 +12,84 @@ struct TeamsOverviewView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ZStack {
-                    Color("Yellow").ignoresSafeArea()
-
-                    Grid {
-                        SwiftUI.Group {
-                            GridRow {
-                                ForEach(countries[0 ... 2], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                                .padding([.leading, .trailing])
+            List {
+                Grid {
+                    SwiftUI.Group {
+                        GridRow {
+                            ForEach(countries[0 ... 2], id: \.rawValue) { country in
+                                TeamItemView(country: country)
                             }
-                            GridRow {
-                                ForEach(countries[3 ... 5], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[6 ... 8], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[9 ... 11], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[12 ... 14], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
+                            .padding([.leading, .trailing])
                         }
-                        SwiftUI.Group {
-                            GridRow {
-                                ForEach(countries[15 ... 17], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
+                        GridRow {
+                            ForEach(countries[3 ... 5], id: \.rawValue) { country in
+                                TeamItemView(country: country)
                             }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[18 ... 20], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[20 ... 22], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow(alignment: .top) {
-                                ForEach(countries[23 ... 25], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[26 ... 28], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
-                            GridRow {
-                                ForEach(countries[29 ... 31], id: \.rawValue) { country in
-                                    TeamItemView(country: country)
-                                }
-                            }
-                            .padding(.top)
                         }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[6 ... 8], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[9 ... 11], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[12 ... 14], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                    }
+                    SwiftUI.Group {
+                        GridRow {
+                            ForEach(countries[15 ... 17], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[18 ... 20], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[20 ... 22], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow(alignment: .top) {
+                            ForEach(countries[23 ... 25], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[26 ... 28], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
+                        GridRow {
+                            ForEach(countries[29 ... 31], id: \.rawValue) { country in
+                                TeamItemView(country: country)
+                            }
+                        }
+                        .padding(.top)
                     }
                 }
+                .listRowBackground(Color("Yellow"))
+                .listRowSeparator(.hidden)
                 .padding([.top, .bottom])
             }
+            .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Teams")
         }

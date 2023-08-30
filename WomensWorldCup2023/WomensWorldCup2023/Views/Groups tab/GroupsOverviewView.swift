@@ -12,19 +12,13 @@ struct GroupsOverviewView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ZStack {
-                    Color("Yellow").ignoresSafeArea()
-                    VStack(spacing: 30) {
-                        ForEach(groups, id: \.groupName) { group in
-                            GroupView(group: group)
-                        }
-                        .cornerRadius(20)
-                    }
-                    .padding(.horizontal)
-                }
-                .padding([.top, .bottom])
+            List(groups, id: \.groupName) { group in
+                GroupView(group: group)
+                    .cornerRadius(20)
+                    .listRowBackground(Color("Yellow"))
+                    .listRowSeparator(.hidden)
             }
+            .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Groups")
         }
