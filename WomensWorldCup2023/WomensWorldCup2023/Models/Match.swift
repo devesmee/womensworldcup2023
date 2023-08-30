@@ -41,6 +41,7 @@ struct Match: Identifiable, Decodable {
         let dateString = try container.decode(String.self, forKey: .date)
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
         self.date = formatter.date(from: dateString) ?? Date()
 
         self.homeTeam = try container.decode(CountryEnum.self, forKey: .homeTeam)

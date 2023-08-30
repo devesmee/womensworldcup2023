@@ -14,30 +14,30 @@ struct MatchesOverviewView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                VStack {
-                    DateScrollbarView(dates: sortedUniqueDates, selectedDate: $selectedDate)
-                        .padding(.horizontal)
-                    ScrollViewReader { scrollReader in
-                        List(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
-                                    MatchDateSectionView(date: date, matches: matches.forDate( date: date))
-                                        .id(date)
-                                        .listRowInsets(EdgeInsets(
-                                            top: 0,
-                                            leading: 0,
-                                            bottom: 0,
-                                            trailing: 0))
-                        }
-                        .scrollContentBackground(.hidden)
-                        .listStyle(.plain)
-                        .onChange(of: selectedDate) { _ in
-                            withAnimation {
-                                scrollReader.scrollTo(selectedDate, anchor: .top)
-                            }
+            VStack {
+                DateScrollbarView(dates: sortedUniqueDates, selectedDate: $selectedDate)
+                    .padding(.horizontal)
+                ScrollViewReader { scrollReader in
+                    List {
+                        ForEach(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
+                            MatchDateSectionView(date: date, matches: matches.forDate( date: date))
+                                .id(date)
+                                .listRowInsets(EdgeInsets(
+                                    top: 0,
+                                    leading: 0,
+                                    bottom: 0,
+                                    trailing: 0))
                         }
                     }
-                    .background(Color("Yellow"))
+                    .scrollContentBackground(.hidden)
+                    .listStyle(.plain)
+                    .onChange(of: selectedDate) { _ in
+                        withAnimation {
+                            scrollReader.scrollTo(selectedDate, anchor: .top)
+                        }
+                    }
                 }
+                .background(Color("Yellow"))
             }
             .background(Color("Yellow"))
             .navigationTitle("Matches")
