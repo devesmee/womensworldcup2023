@@ -16,17 +16,14 @@ struct MatchesOverviewView: View {
             ZStack {
                 VStack {
                     DateScrollbarView(dates: matches.sortedUniqueDates, selectedDate: $selectedDate)
+                        .padding(.horizontal)
                     ScrollViewReader { scrollReader in
                         ScrollView {
                             VStack(spacing: 25) {
                                 Color("Yellow").ignoresSafeArea()
-                                ForEach(matches) { match in
-                                    MatchListRow(
-                                        match: match,
-                                        showDate: false,
-                                        showTournamentStage: true
-                                    )
-                                    .id(match.date)
+                                ForEach(matches.sortedUniqueDates, id: \.timeIntervalSince1970) { date in
+                                    MatchDateSectionView(date: date, matches: matches.forDate( date: date))
+                                    .id(date)
                                 }
                             }
                         }
@@ -35,7 +32,6 @@ struct MatchesOverviewView: View {
                         }
                     }
                 }
-                .padding(.horizontal)
             }
             .background(Color("Yellow"))
             .navigationTitle("Matches")
