@@ -9,23 +9,33 @@ import SwiftUI
 
 struct MatchesOverviewView: View {
     private var matches: [Match] = []
+    @State private var selectedDate: Date?
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ZStack {
-                    Color("Yellow").ignoresSafeArea()
-                    VStack(spacing: 25) {
-                        ForEach(matches) { match in
-                            MatchListRow(
-                                match: match,
-                                showDate: false,
-                                showTournamentStage: true
-                            )
+            ZStack {
+                VStack {
+                    DateScrollbarView(dates: matches.sortedUniqueDates, selectedDate: $selectedDate)
+                    ScrollViewReader { scrollReader in
+                        ScrollView {
+                            VStack(spacing: 25) {
+                                Color("Yellow").ignoresSafeArea()
+                                ForEach(matches) { match in
+                                    MatchListRow(
+                                        match: match,
+                                        showDate: false,
+                                        showTournamentStage: true
+                                    )
+                                    .id(match.date)
+                                }
+                            }
+                        }
+                        .onChange(of: selectedDate) { _ in
+                            scrollReader.scrollTo(selectedDate, anchor: .top)
                         }
                     }
-                    .padding(.horizontal)
                 }
+                .padding(.horizontal)
             }
             .background(Color("Yellow"))
             .navigationTitle("Matches")

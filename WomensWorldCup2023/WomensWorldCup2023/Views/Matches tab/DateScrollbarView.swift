@@ -9,10 +9,10 @@ import SwiftUI
 
 struct DateScrollbarView: View {
     let dates: [Date]
-    @State private var selectedDate: Date?
+    @Binding var selectedDate: Date?
 
     var body: some View {
-        ScrollViewReader { scrollView in
+        ScrollViewReader { scrollReader in
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(dates, id: \.timeIntervalSince1970) { date in
@@ -21,7 +21,7 @@ struct DateScrollbarView: View {
                             .onTapGesture {
                                 withAnimation {
                                     self.selectedDate = date
-                                    scrollView.scrollTo(date, anchor: .center)
+                                    scrollReader.scrollTo(date, anchor: .center)
                                 }
                             }
                     }
@@ -32,7 +32,9 @@ struct DateScrollbarView: View {
 }
 
 struct DateScrollbarView_Previews: PreviewProvider {
+    @State private static var selectedDate: Date? = Date()
+
     static var previews: some View {
-        DateScrollbarView(dates: [Date(), Date(), Date()])
+        DateScrollbarView(dates: [Date(), Date(), Date()], selectedDate: $selectedDate)
     }
 }
