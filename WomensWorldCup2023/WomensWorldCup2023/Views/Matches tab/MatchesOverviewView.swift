@@ -21,15 +21,17 @@ struct MatchesOverviewView: View {
                     ScrollViewReader { scrollReader in
                         ScrollView {
                             VStack(spacing: 25) {
-                                Color("Yellow").ignoresSafeArea()
                                 ForEach(sortedUniqueDates, id: \.timeIntervalSince1970) { date in
                                     MatchDateSectionView(date: date, matches: matches.forDate( date: date))
                                     .id(date)
                                 }
                             }
                         }
+                        .padding(.bottom)
                         .onChange(of: selectedDate) { _ in
-                            scrollReader.scrollTo(selectedDate, anchor: .top)
+                            withAnimation {
+                                scrollReader.scrollTo(selectedDate, anchor: .top)
+                            }
                         }
                     }
                 }
