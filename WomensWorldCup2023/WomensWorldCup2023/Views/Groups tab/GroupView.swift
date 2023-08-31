@@ -22,6 +22,7 @@ struct GroupView: View {
                     Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])
                     Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])
                     Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])
+                    Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])
                     // Matches played
                     Text("MP")
                         .font(.title3)
@@ -44,6 +45,17 @@ struct GroupView: View {
                 Divider()
                 // Team that finished fourth
                 GroupRow(team: group.teams[3], finishedPosition: 4)
+                Divider()
+                HStack {
+                    HStack {
+                        Circle()
+                            .foregroundColor(Color("Pink"))
+                            .frame(width: 20, height: 20)
+                        Text("To round of 16")
+                            .font(.callout.italic())
+                    }
+                    Spacer()
+                }
             }
         }
         .padding()

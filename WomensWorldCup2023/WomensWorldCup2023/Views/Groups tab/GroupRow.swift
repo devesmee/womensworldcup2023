@@ -12,6 +12,11 @@ struct GroupRow: View {
     let finishedPosition: Int
     var body: some View {
         GridRow {
+            Rectangle()
+                .frame(width: 5, height: 25)
+                .foregroundColor(
+                    finishedPosition <= 2 ? Color("Pink") : .clear
+                )
             Text("\(finishedPosition)")
                 .bold()
             Image(team.country.name)
