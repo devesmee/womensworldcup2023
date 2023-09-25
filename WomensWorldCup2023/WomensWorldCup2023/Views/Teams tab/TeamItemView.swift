@@ -19,8 +19,10 @@ struct TeamItemView: View {
                 .clipShape(Circle())
             Text(country.rawValue)
                 .fontWeight(.semibold)
-                .lineLimit(1)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
         }
+        .frame(width: 100)
     }
 }
 
