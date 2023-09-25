@@ -60,25 +60,25 @@ struct TeamsOverviewView: View {
                         }
                         .padding(.top)
                         GridRow(alignment: .top) {
-                            ForEach(countries[20 ... 22], id: \.rawValue) { country in
+                            ForEach(countries[21 ... 23], id: \.rawValue) { country in
                                 TeamItemView(country: country)
                             }
                         }
                         .padding(.top)
                         GridRow(alignment: .top) {
-                            ForEach(countries[23 ... 25], id: \.rawValue) { country in
+                            ForEach(countries[24 ... 26], id: \.rawValue) { country in
                                 TeamItemView(country: country)
                             }
                         }
                         .padding(.top)
                         GridRow(alignment: .top) {
-                            ForEach(countries[26 ... 28], id: \.rawValue) { country in
+                            ForEach(countries[27 ... 29], id: \.rawValue) { country in
                                 TeamItemView(country: country)
                             }
                         }
                         .padding(.top)
                         GridRow(alignment: .top) {
-                            ForEach(countries[29 ... 31], id: \.rawValue) { country in
+                            ForEach(countries[30 ... 31], id: \.rawValue) { country in
                                 TeamItemView(country: country)
                             }
                         }
