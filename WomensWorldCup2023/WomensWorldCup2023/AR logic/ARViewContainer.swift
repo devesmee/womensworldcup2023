@@ -13,7 +13,9 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
 
-        // TODO: add item & anchor to scene
+        let footballAnchor = try! Football.loadScene()
+        arView.scene.anchors.append(footballAnchor)
+
         return arView
     }
 
