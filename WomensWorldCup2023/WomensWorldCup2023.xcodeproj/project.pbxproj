@@ -39,7 +39,7 @@
 		7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC97B2A617F1F0082CF5C /* Country.swift */; };
 		7BAFBE7C2AC7038000B53CA1 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE7B2AC7038000B53CA1 /* ARViewContainer.swift */; };
 		7BAFBE802AC70DAD00B53CA1 /* CameraStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE7F2AC70DAD00B53CA1 /* CameraStatus.swift */; };
-		7BAFBE832AC710E400B53CA1 /* Football.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE822AC710E400B53CA1 /* Football.rcproject */; };
+		7BAFBE872AC7151E00B53CA1 /* Football.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE862AC7151E00B53CA1 /* Football.rcproject */; };
 		7BF371C22A9F55E800FA7E3B /* DateScrollbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF371C12A9F55E800FA7E3B /* DateScrollbarItemView.swift */; };
 		7BF371C42A9F615000FA7E3B /* MatchDateSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF371C32A9F615000FA7E3B /* MatchDateSectionView.swift */; };
 		7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA385F2A7D27A400440F31 /* GroupView.swift */; };
@@ -82,7 +82,7 @@
 		7B9BC97B2A617F1F0082CF5C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		7BAFBE7B2AC7038000B53CA1 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		7BAFBE7F2AC70DAD00B53CA1 /* CameraStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStatus.swift; sourceTree = "<group>"; };
-		7BAFBE822AC710E400B53CA1 /* Football.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Football.rcproject; sourceTree = "<group>"; };
+		7BAFBE862AC7151E00B53CA1 /* Football.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Football.rcproject; sourceTree = "<group>"; };
 		7BF371C12A9F55E800FA7E3B /* DateScrollbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollbarItemView.swift; sourceTree = "<group>"; };
 		7BF371C32A9F615000FA7E3B /* MatchDateSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDateSectionView.swift; sourceTree = "<group>"; };
 		7BFA385F2A7D27A400440F31 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		7BAFBE812AC710DD00B53CA1 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				7BAFBE822AC710E400B53CA1 /* Football.rcproject */,
+				7BAFBE862AC7151E00B53CA1 /* Football.rcproject */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -354,6 +354,7 @@
 				7BAFBE7C2AC7038000B53CA1 /* ARViewContainer.swift in Sources */,
 				7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */,
 				7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */,
+				7BAFBE872AC7151E00B53CA1 /* Football.rcproject in Sources */,
 				7B23E3CE2A45B16200267C59 /* Stadium.swift in Sources */,
 				7B9BC97A2A617E500082CF5C /* Group.swift in Sources */,
 				7BAFBE802AC70DAD00B53CA1 /* CameraStatus.swift in Sources */,
@@ -367,7 +368,6 @@
 				7B32AD132A558E7500C1EFFD /* AugmentedRealityView.swift in Sources */,
 				7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
-				7BAFBE832AC710E400B53CA1 /* Football.rcproject in Sources */,
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
 				7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */,
