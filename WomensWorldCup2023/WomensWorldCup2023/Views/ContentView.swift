@@ -32,7 +32,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Stadiums", systemImage: "sportscourt")
                 }
-            ARView()
+            AugmentedRealityView()
                 .tabItem {
                     Label("AR", systemImage: "camera.viewfinder")
                 }

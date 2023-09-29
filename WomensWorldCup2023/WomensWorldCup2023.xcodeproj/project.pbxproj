@@ -28,7 +28,7 @@
 		7B32AD062A556D8300C1EFFD /* GroupEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD052A556D8300C1EFFD /* GroupEnum.swift */; };
 		7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD0A2A558DBB00C1EFFD /* ContentView.swift */; };
 		7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD0C2A558E2200C1EFFD /* MatchesOverviewView.swift */; };
-		7B32AD132A558E7500C1EFFD /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD122A558E7500C1EFFD /* ARView.swift */; };
+		7B32AD132A558E7500C1EFFD /* AugmentedRealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD122A558E7500C1EFFD /* AugmentedRealityView.swift */; };
 		7B32AD152A558EA300C1EFFD /* GroupsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */; };
 		7B32AD182A55B20600C1EFFD /* TeamsOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */; };
 		7B32AD1A2A55B3E100C1EFFD /* TeamItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */; };
@@ -37,6 +37,8 @@
 		7B9BC9772A617BA30082CF5C /* groups.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B9BC9762A617BA30082CF5C /* groups.json */; };
 		7B9BC97A2A617E500082CF5C /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC9792A617E500082CF5C /* Group.swift */; };
 		7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC97B2A617F1F0082CF5C /* Country.swift */; };
+		7BAFBE7C2AC7038000B53CA1 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE7B2AC7038000B53CA1 /* ARViewContainer.swift */; };
+		7BAFBE802AC70DAD00B53CA1 /* CameraStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFBE7F2AC70DAD00B53CA1 /* CameraStatus.swift */; };
 		7BF371C22A9F55E800FA7E3B /* DateScrollbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF371C12A9F55E800FA7E3B /* DateScrollbarItemView.swift */; };
 		7BF371C42A9F615000FA7E3B /* MatchDateSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF371C32A9F615000FA7E3B /* MatchDateSectionView.swift */; };
 		7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA385F2A7D27A400440F31 /* GroupView.swift */; };
@@ -68,7 +70,7 @@
 		7B32AD052A556D8300C1EFFD /* GroupEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEnum.swift; sourceTree = "<group>"; };
 		7B32AD0A2A558DBB00C1EFFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B32AD0C2A558E2200C1EFFD /* MatchesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesOverviewView.swift; sourceTree = "<group>"; };
-		7B32AD122A558E7500C1EFFD /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		7B32AD122A558E7500C1EFFD /* AugmentedRealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityView.swift; sourceTree = "<group>"; };
 		7B32AD142A558EA300C1EFFD /* GroupsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsOverviewView.swift; sourceTree = "<group>"; };
 		7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOverviewView.swift; sourceTree = "<group>"; };
 		7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamItemView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		7B9BC9762A617BA30082CF5C /* groups.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groups.json; sourceTree = "<group>"; };
 		7B9BC9792A617E500082CF5C /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		7B9BC97B2A617F1F0082CF5C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7BAFBE7B2AC7038000B53CA1 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		7BAFBE7F2AC70DAD00B53CA1 /* CameraStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStatus.swift; sourceTree = "<group>"; };
 		7BF371C12A9F55E800FA7E3B /* DateScrollbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScrollbarItemView.swift; sourceTree = "<group>"; };
 		7BF371C32A9F615000FA7E3B /* MatchDateSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDateSectionView.swift; sourceTree = "<group>"; };
 		7BFA385F2A7D27A400440F31 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		7B23E3B72A45B0D100267C59 /* WomensWorldCup2023 */ = {
 			isa = PBXGroup;
 			children = (
+				7BAFBE7A2AC7036E00B53CA1 /* AR logic */,
 				7B23E3DE2A45DDD900267C59 /* Launch Screen.storyboard */,
 				7B23E3DD2A45DCCE00267C59 /* Info.plist */,
 				7B23E3D82A45B27C00267C59 /* Extensions */,
@@ -219,7 +224,7 @@
 		7B32AD112A558E5C00C1EFFD /* AR tab */ = {
 			isa = PBXGroup;
 			children = (
-				7B32AD122A558E7500C1EFFD /* ARView.swift */,
+				7B32AD122A558E7500C1EFFD /* AugmentedRealityView.swift */,
 			);
 			path = "AR tab";
 			sourceTree = "<group>";
@@ -240,6 +245,15 @@
 				7B32AD052A556D8300C1EFFD /* GroupEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		7BAFBE7A2AC7036E00B53CA1 /* AR logic */ = {
+			isa = PBXGroup;
+			children = (
+				7BAFBE7B2AC7038000B53CA1 /* ARViewContainer.swift */,
+				7BAFBE7F2AC70DAD00B53CA1 /* CameraStatus.swift */,
+			);
+			path = "AR logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,10 +340,12 @@
 				7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */,
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,
 				7B20D6F22A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift in Sources */,
+				7BAFBE7C2AC7038000B53CA1 /* ARViewContainer.swift in Sources */,
 				7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */,
 				7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */,
 				7B23E3CE2A45B16200267C59 /* Stadium.swift in Sources */,
 				7B9BC97A2A617E500082CF5C /* Group.swift in Sources */,
+				7BAFBE802AC70DAD00B53CA1 /* CameraStatus.swift in Sources */,
 				7B23E3CA2A45B15500267C59 /* TournamentStage.swift in Sources */,
 				7B9BC97C2A617F1F0082CF5C /* Country.swift in Sources */,
 				7B23E3C82A45B14C00267C59 /* CountryEnum.swift in Sources */,
@@ -337,7 +353,7 @@
 				7B32AD1A2A55B3E100C1EFFD /* TeamItemView.swift in Sources */,
 				7B32AD202A55B84900C1EFFD /* CountryArray.swift in Sources */,
 				7B23E3DA2A45B28500267C59 /* MatchArray.swift in Sources */,
-				7B32AD132A558E7500C1EFFD /* ARView.swift in Sources */,
+				7B32AD132A558E7500C1EFFD /* AugmentedRealityView.swift in Sources */,
 				7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
