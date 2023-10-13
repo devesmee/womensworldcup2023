@@ -10,6 +10,7 @@ import AVFoundation
 import ARKit
 
 struct AugmentedRealityView: View {
+    private let arView = ARViewContainer()
     @State private var cameraStatus: CameraStatus = .pending
     private var isAuthorized: Bool {
         get async {
@@ -35,7 +36,10 @@ struct AugmentedRealityView: View {
                 Text("Camera permission is required to use this functionality.")
                     .multilineTextAlignment(.center)
             } else {
-                ARViewContainer()
+                arView
+                    .onTapGesture(coordinateSpace: .global) { location in
+                        self.placeObject(tapLocation: location)
+                    }
             }
         }
         .task {
@@ -49,6 +53,10 @@ struct AugmentedRealityView: View {
             return
         }
         cameraStatus = .authorized
+    }
+
+    private func placeObject(tapLocation: CGPoint) {
+        arView.placeObject(location: tapLocation)
     }
 }
 
