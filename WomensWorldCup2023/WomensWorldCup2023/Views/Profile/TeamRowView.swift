@@ -1,31 +1,30 @@
 //
-//  TeamItemView.swift
+//  TeamRowView.swift
 //  WomensWorldCup2023
 //
-//  Created by Esmee Kluijtmans on 05/07/2023.
+//  Created by Esmee Kluijtmans on 15/11/2023.
 //
 
 import SwiftUI
 
-struct TeamItemView: View {
+struct TeamRowView: View {
     let team: CountryEnum
 
     var body: some View {
-        VStack(alignment: .center) {
+        HStack {
             Image(team.rawValue)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
             Text(team.rawValue)
-                .fontWeight(.semibold)
-                .lineLimit(2)
-                .multilineTextAlignment(.center)
+                .bold()
         }
-        .frame(width: 100)
+        .foregroundColor(Color("Yellow"))
+        .background(Color("Green"))
     }
 }
 
 #Preview {
-    TeamItemView(team: .ireland)
+    TeamRowView(team: CountryEnum.netherlands)
 }

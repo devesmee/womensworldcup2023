@@ -11,6 +11,7 @@ struct MatchListRow: View {
     let match: Match
     let showDate: Bool
     let showTournamentStage: Bool
+    let backgroundColor: Color
 
     var body: some View {
         VStack(spacing: 5) {
@@ -59,7 +60,7 @@ struct MatchListRow: View {
                 .lineSpacing(0)
             }
         }
-        .listRowBackground(Color("Yellow"))
+        .listRowBackground(backgroundColor)
         .alignmentGuide(.listRowSeparatorLeading) { dimensions in
             dimensions[.leading]
         }
@@ -72,5 +73,5 @@ struct MatchListRow: View {
 #Preview {
     let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
     
-    return MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false)
+    return MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
 }

@@ -28,7 +28,8 @@ struct MatchDateSectionView: View {
                 MatchListRow(
                     match: match,
                     showDate: false,
-                    showTournamentStage: true
+                    showTournamentStage: true,
+                    backgroundColor: Color("Yellow")
                 )
                 .padding(.bottom)
             }

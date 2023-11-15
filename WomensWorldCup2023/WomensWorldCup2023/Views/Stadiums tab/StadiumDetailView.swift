@@ -32,7 +32,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.groupStage, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
@@ -54,7 +54,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.roundOf16, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
@@ -76,7 +76,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.quarterFinal, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
@@ -98,7 +98,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.semiFinal, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
@@ -120,7 +120,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.thirdPlace, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
@@ -142,7 +142,7 @@ struct StadiumDetailView: View {
                     ) {
                         ForEach(matches.final, id: \.id) {
                             match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false)
+                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
                         }
                     }
                 }
