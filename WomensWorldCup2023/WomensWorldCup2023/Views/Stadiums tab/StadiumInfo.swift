@@ -21,7 +21,6 @@ struct StadiumInfo: View {
 
                 Button {
                     self.generateCarRoute()
-
                 } label: {
                     Image(systemName: "car.circle.fill")
                         .resizable()
@@ -55,11 +54,9 @@ struct StadiumInfo: View {
     }
 }
 
-struct StadiumInfo_Previews: PreviewProvider {
-    static let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
-    static let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: 36.87481208922987, longitude: -174.7447541218587, matches: [exampleMatch])
+#Preview {
+    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: 36.87481208922987, longitude: -174.7447541218587, matches: [exampleMatch])
 
-    static var previews: some View {
-        StadiumInfo(stadium: exampleStadium)
-    }
+   return StadiumInfo(stadium: exampleStadium)
 }

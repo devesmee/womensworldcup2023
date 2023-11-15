@@ -116,8 +116,6 @@ struct TeamsOverviewView: View {
     }
 }
 
-struct TeamsOverviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        TeamsOverviewView()
-    }
+#Preview {
+    TeamsOverviewView()
 }

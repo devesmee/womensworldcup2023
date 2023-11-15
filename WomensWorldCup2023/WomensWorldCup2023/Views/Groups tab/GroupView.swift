@@ -64,8 +64,8 @@ struct GroupView: View {
     }
 }
 
-struct GroupView_Previews: PreviewProvider {
-    static let exampleGroup =
+#Preview {
+    let exampleGroup =
     Group(
         groupName: .a,
         teams: [
@@ -96,7 +96,5 @@ struct GroupView_Previews: PreviewProvider {
         ]
     )
 
-    static var previews: some View {
-        GroupView(group: exampleGroup)
-    }
+    return GroupView(group: exampleGroup)
 }

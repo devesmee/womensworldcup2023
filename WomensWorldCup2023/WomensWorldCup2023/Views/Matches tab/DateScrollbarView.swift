@@ -36,10 +36,8 @@ struct DateScrollbarView: View {
     }
 }
 
-struct DateScrollbarView_Previews: PreviewProvider {
-    @State private static var selectedDate: Date? = Date()
+#Preview {
+    @State var selectedDate: Date? = Date()
 
-    static var previews: some View {
-        DateScrollbarView(dates: [Date(), Date(), Date()], selectedDate: $selectedDate)
-    }
+    return DateScrollbarView(dates: [Date(), Date(), Date()], selectedDate: $selectedDate)
 }

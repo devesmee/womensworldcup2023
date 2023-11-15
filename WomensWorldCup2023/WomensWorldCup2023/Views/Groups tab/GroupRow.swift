@@ -35,14 +35,13 @@ struct GroupRow: View {
     }
 }
 
-struct GroupRow_Previews: PreviewProvider {
-    static let exampleTeam = Country(
+#Preview {
+    let exampleTeam = Country(
         country: .newZealand,
         matchesPlayed: 3,
         goalDifference: 0,
         points: 4
     )
-    static var previews: some View {
-        GroupRow(team: exampleTeam, finishedPosition: 3)
-    }
+    
+    return GroupRow(team: exampleTeam, finishedPosition: 3)
 }

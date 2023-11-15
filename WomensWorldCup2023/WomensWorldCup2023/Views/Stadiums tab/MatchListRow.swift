@@ -69,10 +69,8 @@ struct MatchListRow: View {
     }
 }
 
-struct MatchListRow_Previews: PreviewProvider {
-    static let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
-
-    static var previews: some View {
-        MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false)
-    }
+#Preview {
+    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    
+    return MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false)
 }

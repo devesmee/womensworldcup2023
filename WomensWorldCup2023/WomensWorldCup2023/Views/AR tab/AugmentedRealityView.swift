@@ -60,8 +60,6 @@ struct AugmentedRealityView: View {
     }
 }
 
-struct AugmentedRealityView_Previews: PreviewProvider {
-    static var previews: some View {
-        AugmentedRealityView()
-    }
+#Preview {
+    AugmentedRealityView()
 }

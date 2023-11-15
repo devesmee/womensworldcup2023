@@ -24,8 +24,6 @@ struct DateScrollbarItemView: View {
     }
 }
 
-struct DateScrollbarItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        DateScrollbarItemView(date: Date(), isSelected: true)
-    }
+#Preview {
+    DateScrollbarItemView(date: Date(), isSelected: true)
 }

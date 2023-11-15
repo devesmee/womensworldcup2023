@@ -45,8 +45,6 @@ struct GroupsOverviewView: View {
     }
 }
 
-struct GroupsOverviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupsOverviewView()
-    }
+#Preview {
+    GroupsOverviewView()
 }

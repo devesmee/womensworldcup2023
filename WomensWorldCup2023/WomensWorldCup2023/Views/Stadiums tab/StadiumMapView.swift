@@ -72,9 +72,7 @@ struct StadiumMapView: View {
     }
 }
 
-struct StadiumMapView_Previews: PreviewProvider {
-    static var previews: some View {
-        StadiumMapView()
-    }
+#Preview {
+    StadiumMapView()
 }
 

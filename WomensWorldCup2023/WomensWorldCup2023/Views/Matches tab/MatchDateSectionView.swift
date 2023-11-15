@@ -38,8 +38,6 @@ struct MatchDateSectionView: View {
     }
 }
 
-struct MatchDateSectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        MatchDateSectionView(date: Date(), matches: [Match(date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)])
-    }
+#Preview {
+    MatchDateSectionView(date: Date(), matches: [Match(date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)])
 }

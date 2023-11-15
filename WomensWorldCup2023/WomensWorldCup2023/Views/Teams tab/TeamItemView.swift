@@ -26,8 +26,6 @@ struct TeamItemView: View {
     }
 }
 
-struct TeamItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        TeamItemView(country: .ireland)
-    }
+#Preview {
+    TeamItemView(country: .ireland)
 }

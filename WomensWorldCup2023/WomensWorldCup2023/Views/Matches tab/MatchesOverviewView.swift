@@ -66,8 +66,6 @@ struct MatchesOverviewView: View {
     }
 }
 
-struct MatchesOverviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        MatchesOverviewView()
-    }
+#Preview {
+    MatchesOverviewView()
 }
