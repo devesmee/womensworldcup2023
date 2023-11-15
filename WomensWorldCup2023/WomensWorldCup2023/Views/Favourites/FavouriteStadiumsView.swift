@@ -14,8 +14,10 @@ struct FavouriteStadiumsView: View {
         VStack {
             VStack {
                 ForEach(stadiums, id: \.name) { stadium in
-                    StadiumRowView(stadium: stadium)
-                        .padding([.top, .horizontal])
+                    NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
+                        StadiumRowView(stadium: stadium)
+                            .padding([.top, .horizontal])
+                    }
                 }
             }
             .padding(.bottom)

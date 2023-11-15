@@ -42,7 +42,7 @@ struct MatchesOverviewView: View {
             .background(Color("Yellow"))
             .navigationTitle("Matches")
             .toolbar {
-                ToolbarProfileButtonView()
+                ToolbarFavouritesButtonView()
             }
         }
     }

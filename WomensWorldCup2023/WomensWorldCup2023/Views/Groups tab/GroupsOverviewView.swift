@@ -22,7 +22,7 @@ struct GroupsOverviewView: View {
             .background(Color("Yellow"))
             .navigationTitle("Groups")
             .toolbar {
-                ToolbarProfileButtonView()
+                ToolbarFavouritesButtonView()
             }
         }
     }

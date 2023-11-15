@@ -1,5 +1,5 @@
 //
-//  ProfileOverview.swift
+//  FavouritesOverviewView.swift
 //  WomensWorldCup2023
 //
 //  Created by Esmee Kluijtmans on 15/11/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileOverviewView: View {
+struct FavouritesOverviewView: View {
     // TODO: remove this hardcoded data and replace it by accessing the user's data
     private let favouriteTeams: [CountryEnum] = [.england, .germany, .netherlands, .spain, .argentina, .australia, .brazil, .canada]
     private let favouriteStadiums: [Stadium] =
@@ -19,39 +19,49 @@ struct ProfileOverviewView: View {
         ScrollView(.vertical) {
             VStack {
                 HStack {
-                    Text("Your favourite teams")
+                    Text("Favourite teams")
+                        .font(.title2)
+                        .bold()
+                        .foregroundColor(Color("Blue"))
                     Spacer()
                 }
                 .padding(.leading)
                 FavouriteTeamsView(teams: favouriteTeams)
                     .cornerRadius(20)
-                    .padding()
+                    .padding([.horizontal, .bottom])
             }
             VStack {
                 HStack {
-                    Text("Your favourite stadiums")
+                    Text("Favourite stadiums")
+                        .font(.title2)
+                        .bold()
+                        .foregroundColor(Color("Blue"))
                     Spacer()
                 }
                 .padding(.leading)
                 FavouriteStadiumsView(stadiums: favouriteStadiums)
                     .cornerRadius(20)
-                    .padding()
+                    .padding([.horizontal, .bottom])
             }
             VStack {
                 HStack {
-                    Text("Your favourite matches")
+                    Text("Favourite matches")
+                        .font(.title2)
+                        .bold()
+                        .foregroundColor(Color("Blue"))
                     Spacer()
                 }
                 .padding(.leading)
                 FavouriteMatchesView(matches: favouriteMatches)
                     .cornerRadius(20)
-                    .padding(20)
+                    .padding([.horizontal, .bottom])
             }
         }
         .background(Color("Yellow"))
+        .navigationBarTitle("", displayMode: .inline)
     }
 }
 
 #Preview {
-    ProfileOverviewView()
+    FavouritesOverviewView()
 }
