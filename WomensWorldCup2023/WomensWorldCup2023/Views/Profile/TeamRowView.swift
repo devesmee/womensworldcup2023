@@ -12,13 +12,16 @@ struct TeamRowView: View {
 
     var body: some View {
         HStack {
-            Image(team.rawValue)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-            Text(team.rawValue)
-                .bold()
+            HStack {
+                Image(team.rawValue)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                Text(team.rawValue)
+                    .bold()
+            }
+            Spacer()
         }
         .foregroundColor(Color("Yellow"))
         .background(Color("Green"))

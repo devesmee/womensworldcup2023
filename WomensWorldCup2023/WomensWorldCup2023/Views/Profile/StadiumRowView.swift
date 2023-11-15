@@ -21,14 +21,12 @@ struct StadiumRowView: View {
                 Text(stadium.name)
                     .bold()
             }
-            .padding([.top, .bottom])
             Spacer()
             HStack {
                 Image(systemName: "pin.fill")
                 Text(stadium.city)
                     .bold()
             }
-            .padding(.trailing)
         }
         .foregroundColor(Color("Yellow"))
         .background(Color("Orange"))

@@ -11,15 +11,17 @@ struct FavouriteMatchesView: View {
     let matches: [Match]
     
     var body: some View {
-        List(matches, id: \.date) { match in
-            MatchListRow(match: match, showDate: true, showTournamentStage: true, backgroundColor: Color("Blue"))
-                .listRowBackground(Color("Blue"))
-                .listRowSeparator(.hidden)
-                .foregroundColor(Color("Yellow"))
+        VStack {
+            VStack {
+                ForEach(matches, id: \.date) { match in
+                    MatchListRow(match: match, showDate: true, showTournamentStage: true, backgroundColor: Color("Blue"))
+                        .foregroundColor(Color("Yellow"))
+                        .padding([.top, .horizontal])
+                }
+            }
+            .padding(.bottom)
         }
-        .listStyle(.plain)
         .background(Color("Blue"))
-        .scrollDisabled(true)
     }
 }
 

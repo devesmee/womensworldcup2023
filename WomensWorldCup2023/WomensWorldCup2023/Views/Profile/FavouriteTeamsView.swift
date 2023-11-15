@@ -11,14 +11,15 @@ struct FavouriteTeamsView: View {
     let teams: [CountryEnum]
 
     var body: some View {
-        List {
-            ForEach(teams, id: \.rawValue) { team in
-                TeamRowView(team: team)
-                    .listRowBackground(Color("Green"))
-                    .listRowSeparator(.hidden)
+        VStack {
+            VStack {
+                ForEach(teams, id: \.rawValue) { team in
+                    TeamRowView(team: team)
+                        .padding([.top, .leading])
+                }
             }
+            .padding(.bottom)
         }
-        .listStyle(.plain)
         .background(Color("Green"))
     }
 }

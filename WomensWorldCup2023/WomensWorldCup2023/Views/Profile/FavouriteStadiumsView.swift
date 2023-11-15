@@ -11,14 +11,16 @@ struct FavouriteStadiumsView: View {
     let stadiums: [Stadium]
 
     var body: some View {
-        List(stadiums, id: \.name) { stadium in
-            StadiumRowView(stadium: stadium)
-                .listRowBackground(Color("Orange"))
-                .listRowSeparator(.hidden)
+        VStack {
+            VStack {
+                ForEach(stadiums, id: \.name) { stadium in
+                    StadiumRowView(stadium: stadium)
+                        .padding([.top, .horizontal])
+                }
+            }
+            .padding(.bottom)
         }
-        .listStyle(.plain)
         .background(Color("Orange"))
-        .scrollDisabled(true)
     }
 }
 
