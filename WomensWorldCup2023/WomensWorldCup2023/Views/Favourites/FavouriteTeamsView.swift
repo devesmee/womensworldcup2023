@@ -21,17 +21,14 @@ struct FavouriteTeamsView: View {
                 Button {
                     expandContent()
                 } label: {
-                    if isExpanded {
-                        Image(systemName: "chevron.down")
-                            .resizable()
-                            .frame(width: 18, height: 12)
-                            .foregroundColor(Color("Yellow"))
-                    } else {
-                        Image(systemName: "chevron.right")
-                            .resizable()
-                            .frame(width: 12, height: 18)
-                            .foregroundColor(Color("Yellow"))
-                    }
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .frame(
+                            width: 12,
+                            height: 18
+                        )
+                        .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
+                        .foregroundColor(Color("Yellow"))
                 }
             }
             .contentShape(Rectangle())

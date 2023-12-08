@@ -71,7 +71,7 @@ struct MatchListRow: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
     
     return MatchListRow(match: exampleMatch, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
 }

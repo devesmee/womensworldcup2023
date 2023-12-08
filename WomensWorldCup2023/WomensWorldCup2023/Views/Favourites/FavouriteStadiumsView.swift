@@ -21,17 +21,14 @@ struct FavouriteStadiumsView: View {
                 Button {
                     expandContent()
                 } label: {
-                    if isExpanded {
-                        Image(systemName: "chevron.down")
-                            .resizable()
-                            .frame(width: 18, height: 12)
-                            .foregroundColor(Color("Yellow"))
-                    } else {
-                        Image(systemName: "chevron.right")
-                            .resizable()
-                            .frame(width: 12, height: 18)
-                            .foregroundColor(Color("Yellow"))
-                    }
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .frame(
+                            width: 12,
+                            height: 18
+                        )
+                        .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
+                        .foregroundColor(Color("Yellow"))
                 }
             }
             .contentShape(Rectangle())
@@ -64,7 +61,7 @@ struct FavouriteStadiumsView: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "? - ?", tournamentStage: .groupStage, group: .a)
+    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
     let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: -36.87481208922987, longitude: 174.7447541218587, matches: [exampleMatch])
     
     return FavouriteStadiumsView(stadiums: [exampleStadium])
