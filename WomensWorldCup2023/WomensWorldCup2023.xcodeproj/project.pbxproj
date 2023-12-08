@@ -46,7 +46,7 @@
 		7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38612A7D288100440F31 /* GroupArray.swift */; };
 		7BFA38642A7D34E500440F31 /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38632A7D34E500440F31 /* GroupRow.swift */; };
 		BFC82C762B04F650006D38AC /* FavouritesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */; };
-		BFC82C792B04FA32006D38AC /* ToolbarFavouritesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C782B04FA32006D38AC /* ToolbarFavouritesButtonView.swift */; };
+		BFC82C792B04FA32006D38AC /* ToolbarFavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */; };
 		BFC82C7B2B04FDE8006D38AC /* FavouriteTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */; };
 		BFC82C7D2B04FED3006D38AC /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7C2B04FED3006D38AC /* TeamRowView.swift */; };
 		BFC82C7F2B05041A006D38AC /* FavouriteStadiumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */; };
@@ -96,7 +96,7 @@
 		7BFA38612A7D288100440F31 /* GroupArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupArray.swift; sourceTree = "<group>"; };
 		7BFA38632A7D34E500440F31 /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 		BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesOverviewView.swift; sourceTree = "<group>"; };
-		BFC82C782B04FA32006D38AC /* ToolbarFavouritesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarFavouritesButtonView.swift; sourceTree = "<group>"; };
+		BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarFavouriteButton.swift; sourceTree = "<group>"; };
 		BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTeamsView.swift; sourceTree = "<group>"; };
 		BFC82C7C2B04FED3006D38AC /* TeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
 		BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStadiumsView.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				7B23E3D42A45B18F00267C59 /* MatchListRow.swift */,
-				BFC82C782B04FA32006D38AC /* ToolbarFavouritesButtonView.swift */,
+				BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */,
 			);
 			path = "Reusable views";
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 				BFC82C762B04F650006D38AC /* FavouritesOverviewView.swift in Sources */,
 				7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
-				BFC82C792B04FA32006D38AC /* ToolbarFavouritesButtonView.swift in Sources */,
+				BFC82C792B04FA32006D38AC /* ToolbarFavouriteButton.swift in Sources */,
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
 				7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */,

@@ -21,9 +21,6 @@ struct GroupsOverviewView: View {
             .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Groups")
-            .toolbar {
-                ToolbarFavouritesButtonView()
-            }
         }
     }
 

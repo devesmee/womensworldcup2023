@@ -153,6 +153,10 @@ struct StadiumDetailView: View {
         }
         .background(Color("Yellow"))
         .navigationBarTitle("", displayMode: .inline)
+        .toolbar {
+            ToolbarFavouriteButton()
+        }
+        .toolbar(.hidden, for: .tabBar)
     }
 
     private var matches: [Match] {

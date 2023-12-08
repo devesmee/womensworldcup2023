@@ -92,9 +92,6 @@ struct TeamsOverviewView: View {
             .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Teams")
-            .toolbar {
-                ToolbarFavouritesButtonView()
-            }
         }
     }
 

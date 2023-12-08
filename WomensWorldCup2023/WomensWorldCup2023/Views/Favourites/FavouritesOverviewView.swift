@@ -16,49 +16,55 @@ struct FavouritesOverviewView: View {
     
     // TODO: improve UI
     var body: some View {
-        ScrollView(.vertical) {
-            VStack {
-                HStack {
-                    Text("Favourite teams")
-                        .font(.title2)
-                        .bold()
-                        .foregroundColor(Color("Blue"))
-                    Spacer()
+        NavigationStack {
+            ScrollView(.vertical) {
+                VStack {
+                    HStack {
+                        Text("Teams")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(Color("Blue"))
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    FavouriteTeamsView(teams: favouriteTeams)
+                        .cornerRadius(20)
+                        .padding([.horizontal, .bottom])
                 }
-                .padding(.leading)
-                FavouriteTeamsView(teams: favouriteTeams)
-                    .cornerRadius(20)
-                    .padding([.horizontal, .bottom])
-            }
-            VStack {
-                HStack {
-                    Text("Favourite stadiums")
-                        .font(.title2)
-                        .bold()
-                        .foregroundColor(Color("Blue"))
-                    Spacer()
+                VStack {
+                    HStack {
+                        Text("Stadiums")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(Color("Blue"))
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    FavouriteStadiumsView(stadiums: favouriteStadiums)
+                        .cornerRadius(20)
+                        .padding([.horizontal, .bottom])
                 }
-                .padding(.leading)
-                FavouriteStadiumsView(stadiums: favouriteStadiums)
-                    .cornerRadius(20)
-                    .padding([.horizontal, .bottom])
-            }
-            VStack {
-                HStack {
-                    Text("Favourite matches")
-                        .font(.title2)
-                        .bold()
-                        .foregroundColor(Color("Blue"))
-                    Spacer()
+                VStack {
+                    HStack {
+                        Text("Matches")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(Color("Blue"))
+                        Spacer()
+                    }
+                    .padding(.leading)
+                    FavouriteMatchesView(matches: favouriteMatches)
+                        .cornerRadius(20)
+                        .padding([.horizontal, .bottom])
                 }
-                .padding(.leading)
-                FavouriteMatchesView(matches: favouriteMatches)
-                    .cornerRadius(20)
-                    .padding([.horizontal, .bottom])
             }
+            .background(Color("Yellow"))
+            .navigationTitle("Favourites")
         }
-        .background(Color("Yellow"))
-        .navigationBarTitle("", displayMode: .inline)
+    }
+    
+    init() {
+        self.setNavigationTitleColour()
     }
 }
 

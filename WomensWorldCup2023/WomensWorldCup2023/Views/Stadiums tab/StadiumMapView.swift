@@ -45,9 +45,6 @@ struct StadiumMapView: View {
             }
             .navigationTitle("Stadiums")
             .background(Color("Yellow"))
-            .toolbar {
-                ToolbarFavouritesButtonView()
-            }
         }
     }
 

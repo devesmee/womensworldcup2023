@@ -36,6 +36,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("AR", systemImage: "camera.viewfinder")
                 }*/
+            FavouritesOverviewView()
+                .tabItem {
+                    Label("Favourites", systemImage: "heart.fill")
+                }
         }
     }
 }
