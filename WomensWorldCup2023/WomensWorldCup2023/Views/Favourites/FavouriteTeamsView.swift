@@ -12,6 +12,14 @@ struct FavouriteTeamsView: View {
 
     var body: some View {
         VStack {
+            HStack {
+                Text("Teams")
+                    .font(.title2)
+                    .bold()
+                Spacer()
+            }
+            .padding([.top, .leading])
+            
             VStack {
                 ForEach(teams, id: \.rawValue) { team in
                     TeamRowView(team: team)
@@ -20,6 +28,7 @@ struct FavouriteTeamsView: View {
             }
             .padding(.bottom)
         }
+        .foregroundColor(Color("Yellow"))
         .background(Color("Green"))
     }
 }

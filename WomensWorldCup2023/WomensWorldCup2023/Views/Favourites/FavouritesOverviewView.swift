@@ -18,45 +18,17 @@ struct FavouritesOverviewView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                VStack {
-                    HStack {
-                        Text("Teams")
-                            .font(.title2)
-                            .bold()
-                            .foregroundColor(Color("Blue"))
-                        Spacer()
-                    }
-                    .padding(.leading)
-                    FavouriteTeamsView(teams: favouriteTeams)
-                        .cornerRadius(20)
-                        .padding([.horizontal, .bottom])
-                }
-                VStack {
-                    HStack {
-                        Text("Stadiums")
-                            .font(.title2)
-                            .bold()
-                            .foregroundColor(Color("Blue"))
-                        Spacer()
-                    }
-                    .padding(.leading)
-                    FavouriteStadiumsView(stadiums: favouriteStadiums)
-                        .cornerRadius(20)
-                        .padding([.horizontal, .bottom])
-                }
-                VStack {
-                    HStack {
-                        Text("Matches")
-                            .font(.title2)
-                            .bold()
-                            .foregroundColor(Color("Blue"))
-                        Spacer()
-                    }
-                    .padding(.leading)
-                    FavouriteMatchesView(matches: favouriteMatches)
-                        .cornerRadius(20)
-                        .padding([.horizontal, .bottom])
-                }
+                FavouriteTeamsView(teams: favouriteTeams)
+                    .cornerRadius(20)
+                    .padding([.horizontal, .bottom])
+            
+                FavouriteStadiumsView(stadiums: favouriteStadiums)
+                    .cornerRadius(20)
+                    .padding([.horizontal, .bottom])
+
+                FavouriteMatchesView(matches: favouriteMatches)
+                    .cornerRadius(20)
+                    .padding([.horizontal, .bottom])
             }
             .background(Color("Yellow"))
             .navigationTitle("Favourites")

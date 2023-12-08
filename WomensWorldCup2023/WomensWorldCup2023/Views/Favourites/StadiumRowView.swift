@@ -28,7 +28,6 @@ struct StadiumRowView: View {
                     .bold()
             }
         }
-        .foregroundColor(Color("Yellow"))
         .background(Color("Orange"))
     }
 }

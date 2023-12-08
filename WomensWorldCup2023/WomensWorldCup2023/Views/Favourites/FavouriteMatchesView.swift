@@ -12,15 +12,22 @@ struct FavouriteMatchesView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("Matches")
+                    .font(.title2)
+                    .bold()
+                Spacer()
+            }
+            .padding([.top, .leading])
             VStack {
                 ForEach(matches, id: \.date) { match in
                     MatchListRow(match: match, showDate: true, showTournamentStage: true, backgroundColor: Color("Blue"))
-                        .foregroundColor(Color("Yellow"))
                         .padding([.top, .horizontal])
                 }
             }
             .padding(.bottom)
         }
+        .foregroundColor(Color("Yellow"))
         .background(Color("Blue"))
     }
 }

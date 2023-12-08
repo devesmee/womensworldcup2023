@@ -23,7 +23,6 @@ struct TeamRowView: View {
             }
             Spacer()
         }
-        .foregroundColor(Color("Yellow"))
         .background(Color("Green"))
     }
 }

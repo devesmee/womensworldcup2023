@@ -12,6 +12,13 @@ struct FavouriteStadiumsView: View {
 
     var body: some View {
         VStack {
+            HStack {
+                Text("Stadiums")
+                    .font(.title2)
+                    .bold()
+                Spacer()
+            }
+            .padding([.top, .leading])
             VStack {
                 ForEach(stadiums, id: \.name) { stadium in
                     NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
@@ -22,6 +29,7 @@ struct FavouriteStadiumsView: View {
             }
             .padding(.bottom)
         }
+        .foregroundColor(Color("Yellow"))
         .background(Color("Orange"))
     }
 }

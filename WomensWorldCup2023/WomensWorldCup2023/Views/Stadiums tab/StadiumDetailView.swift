@@ -156,7 +156,6 @@ struct StadiumDetailView: View {
         .toolbar {
             ToolbarFavouriteButton()
         }
-        .toolbar(.hidden, for: .tabBar)
     }
 
     private var matches: [Match] {
