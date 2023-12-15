@@ -37,10 +37,10 @@ extension Array where Element == Match {
     }
 
     var sortedUniqueDates: [Date] {
-        let allDates = map( { $0.date } )
+        let allDates = map({ $0.date })
 
         var uniqueDates = self.getUniqueDates(dates: allDates)
-        uniqueDates.sort(by: { $0.timeIntervalSince1970 < $1.timeIntervalSince1970 } )
+        uniqueDates.sort(by: { $0.timeIntervalSince1970 < $1.timeIntervalSince1970 })
 
         return uniqueDates
     }
@@ -57,6 +57,6 @@ extension Array where Element == Match {
     }
 
     func forDate(date: Date) -> [Match] {
-        self.filter( { $0.date == date } )
+        self.filter({ $0.date == date })
     }
 }

@@ -16,7 +16,14 @@ struct Match: Identifiable, Decodable {
     let tournamentStage: TournamentStage
     let group: GroupEnum?
 
-    init(date: Date, homeTeam: CountryEnum, awayTeam: CountryEnum, score: String, tournamentStage: TournamentStage, group: GroupEnum? = nil) {
+    init(
+        date: Date,
+        homeTeam: CountryEnum,
+        awayTeam: CountryEnum,
+        score: String,
+        tournamentStage: TournamentStage,
+        group: GroupEnum? = nil
+    ) {
         self.date = date
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam

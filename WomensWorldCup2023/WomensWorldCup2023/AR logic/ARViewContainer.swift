@@ -30,7 +30,8 @@ struct ARViewContainer: UIViewRepresentable {
     }
 
     func placeObject(location: CGPoint) {
-        guard let raycastQuery = arView.makeRaycastQuery(from: location, allowing: .estimatedPlane, alignment: .any) else {
+        guard let raycastQuery =
+                arView.makeRaycastQuery(from: location, allowing: .estimatedPlane, alignment: .any) else {
             print("Something went wrong when creating the raycast query.")
             return
         }

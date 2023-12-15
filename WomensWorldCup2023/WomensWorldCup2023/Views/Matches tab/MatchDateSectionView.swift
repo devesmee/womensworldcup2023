@@ -40,5 +40,10 @@ struct MatchDateSectionView: View {
 }
 
 #Preview {
-    MatchDateSectionView(date: Date(), matches: [Match(date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)])
+    MatchDateSectionView(
+        date: Date(),
+        matches: [
+            Match(date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)
+        ]
+    )
 }

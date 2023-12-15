@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension View {
-    
+
     func setNavigationTitleColour() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color("Blue"))]
     }

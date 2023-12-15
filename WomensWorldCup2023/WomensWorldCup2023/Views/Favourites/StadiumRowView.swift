@@ -33,8 +33,21 @@ struct StadiumRowView: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
-    let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: -36.87481208922987, longitude: 174.7447541218587, matches: [exampleMatch])
-    
+    let exampleMatch = Match(
+        date: Date(),
+        homeTeam: CountryEnum.newZealand,
+        awayTeam: CountryEnum.norway,
+        score: "1 - 0",
+        tournamentStage: .groupStage,
+        group: .groupA
+    )
+    let exampleStadium = Stadium(
+        name: "Eden Park",
+        city: "Auckland",
+        latitude: -36.87481208922987,
+        longitude: 174.7447541218587,
+        matches: [exampleMatch]
+    )
+
     return StadiumRowView(stadium: exampleStadium)
 }

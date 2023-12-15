@@ -9,7 +9,10 @@ import SwiftUI
 import MapKit
 
 struct StadiumMapView: View {
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -30, longitude: 146), span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70))
+    @State private var mapRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: -30, longitude: 146),
+        span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
+    )
     private var stadiums: [Stadium] = []
     @State private var path: [Stadium] = []
 
@@ -68,11 +71,13 @@ struct StadiumMapView: View {
     }
 
     private func resetMapRegion() {
-        mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -30, longitude: 146), span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70))
+        mapRegion = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: -30, longitude: 146),
+            span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
+        )
     }
 }
 
 #Preview {
     StadiumMapView()
 }
-

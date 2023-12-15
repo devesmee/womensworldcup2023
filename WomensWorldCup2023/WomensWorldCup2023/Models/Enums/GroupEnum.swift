@@ -6,14 +6,14 @@
 //
 
 enum GroupEnum: String, Decodable {
-    case a = "A"
-    case b = "B"
-    case c = "C"
-    case d = "D"
-    case e = "E"
-    case f = "F"
-    case g = "G"
-    case h = "H"
+    case groupA = "A"
+    case groupB = "B"
+    case groupC = "C"
+    case groupD = "D"
+    case groupE = "E"
+    case groupF = "F"
+    case groupG = "G"
+    case groupH = "H"
 
     func fullText() -> String {
         return "Group \(self.rawValue)"

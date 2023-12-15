@@ -42,6 +42,6 @@ struct GroupRow: View {
         goalDifference: 0,
         points: 4
     )
-    
+
     return GroupRow(team: exampleTeam, finishedPosition: 3)
 }

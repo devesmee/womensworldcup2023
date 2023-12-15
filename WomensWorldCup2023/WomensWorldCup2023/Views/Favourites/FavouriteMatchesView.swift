@@ -10,7 +10,7 @@ import SwiftUI
 struct FavouriteMatchesView: View {
     let matches: [Match]
     @State private var isExpanded = false
-    
+
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -36,13 +36,17 @@ struct FavouriteMatchesView: View {
             .onTapGesture {
                 expandContent()
             }
-            
-            
+
             if isExpanded {
                 VStack {
                     ForEach(matches, id: \.date) { match in
-                        MatchListRow(match: match, showDate: true, showTournamentStage: true, backgroundColor: Color("Blue"))
-                            .padding([.top, .horizontal])
+                        MatchListRow(
+                            match: match,
+                            showDate: true,
+                            showTournamentStage: true,
+                            backgroundColor: Color("Blue")
+                        )
+                        .padding([.top, .horizontal])
                     }
                 }
                 .padding(.bottom)
@@ -51,7 +55,7 @@ struct FavouriteMatchesView: View {
         .foregroundColor(Color("Yellow"))
         .background(Color("Blue"))
     }
-    
+
     private func expandContent() {
         withAnimation {
             isExpanded.toggle()
@@ -60,7 +64,14 @@ struct FavouriteMatchesView: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
-    
+    let exampleMatch = Match(
+        date: Date(),
+        homeTeam: CountryEnum.newZealand,
+        awayTeam: CountryEnum.norway,
+        score: "1 - 0",
+        tournamentStage: .groupStage,
+        group: .groupA
+    )
+
     return FavouriteMatchesView(matches: [exampleMatch])
 }

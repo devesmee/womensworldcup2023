@@ -36,7 +36,7 @@ struct FavouriteStadiumsView: View {
             .onTapGesture {
                 expandContent()
             }
-            
+
             if isExpanded {
                 VStack {
                     ForEach(stadiums, id: \.name) { stadium in
@@ -52,7 +52,7 @@ struct FavouriteStadiumsView: View {
         .foregroundColor(Color("Yellow"))
         .background(Color("Orange"))
     }
-    
+
     private func expandContent() {
         withAnimation {
             isExpanded.toggle()
@@ -61,8 +61,21 @@ struct FavouriteStadiumsView: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
-    let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: -36.87481208922987, longitude: 174.7447541218587, matches: [exampleMatch])
-    
+    let exampleMatch = Match(
+        date: Date(),
+        homeTeam: CountryEnum.newZealand,
+        awayTeam: CountryEnum.norway,
+        score: "1 - 0",
+        tournamentStage: .groupStage,
+        group: .groupA
+    )
+    let exampleStadium = Stadium(
+        name: "Eden Park",
+        city: "Auckland",
+        latitude: -36.87481208922987,
+        longitude: 174.7447541218587,
+        matches: [exampleMatch]
+    )
+
     return FavouriteStadiumsView(stadiums: [exampleStadium])
 }

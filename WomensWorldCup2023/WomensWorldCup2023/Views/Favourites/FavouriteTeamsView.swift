@@ -36,7 +36,7 @@ struct FavouriteTeamsView: View {
             .onTapGesture {
                 expandContent()
             }
-            
+
             if isExpanded {
                 VStack {
                     ForEach(teams, id: \.rawValue) { team in
@@ -50,7 +50,7 @@ struct FavouriteTeamsView: View {
         .foregroundColor(Color("Yellow"))
         .background(Color("Green"))
     }
-    
+
     private func expandContent() {
         withAnimation {
             isExpanded.toggle()
@@ -60,6 +60,6 @@ struct FavouriteTeamsView: View {
 
 #Preview {
     let teams: [CountryEnum] = [.england, .germany, .netherlands, .spain]
-    
+
     return FavouriteTeamsView(teams: teams)
 }

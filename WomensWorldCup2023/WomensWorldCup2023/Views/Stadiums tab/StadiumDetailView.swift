@@ -14,7 +14,7 @@ struct StadiumDetailView: View {
         VStack(spacing: 0) {
             StadiumInfo(stadium: stadium)
 
-            List() {
+            List {
                 if !matches.groupStage.isEmpty {
                     Section(header: HStack {
                         Text("Group stage")
@@ -30,9 +30,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.groupStage, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.groupStage, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -52,9 +56,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.roundOf16, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.roundOf16, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -74,9 +82,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.quarterFinal, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.quarterFinal, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -96,9 +108,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.semiFinal, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.semiFinal, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -118,9 +134,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.thirdPlace, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.thirdPlace, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -140,9 +160,13 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.final, id: \.id) {
-                            match in
-                            MatchListRow(match: match, showDate: true, showTournamentStage: false, backgroundColor: Color("Yellow"))
+                        ForEach(matches.final, id: \.id) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: false,
+                                backgroundColor: Color("Yellow")
+                            )
                         }
                     }
                 }
@@ -164,8 +188,21 @@ struct StadiumDetailView: View {
 }
 
 #Preview {
-    let exampleMatch = Match(date: Date(), homeTeam: CountryEnum.newZealand, awayTeam: CountryEnum.norway, score: "1 - 0", tournamentStage: .groupStage, group: .a)
-    let exampleStadium = Stadium(name: "Eden Park", city: "Auckland", latitude: -36.87481208922987, longitude: 174.7447541218587, matches: [exampleMatch])
+    let exampleMatch = Match(
+        date: Date(),
+        homeTeam: CountryEnum.newZealand,
+        awayTeam: CountryEnum.norway,
+        score: "1 - 0",
+        tournamentStage: .groupStage,
+        group: .groupA
+    )
+    let exampleStadium = Stadium(
+        name: "Eden Park",
+        city: "Auckland",
+        latitude: -36.87481208922987,
+        longitude: 174.7447541218587,
+        matches: [exampleMatch]
+    )
 
     return StadiumDetailView(stadium: exampleStadium)
 }

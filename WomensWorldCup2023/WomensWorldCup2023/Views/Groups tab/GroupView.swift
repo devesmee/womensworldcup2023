@@ -67,7 +67,7 @@ struct GroupView: View {
 #Preview {
     let exampleGroup =
     Group(
-        groupName: .a,
+        groupName: .groupA,
         teams: [
             Country(
                 country: .newZealand,
