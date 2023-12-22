@@ -9,24 +9,23 @@ import SwiftUI
 import MapKit
 
 struct StadiumMapView: View {
-    @State private var mapRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: -30, longitude: 146),
-        span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
-    )
+    @State private var mapPosition = MapCameraPosition.automatic
     private var stadiums: [Stadium] = []
     @State private var path: [Stadium] = []
 
     var body: some View {
         NavigationStack(path: $path) {
             ZStack(alignment: .topTrailing) {
-                Map(coordinateRegion: $mapRegion, annotationItems: stadiums) { stadium in
-                    MapAnnotation(coordinate: stadium.coordinate) {
-                        NavigationLink(value: stadium) {
-                            Image("logo_rounded")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 44, height: 44)
-                                .clipShape(Circle())
+                Map(position: $mapPosition) {
+                    ForEach(stadiums) { stadium in
+                        Annotation(stadium.name, coordinate: stadium.coordinate) {
+                            NavigationLink(value: stadium) {
+                                Image("logo_rounded")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 44, height: 44)
+                                    .clipShape(Circle())
+                            }
                         }
                     }
                 }
@@ -71,10 +70,7 @@ struct StadiumMapView: View {
     }
 
     private func resetMapRegion() {
-        mapRegion = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: -30, longitude: 146),
-            span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
-        )
+        mapPosition = MapCameraPosition.automatic
     }
 }
 

@@ -27,7 +27,7 @@ struct DateScrollbarView: View {
                     }
                 }
             }
-            .onChange(of: selectedDate) { _ in
+            .onChange(of: selectedDate) {
                 withAnimation {
                     scrollReader.scrollTo(selectedDate, anchor: .center)
                 }

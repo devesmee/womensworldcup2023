@@ -31,7 +31,7 @@ struct MatchesOverviewView: View {
                     }
                     .scrollContentBackground(.hidden)
                     .listStyle(.plain)
-                    .onChange(of: selectedDate) { _ in
+                    .onChange(of: selectedDate) {
                         withAnimation {
                             scrollReader.scrollTo(selectedDate, anchor: .top)
                         }
