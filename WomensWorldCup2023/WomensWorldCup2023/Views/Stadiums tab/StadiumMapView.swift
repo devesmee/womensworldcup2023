@@ -56,16 +56,8 @@ struct StadiumMapView: View {
     }
 
     private mutating func loadStadiumData() {
-        if let path = Bundle.main.path(forResource: "stadiums", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedStadiums = try JSONDecoder().decode([Stadium].self, from: data)
-                self.stadiums = decodedStadiums
-                return
-            } catch {
-                print("Something went wrong when fetching data:")
-                print(error.localizedDescription)
-            }
+        if let decodedStadiums = [Stadium].loadData(resource: "stadiums") {
+            self.stadiums = decodedStadiums
         }
     }
 

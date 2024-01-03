@@ -30,17 +30,8 @@ struct GroupsOverviewView: View {
     }
 
     private mutating func loadGroupsData() {
-        if let path = Bundle.main.path(forResource: "groups", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedGroups = try JSONDecoder().decode([Group].self, from: data)
-                let sortedGroups = decodedGroups.sortedByAlphabet
-                self.groups = sortedGroups
-                return
-            } catch {
-                print("Something went wrong when fetching data:")
-                print(error.localizedDescription)
-            }
+        if let decodedGroups = [Group].loadData(resource: "groups") {
+            self.groups = decodedGroups.sortedByAlphabet
         }
     }
 }

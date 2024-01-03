@@ -50,18 +50,10 @@ struct MatchesOverviewView: View {
     }
 
     private mutating func loadMatchesData() {
-        if let path = Bundle.main.path(forResource: "matches", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedMatches = try JSONDecoder().decode([Match].self, from: data)
-                self.matches = decodedMatches.sortedByDate
-                self.sortedUniqueDates = self.matches.sortedUniqueDates
-                self._selectedDate = State(initialValue: self.sortedUniqueDates.first)
-                return
-            } catch {
-                print("Something went wrong when fetching data:")
-                print(error.localizedDescription)
-            }
+        if let decodedMatches = [Match].loadData(resource: "matches") {
+            self.matches = decodedMatches
+            self.sortedUniqueDates = self.matches.sortedUniqueDates
+            self._selectedDate = State(initialValue: self.sortedUniqueDates.first)
         }
     }
 }

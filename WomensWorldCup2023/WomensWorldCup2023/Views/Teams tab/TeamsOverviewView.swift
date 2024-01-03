@@ -101,17 +101,8 @@ struct TeamsOverviewView: View {
     }
 
     private mutating func loadTeamsData() {
-        if let path = Bundle.main.path(forResource: "countries", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path))
-                let decodedCountries = try JSONDecoder().decode([CountryEnum].self, from: data)
-                let sortedCountries = decodedCountries.sortedByAlphabet
-                self.countries = sortedCountries
-                return
-            } catch {
-                print("Something went wrong when fetching data:")
-                print(error.localizedDescription)
-            }
+        if let decodedTeams = [CountryEnum].loadData(resource: "countries") {
+            self.countries = decodedTeams.sortedByAlphabet
         }
     }
 }
