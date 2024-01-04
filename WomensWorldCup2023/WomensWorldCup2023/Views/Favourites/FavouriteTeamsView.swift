@@ -39,9 +39,13 @@ struct FavouriteTeamsView: View {
 
             if isExpanded {
                 VStack {
-                    ForEach(teams, id: \.rawValue) { team in
-                        TeamRowView(team: team)
-                            .padding([.top, .leading])
+                    if teams.isEmpty {
+                        Text("You have no favourite stadiums yet.")
+                    } else {
+                        ForEach(teams, id: \.rawValue) { team in
+                            TeamRowView(team: team)
+                                .padding([.top, .leading])
+                        }
                     }
                 }
                 .padding(.bottom)

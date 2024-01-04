@@ -92,11 +92,11 @@ struct TeamsOverviewView: View {
             .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Teams")
+            .navigationBarTitleTextColor(Color("Blue"))
         }
     }
 
     init() {
-        self.setNavigationTitleColour()
         self.loadTeamsData()
     }
 

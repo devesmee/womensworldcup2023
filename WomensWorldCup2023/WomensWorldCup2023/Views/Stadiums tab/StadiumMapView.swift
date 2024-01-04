@@ -40,27 +40,26 @@ struct StadiumMapView: View {
                 }
                 .clipShape(Circle())
                 .padding(10)
-
             }
             .navigationDestination(for: Stadium.self) { stadium in
                 StadiumDetailView(stadium: stadium)
             }
+            .toolbarBackground(Color("Yellow"))
             .navigationTitle("Stadiums")
-            .background(Color("Yellow"))
+            .navigationBarTitleTextColor(Color("Blue"))
         }
     }
-
+    
     init() {
-        self.setNavigationTitleColour()
         self.loadStadiumData()
     }
-
+    
     private mutating func loadStadiumData() {
         if let decodedStadiums = [Stadium].loadData(resource: "stadiums") {
             self.stadiums = decodedStadiums
         }
     }
-
+    
     private func resetMapRegion() {
         mapPosition = MapCameraPosition.automatic
     }

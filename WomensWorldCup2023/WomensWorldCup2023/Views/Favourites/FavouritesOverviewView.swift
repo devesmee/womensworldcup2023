@@ -48,11 +48,8 @@ struct FavouritesOverviewView: View {
             }
             .background(Color("Yellow"))
             .navigationTitle("Favourites")
+            .navigationBarTitleTextColor(Color("Blue"))
         }
-    }
-
-    init() {
-        self.setNavigationTitleColour()
     }
 }
 

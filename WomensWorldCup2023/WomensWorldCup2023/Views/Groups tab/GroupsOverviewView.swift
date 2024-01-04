@@ -21,11 +21,11 @@ struct GroupsOverviewView: View {
             .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Groups")
+            .navigationBarTitleTextColor(Color("Blue"))
         }
     }
 
     init() {
-        self.setNavigationTitleColour()
         self.loadGroupsData()
     }
 

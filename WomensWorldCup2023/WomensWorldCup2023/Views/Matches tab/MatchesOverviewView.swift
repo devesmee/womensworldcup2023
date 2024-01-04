@@ -41,11 +41,11 @@ struct MatchesOverviewView: View {
             }
             .background(Color("Yellow"))
             .navigationTitle("Matches")
+            .navigationBarTitleTextColor(Color("Blue"))
         }
     }
 
     init() {
-        self.setNavigationTitleColour()
         self.loadMatchesData()
     }
 

@@ -39,14 +39,18 @@ struct FavouriteMatchesView: View {
 
             if isExpanded {
                 VStack {
-                    ForEach(matches, id: \.date) { match in
-                        MatchListRow(
-                            match: match,
-                            showDate: true,
-                            showTournamentStage: true,
-                            backgroundColor: Color("Blue")
-                        )
-                        .padding([.top, .horizontal])
+                    if matches.isEmpty {
+                        Text("You have no favourite stadiums yet.")
+                    } else {
+                        ForEach(matches, id: \.date) { match in
+                            MatchListRow(
+                                match: match,
+                                showDate: true,
+                                showTournamentStage: true,
+                                backgroundColor: Color("Blue")
+                            )
+                            .padding([.top, .horizontal])
+                        }
                     }
                 }
                 .padding(.bottom)
