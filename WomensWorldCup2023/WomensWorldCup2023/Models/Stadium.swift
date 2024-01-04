@@ -7,8 +7,9 @@
 
 import Foundation
 import CoreLocation
+import Observation
 
-struct Stadium: Identifiable, Decodable, Hashable {
+@Observable class Stadium: Favouritable, Identifiable, Decodable, Hashable {
     let id = UUID()
     let name: String
     let city: String
@@ -21,7 +22,7 @@ struct Stadium: Identifiable, Decodable, Hashable {
         case name, city, latitude, longitude, matches
     }
 
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         name = try container.decode(String.self, forKey: .name)
         city = try container.decode(String.self, forKey: .city)

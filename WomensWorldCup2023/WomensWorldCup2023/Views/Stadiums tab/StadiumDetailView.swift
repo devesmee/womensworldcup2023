@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StadiumDetailView: View {
+    @Environment(FavouritesTracker.self) private var favourites
     let stadium: Stadium
 
     var body: some View {
@@ -178,7 +179,9 @@ struct StadiumDetailView: View {
         .background(Color("Yellow"))
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
-            ToolbarFavouriteButton()
+            ToolbarFavouriteButton(favouritable: stadium) {
+                favourites.toggleFavourite(for: stadium)
+            }
         }
     }
 
@@ -205,4 +208,5 @@ struct StadiumDetailView: View {
     )
 
     return StadiumDetailView(stadium: exampleStadium)
+            .environment(FavouritesTracker())
 }

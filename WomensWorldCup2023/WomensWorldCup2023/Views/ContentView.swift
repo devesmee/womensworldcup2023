@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var favouritesTracker = FavouritesTracker()
+    
     init() {
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithDefaultBackground()
@@ -41,6 +43,7 @@ struct ContentView: View {
                     Label("Favourites", systemImage: "heart.fill")
                 }
         }
+        .environment(favouritesTracker)
     }
 }
 

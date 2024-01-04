@@ -39,10 +39,14 @@ struct FavouriteStadiumsView: View {
 
             if isExpanded {
                 VStack {
-                    ForEach(stadiums, id: \.name) { stadium in
-                        NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
-                            StadiumRowView(stadium: stadium)
-                                .padding([.top, .horizontal])
+                    if stadiums.isEmpty {
+                        Text("You have no favourite stadiums yet.")
+                    } else {
+                        ForEach(stadiums, id: \.name) { stadium in
+                            NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
+                                StadiumRowView(stadium: stadium)
+                                    .padding([.top, .horizontal])
+                            }
                         }
                     }
                 }
