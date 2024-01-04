@@ -10,9 +10,15 @@ import SwiftUI
 struct StadiumDetailView: View {
     @Environment(FavouritesTracker.self) private var favourites
     let stadium: Stadium
+    private var matches: [Match] {
+        return stadium.matches
+    }
 
     var body: some View {
-        VStack(spacing: 0) {
+        if favourites.stadiums.contains(where: { $0.name == stadium.name }) {
+            stadium.isFavourite = true
+        }
+        return VStack(spacing: 0) {
             StadiumInfo(stadium: stadium)
 
             List {
@@ -50,8 +56,8 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Red"))
-                    .listRowInsets(EdgeInsets(
+                        .background(Color("Red"))
+                        .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
                             bottom: 0,
@@ -76,8 +82,8 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Pink"))
-                    .listRowInsets(EdgeInsets(
+                        .background(Color("Pink"))
+                        .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
                             bottom: 0,
@@ -102,8 +108,8 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Blue"))
-                    .listRowInsets(EdgeInsets(
+                        .background(Color("Blue"))
+                        .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
                             bottom: 0,
@@ -128,8 +134,8 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Green"))
-                    .listRowInsets(EdgeInsets(
+                        .background(Color("Green"))
+                        .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
                             bottom: 0,
@@ -154,8 +160,8 @@ struct StadiumDetailView: View {
                             .padding()
                         Spacer()
                     }
-                    .background(Color("Orange"))
-                    .listRowInsets(EdgeInsets(
+                        .background(Color("Orange"))
+                        .listRowInsets(EdgeInsets(
                             top: 0,
                             leading: 0,
                             bottom: 0,
@@ -183,10 +189,6 @@ struct StadiumDetailView: View {
                 favourites.toggleFavourite(for: stadium)
             }
         }
-    }
-
-    private var matches: [Match] {
-        return stadium.matches
     }
 }
 

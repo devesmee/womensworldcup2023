@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var favouritesTracker = FavouritesTracker()
-    
+
     init() {
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithDefaultBackground()
@@ -44,6 +44,9 @@ struct ContentView: View {
                 }
         }
         .environment(favouritesTracker)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification), perform: { _ in
+            favouritesTracker.saveToUserDefaults()
+        })
     }
 }
 

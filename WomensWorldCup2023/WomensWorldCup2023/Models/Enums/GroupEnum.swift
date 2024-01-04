@@ -5,7 +5,7 @@
 //  Created by Esmee Kluijtmans on 05/07/2023.
 //
 
-enum GroupEnum: String, Decodable {
+enum GroupEnum: String, Codable {
     case groupA = "A"
     case groupB = "B"
     case groupC = "C"

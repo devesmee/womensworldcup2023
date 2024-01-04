@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Match: Identifiable, Decodable {
+struct Match: Identifiable, Codable {
     let id = UUID()
     let date: Date
     let homeTeam: CountryEnum
@@ -56,5 +56,21 @@ struct Match: Identifiable, Decodable {
         self.score = try container.decode(String.self, forKey: .score)
         self.tournamentStage = try container.decode(TournamentStage.self, forKey: .tournamentStage)
         self.group = try container.decodeIfPresent(GroupEnum.self, forKey: .group)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.id, forKey: .id)
+        try container.encode(self.homeTeam, forKey: .homeTeam)
+        try container.encode(self.awayTeam, forKey: .awayTeam)
+        try container.encode(self.score, forKey: .score)
+        try container.encode(self.tournamentStage, forKey: .tournamentStage)
+        try container.encodeIfPresent(self.group, forKey: .group)
+
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        let formattedDate = formatter.string(from: self.date)
+        try container.encode(formattedDate, forKey: .date)
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import Observation
 
-@Observable class Stadium: Favouritable, Identifiable, Decodable, Hashable {
+@Observable class Stadium: Favouritable, Identifiable, Codable, Hashable {
     let id = UUID()
     let name: String
     let city: String

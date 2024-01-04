@@ -10,7 +10,7 @@ import SwiftUI
 struct ToolbarFavouriteButton: View {
     let favouritable: Favouritable
     let onFavouriteClick: () -> Void
-    
+
     var body: some View {
         Button(action: {
             onFavouriteClick()
@@ -31,7 +31,7 @@ struct ToolbarFavouriteButton: View {
         tournamentStage: .groupStage,
         group: .groupA
     )
-    
+
     let stadium = Stadium(
         name: "Eden Park",
         city: "Auckland",
@@ -39,7 +39,7 @@ struct ToolbarFavouriteButton: View {
         longitude: 174.7447541218587,
         matches: [exampleMatch]
     )
-    
+
     return ToolbarFavouriteButton(favouritable: stadium) {
         print("Favourite Button clicked")
     }

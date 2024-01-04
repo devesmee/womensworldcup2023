@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TournamentStage: String, Decodable {
+enum TournamentStage: String, Codable {
     case groupStage = "Group stage"
     case round16 = "Round of 16"
     case quarterFinal = "Quarter final"
