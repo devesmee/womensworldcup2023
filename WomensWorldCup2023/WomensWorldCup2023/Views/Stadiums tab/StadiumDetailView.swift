@@ -37,7 +37,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.groupStage, id: \.id) { match in
+                        ForEach(matches.groupStage) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,
@@ -63,7 +63,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.roundOf16, id: \.id) { match in
+                        ForEach(matches.roundOf16) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,
@@ -89,7 +89,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.quarterFinal, id: \.id) { match in
+                        ForEach(matches.quarterFinal) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,
@@ -115,7 +115,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.semiFinal, id: \.id) { match in
+                        ForEach(matches.semiFinal) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,
@@ -141,7 +141,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.thirdPlace, id: \.id) { match in
+                        ForEach(matches.thirdPlace) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,
@@ -167,7 +167,7 @@ struct StadiumDetailView: View {
                             bottom: 0,
                             trailing: 0))
                     ) {
-                        ForEach(matches.final, id: \.id) { match in
+                        ForEach(matches.final) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,

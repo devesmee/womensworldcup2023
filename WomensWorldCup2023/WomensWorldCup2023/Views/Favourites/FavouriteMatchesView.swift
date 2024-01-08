@@ -42,7 +42,7 @@ struct FavouriteMatchesView: View {
                     if matches.isEmpty {
                         Text("You have no favourite stadiums yet.")
                     } else {
-                        ForEach(matches, id: \.date) { match in
+                        ForEach(matches) { match in
                             MatchListRow(
                                 match: match,
                                 showDate: true,

@@ -44,6 +44,7 @@
 		BF48DAB52B45A572009D55FC /* DecodableLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */; };
 		BF48DAB72B45A83B009D55FC /* FavouritesTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */; };
 		BF48DABA2B45AA1B009D55FC /* Favouritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB92B45AA1B009D55FC /* Favouritable.swift */; };
+		BF4C04BE2B4C0587009B799F /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */; };
 		BFC82C762B04F650006D38AC /* FavouritesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */; };
 		BFC82C792B04FA32006D38AC /* ToolbarFavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */; };
 		BFC82C7B2B04FDE8006D38AC /* FavouriteTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */; };
@@ -93,6 +94,7 @@
 		BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableLoadData.swift; sourceTree = "<group>"; };
 		BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTracker.swift; sourceTree = "<group>"; };
 		BF48DAB92B45AA1B009D55FC /* Favouritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favouritable.swift; sourceTree = "<group>"; };
+		BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesOverviewView.swift; sourceTree = "<group>"; };
 		BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarFavouriteButton.swift; sourceTree = "<group>"; };
 		BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTeamsView.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */,
 				7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */,
+				BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */,
 			);
 			path = "Teams tab";
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				7B20D6F42A98DC9300DDB1C9 /* DateScrollbarView.swift in Sources */,
 				BF48DABA2B45AA1B009D55FC /* Favouritable.swift in Sources */,
 				7B23E3CC2A45B15B00267C59 /* Match.swift in Sources */,
+				BF4C04BE2B4C0587009B799F /* TeamDetailView.swift in Sources */,
 				BFC82C792B04FA32006D38AC /* ToolbarFavouriteButton.swift in Sources */,
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,

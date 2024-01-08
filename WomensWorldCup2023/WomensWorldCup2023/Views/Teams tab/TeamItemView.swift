@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct TeamItemView: View {
-    let team: CountryEnum
+    let countryName: String
 
     var body: some View {
         VStack(alignment: .center) {
-            Image(team.rawValue)
+            Image(countryName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
-            Text(team.rawValue)
+            Text(countryName)
                 .fontWeight(.semibold)
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
@@ -27,5 +27,5 @@ struct TeamItemView: View {
 }
 
 #Preview {
-    TeamItemView(team: .ireland)
+    TeamItemView(countryName: "Netherlands")
 }

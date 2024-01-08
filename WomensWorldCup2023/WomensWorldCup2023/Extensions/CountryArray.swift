@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension Array where Element == CountryEnum {
-    var sortedByAlphabet: [CountryEnum] {
-        self.sorted { $0.rawValue < $1.rawValue }
+extension Array where Element == Country {
+    var sortedByAlphabet: [Country] {
+        self.sorted { $0.name < $1.name }
     }
 }
