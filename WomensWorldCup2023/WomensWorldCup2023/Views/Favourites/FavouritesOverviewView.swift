@@ -10,8 +10,6 @@ import SwiftUI
 struct FavouritesOverviewView: View {
     @Environment(FavouritesTracker.self) private var favourites
     // TODO: remove this hardcoded data and replace it by accessing the user's data
-    private let favouriteTeams: [CountryEnum] =
-        [.england, .germany, .netherlands, .spain, .argentina, .australia, .brazil, .canada]
     private let favouriteMatches: [Match] = [
         Match(
             date: Date(),
@@ -34,7 +32,7 @@ struct FavouritesOverviewView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                FavouriteTeamsView(teams: favouriteTeams)
+                FavouriteTeamsView(teams: favourites.teams)
                     .cornerRadius(20)
                     .padding([.horizontal, .bottom])
 

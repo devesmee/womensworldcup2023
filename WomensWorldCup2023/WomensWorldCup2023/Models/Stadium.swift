@@ -9,8 +9,7 @@ import Foundation
 import CoreLocation
 import Observation
 
-@Observable class Stadium: Favouritable, Identifiable, Codable, Hashable {
-    let id = UUID()
+@Observable class Stadium: Favouritable, Codable {
     let name: String
     let city: String
     private let latitude: Double
@@ -30,6 +29,8 @@ import Observation
         longitude = try container.decode(Double.self, forKey: .longitude)
         coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         matches = try container.decode([Match].self, forKey: .matches)
+        
+        super.init()
     }
 
     init(name: String, city: String, latitude: Double, longitude: Double, matches: [Match]) {
@@ -39,13 +40,7 @@ import Observation
         self.longitude = longitude
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.matches = matches
-    }
-
-    static func == (lhs: Stadium, rhs: Stadium) -> Bool {
-        return lhs.id == rhs.id
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        
+        super.init()
     }
 }

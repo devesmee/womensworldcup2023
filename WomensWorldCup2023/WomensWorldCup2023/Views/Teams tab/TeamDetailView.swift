@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct TeamDetailView: View {
+    @Environment(FavouritesTracker.self) private var favourites
     let team: Country
 
     var body: some View {
-        VStack {
+        if favourites.teams.contains(where: { $0.name == team.name }) {
+            team.isFavourite = true
+        }
+
+        return VStack {
             VStack(alignment: .center) {
                 Image(team.name)
                     .resizable()
@@ -27,7 +32,11 @@ struct TeamDetailView: View {
         }
         .background(Color("Yellow"))
         .navigationBarTitle("", displayMode: .inline)
-        // TODO: add toolbar to favourite a team
+        .toolbar {
+            ToolbarFavouriteButton(favouritable: team) {
+                favourites.toggleFavourite(for: team)
+            }
+        }
     }
 }
 
@@ -40,4 +49,5 @@ struct TeamDetailView: View {
             points: 1
         )
     )
+    .environment(FavouritesTracker())
 }

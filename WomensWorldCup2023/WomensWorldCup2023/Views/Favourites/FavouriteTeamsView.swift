@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavouriteTeamsView: View {
-    let teams: [CountryEnum]
+    let teams: [Country]
     @State private var isExpanded = false
 
     var body: some View {
@@ -42,9 +42,11 @@ struct FavouriteTeamsView: View {
                     if teams.isEmpty {
                         Text("You have no favourite stadiums yet.")
                     } else {
-                        ForEach(teams, id: \.rawValue) { team in
-                            TeamRowView(team: team)
-                                .padding([.top, .leading])
+                        ForEach(teams, id: \.id) { team in
+                            NavigationLink(destination: TeamDetailView(team: team)) {
+                                TeamRowView(team: team.country)
+                                    .padding([.top, .leading])
+                            }
                         }
                     }
                 }
@@ -63,7 +65,11 @@ struct FavouriteTeamsView: View {
 }
 
 #Preview {
-    let teams: [CountryEnum] = [.england, .germany, .netherlands, .spain]
+    let teams = [
+        Country(country: .england, matchesPlayed: 3, goalDifference: 7, points: 9),
+        Country(country: .netherlands, matchesPlayed: 3, goalDifference: 8, points: 7),
+        Country(country: .spain, matchesPlayed: 3, goalDifference: 4, points: 6)
+    ]
 
     return FavouriteTeamsView(teams: teams)
 }

@@ -7,12 +7,18 @@
 
 import Foundation
 
-struct Country: Identifiable, Decodable, Hashable {
-    let id = UUID()
+@Observable class Country: Favouritable, Codable {
     let country: CountryEnum
     let matchesPlayed: Int
     let goalDifference: Int
     let points: Int
+    
+    init(country: CountryEnum, matchesPlayed: Int, goalDifference: Int, points: Int) {
+        self.country = country
+        self.matchesPlayed = matchesPlayed
+        self.goalDifference = goalDifference
+        self.points = points
+    }
 }
 
 extension Country {
