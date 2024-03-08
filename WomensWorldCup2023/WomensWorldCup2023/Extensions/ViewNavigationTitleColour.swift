@@ -2,7 +2,7 @@
 //  ViewNavigationTitleColour.swift
 //  WomensWorldCup2023
 //
-//  Created by Esmee Kluijtmans on 25/08/2023.
+//  Created by devesmee on 25/08/2023.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  GroupView.swift
 //  WomensWorldCup2023
 //
-//  Created by Esmee Kluijtmans on 04/08/2023.
+//  Created by devesmee on 04/08/2023.
 //
 
 import SwiftUI

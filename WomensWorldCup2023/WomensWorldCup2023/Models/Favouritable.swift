@@ -2,7 +2,7 @@
 //  Favouritable.swift
 //  WomensWorldCup2023
 //
-//  Created by Esmee Kluijtmans on 03/01/2024.
+//  Created by devesmee on 03/01/2024.
 //
 
 import Foundation

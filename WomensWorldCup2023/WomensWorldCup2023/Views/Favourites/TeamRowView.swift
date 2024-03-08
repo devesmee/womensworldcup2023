@@ -2,7 +2,7 @@
 //  TeamRowView.swift
 //  WomensWorldCup2023
 //
-//  Created by Esmee Kluijtmans on 15/11/2023.
+//  Created by devesmee on 15/11/2023.
 //
 
 import SwiftUI
