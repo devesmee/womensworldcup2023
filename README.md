@@ -4,7 +4,7 @@ iOS app that allows users to explore all sorts of things related to the Womens W
 ## Schemes
 This app contains two different schemes, one retrieves the data from Firebase, the other retrieves it from the JSON files bundled with the app.
 
-If you wish to use the Firebase option, you will need to setup a Realtime Database yourself and include the `GoogleService-info.plist` file in the project. WARNING: the app will crash if you use the Firebase scheme and do not supply a `GoogleService-info.plist`.
+If you wish to use the Firebase option, you will need to setup a Realtime Database yourself and include the `GoogleService-info.plist` file in the project. ⚠️ The app will crash if you use the Firebase scheme and do not supply a `GoogleService-info.plist`.
 Make sure that the data inside the Database corresponds to the models defined in the app, feel free to copy the database data from the bundled JSON files.
 
 The scheme that uses the JSON files to retrieve the data can be used from the get-go without any configuration.
@@ -28,5 +28,5 @@ When clicking on a stadium, users will see details of the specific stadium, as w
 ### Favourites
 Users can favourite a stadium or team to easily view its detailed info.
 
-## Disclaimer
+## ⚠️ Disclaimer ⚠️
 I am in no way affliated with FIFA or any of the teams included in this app. This app was built purely for personal purposes and to gain more experience building apps with SwiftUI.
