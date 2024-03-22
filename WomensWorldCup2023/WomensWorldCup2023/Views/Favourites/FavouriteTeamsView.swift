@@ -40,7 +40,7 @@ struct FavouriteTeamsView: View {
             if isExpanded {
                 VStack {
                     if teams.isEmpty {
-                        Text("You have no favourite stadiums yet.")
+                        Text("You have no favourite teams yet.")
                     } else {
                         ForEach(teams, id: \.id) { team in
                             NavigationLink(destination: TeamDetailView(team: team)) {

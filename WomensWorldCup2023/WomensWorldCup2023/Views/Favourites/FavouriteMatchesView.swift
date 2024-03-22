@@ -40,7 +40,7 @@ struct FavouriteMatchesView: View {
             if isExpanded {
                 VStack {
                     if matches.isEmpty {
-                        Text("You have no favourite stadiums yet.")
+                        Text("You have no favourite matches yet.")
                     } else {
                         ForEach(matches) { match in
                             MatchListRow(

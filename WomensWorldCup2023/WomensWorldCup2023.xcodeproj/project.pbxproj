@@ -41,10 +41,14 @@
 		7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA385F2A7D27A400440F31 /* GroupView.swift */; };
 		7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38612A7D288100440F31 /* GroupArray.swift */; };
 		7BFA38642A7D34E500440F31 /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA38632A7D34E500440F31 /* GroupRow.swift */; };
+		BF1E45F62BADC31800AA4B00 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E45F52BADC31800AA4B00 /* DataManager.swift */; };
+		BF1E463C2BADC83800AA4B00 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */; };
 		BF48DAB52B45A572009D55FC /* DecodableLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */; };
 		BF48DAB72B45A83B009D55FC /* FavouritesTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */; };
 		BF48DABA2B45AA1B009D55FC /* Favouritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB92B45AA1B009D55FC /* Favouritable.swift */; };
 		BF4C04BE2B4C0587009B799F /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */; };
+		BF71C6E42B9B263400AC0361 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BF71C6E32B9B263400AC0361 /* FirebaseDatabase */; };
+		BF71C6EE2B9B564B00AC0361 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */; };
 		BFC82C762B04F650006D38AC /* FavouritesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */; };
 		BFC82C792B04FA32006D38AC /* ToolbarFavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */; };
 		BFC82C7B2B04FDE8006D38AC /* FavouriteTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */; };
@@ -52,6 +56,7 @@
 		BFC82C7F2B05041A006D38AC /* FavouriteStadiumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */; };
 		BFC82C812B05047F006D38AC /* StadiumRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C802B05047F006D38AC /* StadiumRowView.swift */; };
 		BFC82C832B0507AC006D38AC /* FavouriteMatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */; };
+		BFE669082B9F5714008D7BE8 /* TeamsGridRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,10 +96,13 @@
 		7BFA385F2A7D27A400440F31 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		7BFA38612A7D288100440F31 /* GroupArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupArray.swift; sourceTree = "<group>"; };
 		7BFA38632A7D34E500440F31 /* GroupRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
+		BF1E45F52BADC31800AA4B00 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableLoadData.swift; sourceTree = "<group>"; };
 		BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTracker.swift; sourceTree = "<group>"; };
 		BF48DAB92B45AA1B009D55FC /* Favouritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favouritable.swift; sourceTree = "<group>"; };
 		BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesOverviewView.swift; sourceTree = "<group>"; };
 		BFC82C782B04FA32006D38AC /* ToolbarFavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarFavouriteButton.swift; sourceTree = "<group>"; };
 		BFC82C7A2B04FDE8006D38AC /* FavouriteTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTeamsView.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 		BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStadiumsView.swift; sourceTree = "<group>"; };
 		BFC82C802B05047F006D38AC /* StadiumRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumRowView.swift; sourceTree = "<group>"; };
 		BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMatchesView.swift; sourceTree = "<group>"; };
+		BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGridRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF71C6E42B9B263400AC0361 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +255,7 @@
 				7B32AD172A55B20600C1EFFD /* TeamsOverviewView.swift */,
 				7B32AD192A55B3E100C1EFFD /* TeamItemView.swift */,
 				BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */,
+				BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */,
 			);
 			path = "Teams tab";
 			sourceTree = "<group>";
@@ -262,6 +273,9 @@
 			isa = PBXGroup;
 			children = (
 				BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */,
+				BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */,
+				BF1E45F52BADC31800AA4B00 /* DataManager.swift */,
+				BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */,
 			);
 			path = "Shared Data";
 			sourceTree = "<group>";
@@ -304,6 +318,9 @@
 			dependencies = (
 			);
 			name = WomensWorldCup2023;
+			packageProductDependencies = (
+				BF71C6E32B9B263400AC0361 /* FirebaseDatabase */,
+			);
 			productName = WomensWorldCup2023;
 			productReference = 7B23E3B52A45B0D100267C59 /* WomensWorldCup2023.app */;
 			productType = "com.apple.product-type.application";
@@ -314,8 +331,8 @@
 		7B23E3AD2A45B0D100267C59 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					7B23E3B42A45B0D100267C59 = {
@@ -332,6 +349,9 @@
 				Base,
 			);
 			mainGroup = 7B23E3AC2A45B0D100267C59;
+			packageReferences = (
+				BF71C6E22B9B263400AC0361 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7B23E3B62A45B0D100267C59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,11 +383,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1E463C2BADC83800AA4B00 /* JSONManager.swift in Sources */,
+				BF71C6EE2B9B564B00AC0361 /* FirebaseManager.swift in Sources */,
 				7BF371C42A9F615000FA7E3B /* MatchDateSectionView.swift in Sources */,
 				7B32AD062A556D8300C1EFFD /* GroupEnum.swift in Sources */,
 				7BFA38622A7D288100440F31 /* GroupArray.swift in Sources */,
 				7BFA38642A7D34E500440F31 /* GroupRow.swift in Sources */,
 				BFC82C832B0507AC006D38AC /* FavouriteMatchesView.swift in Sources */,
+				BF1E45F62BADC31800AA4B00 /* DataManager.swift in Sources */,
 				7BF371C22A9F55E800FA7E3B /* DateScrollbarItemView.swift in Sources */,
 				BF48DAB52B45A572009D55FC /* DecodableLoadData.swift in Sources */,
 				7B23E3D12A45B17F00267C59 /* StadiumMapView.swift in Sources */,
@@ -398,6 +421,7 @@
 				7B23E3D52A45B18F00267C59 /* MatchListRow.swift in Sources */,
 				7B23E3B92A45B0D100267C59 /* WomensWorldCup2023App.swift in Sources */,
 				7B23E3D32A45B18700267C59 /* StadiumInfo.swift in Sources */,
+				BFE669082B9F5714008D7BE8 /* TeamsGridRowView.swift in Sources */,
 				7B32AD182A55B20600C1EFFD /* TeamsOverviewView.swift in Sources */,
 				7B32AD152A558EA300C1EFFD /* GroupsOverviewView.swift in Sources */,
 				BFC82C7B2B04FDE8006D38AC /* FavouriteTeamsView.swift in Sources */,
@@ -407,7 +431,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7B23E3C12A45B0D400267C59 /* Debug */ = {
+		7B23E3C12A45B0D400267C59 /* JSON */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,10 +472,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -463,12 +484,48 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = JSON;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = JSON;
 		};
-		7B23E3C22A45B0D400267C59 /* Release */ = {
+		7B23E3C42A45B0D400267C59 /* JSON */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WomensWorldCup2023/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WomensWorldCup2023/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Womens World Cup 2023";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devesmee.WomensWorldCup2023;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = JSON;
+		};
+		BF1E463D2BADC8FC00AA4B00 /* Firebase */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -501,12 +558,15 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -514,16 +574,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = FIREBASE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Release;
+			name = Firebase;
 		};
-		7B23E3C42A45B0D400267C59 /* Debug */ = {
+		BF1E463E2BADC8FC00AA4B00 /* Firebase */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -534,13 +594,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WomensWorldCup2023/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WomensWorldCup2023/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Womens World Cup 2023";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,43 +610,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devesmee.WomensWorldCup2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
-		};
-		7B23E3C52A45B0D400267C59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WomensWorldCup2023/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WomensWorldCup2023/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devesmee.WomensWorldCup2023;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = Firebase;
 		};
 /* End XCBuildConfiguration section */
 
@@ -593,22 +625,41 @@
 		7B23E3B02A45B0D100267C59 /* Build configuration list for PBXProject "WomensWorldCup2023" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B23E3C12A45B0D400267C59 /* Debug */,
-				7B23E3C22A45B0D400267C59 /* Release */,
+				7B23E3C12A45B0D400267C59 /* JSON */,
+				BF1E463D2BADC8FC00AA4B00 /* Firebase */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = JSON;
 		};
 		7B23E3C32A45B0D400267C59 /* Build configuration list for PBXNativeTarget "WomensWorldCup2023" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B23E3C42A45B0D400267C59 /* Debug */,
-				7B23E3C52A45B0D400267C59 /* Release */,
+				7B23E3C42A45B0D400267C59 /* JSON */,
+				BF1E463E2BADC8FC00AA4B00 /* Firebase */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = JSON;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF71C6E22B9B263400AC0361 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF71C6E32B9B263400AC0361 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF71C6E22B9B263400AC0361 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B23E3AD2A45B0D100267C59 /* Project object */;
 }
