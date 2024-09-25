@@ -29,4 +29,4 @@ When clicking on a stadium, users will see details of the specific stadium, as w
 Users can favourite a stadium or team to easily view its detailed info.
 
 ## ⚠️ Disclaimer ⚠️
-I am in no way affliated with FIFA or any of the teams included in this app. This app was built purely for personal purposes and to gain more experience building apps with SwiftUI.
+I am in no way affliated with FIFA or any of the teams included in this app. This app was built purely for personal purposes and to gain more experience building apps with SwiftUI. I do not own any of the images and all credit goes to their respective owners.
