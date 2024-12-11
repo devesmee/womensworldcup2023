@@ -44,7 +44,6 @@
 		BF1E45F62BADC31800AA4B00 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E45F52BADC31800AA4B00 /* DataManager.swift */; };
 		BF1E463C2BADC83800AA4B00 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */; };
 		BF48DAB52B45A572009D55FC /* DecodableLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */; };
-		BF48DAB72B45A83B009D55FC /* FavouritesTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */; };
 		BF48DABA2B45AA1B009D55FC /* Favouritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB92B45AA1B009D55FC /* Favouritable.swift */; };
 		BF4C04BE2B4C0587009B799F /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */; };
 		BF71C6E42B9B263400AC0361 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BF71C6E32B9B263400AC0361 /* FirebaseDatabase */; };
@@ -99,7 +98,6 @@
 		BF1E45F52BADC31800AA4B00 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableLoadData.swift; sourceTree = "<group>"; };
-		BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTracker.swift; sourceTree = "<group>"; };
 		BF48DAB92B45AA1B009D55FC /* Favouritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favouritable.swift; sourceTree = "<group>"; };
 		BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 		BF48DAB82B45A840009D55FC /* Shared Data */ = {
 			isa = PBXGroup;
 			children = (
-				BF48DAB62B45A83B009D55FC /* FavouritesTracker.swift */,
 				BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */,
 				BF1E45F52BADC31800AA4B00 /* DataManager.swift */,
 				BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */,
@@ -399,7 +396,6 @@
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,
 				7B20D6F22A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift in Sources */,
 				7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */,
-				BF48DAB72B45A83B009D55FC /* FavouritesTracker.swift in Sources */,
 				7B23E3D72A45B19800267C59 /* StadiumDetailView.swift in Sources */,
 				7B23E3CE2A45B16200267C59 /* Stadium.swift in Sources */,
 				7B9BC97A2A617E500082CF5C /* Group.swift in Sources */,
@@ -519,6 +515,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,6 +610,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

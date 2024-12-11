@@ -5,11 +5,10 @@
 //  Created by devesmee on 05/07/2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @State private var favouritesTracker = FavouritesTracker()
-    
     #if FIREBASE
     @State private var firebaseManager = FirebaseManager()
     #else
@@ -52,15 +51,11 @@ struct ContentView: View {
                     Label("Favourites", systemImage: "heart.fill")
                 }
         }
-        .environment(favouritesTracker)
         #if FIREBASE
         .environment(firebaseManager)
         #else
         .environment(jsonManager)
         #endif
-        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification), perform: { _ in
-            favouritesTracker.saveToUserDefaults()
-        })
     }
 }
 

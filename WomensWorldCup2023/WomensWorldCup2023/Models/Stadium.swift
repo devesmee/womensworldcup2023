@@ -7,14 +7,18 @@
 
 import Foundation
 import CoreLocation
-import Observation
+import SwiftData
 
-@Observable class Stadium: Favouritable, Codable {
+@Model class Stadium: Favouritable, Codable {
+    let id = UUID()
     let name: String
     let city: String
+    @Transient var favourited = false
     private let latitude: Double
     private let longitude: Double
-    var coordinate = CLLocationCoordinate2D()
+    @Transient var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
     let matches: [Match]
 
     private enum CodingKeys: CodingKey {
@@ -27,10 +31,16 @@ import Observation
         city = try container.decode(String.self, forKey: .city)
         latitude = try container.decode(Double.self, forKey: .latitude)
         longitude = try container.decode(Double.self, forKey: .longitude)
-        coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         matches = try container.decode([Match].self, forKey: .matches)
-        
-        super.init()
+    }
+    
+    func encode(to encoder: any Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encode(city, forKey: .city)
+        try container.encode(latitude, forKey: .latitude)
+        try container.encode(longitude, forKey: .longitude)
+        try container.encode(matches, forKey: .matches)
     }
 
     init(name: String, city: String, latitude: Double, longitude: Double, matches: [Match]) {
@@ -38,9 +48,10 @@ import Observation
         self.city = city
         self.latitude = latitude
         self.longitude = longitude
-        self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.matches = matches
-        
-        super.init()
+    }
+    
+    static func == (lhs: Stadium, rhs: Stadium) -> Bool {
+        return lhs.id == rhs.id
     }
 }

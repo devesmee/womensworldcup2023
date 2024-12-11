@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ToolbarFavouriteButton: View {
-    let favouritable: Favouritable
+    let favouritable: any Favouritable
     let onFavouriteClick: () -> Void
 
     var body: some View {
         Button(action: {
             onFavouriteClick()
         }, label: {
-            Image(systemName: favouritable.isFavourite ? "heart.fill" : "heart")
+            Image(systemName: favouritable.favourited ? "heart.fill" : "heart")
                 .resizable()
                 .frame(width: 28, height: 28)
         })

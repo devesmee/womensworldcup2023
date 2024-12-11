@@ -29,5 +29,6 @@ struct WomensWorldCup2023App: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Stadium.self, Country.self])
     }
 }
