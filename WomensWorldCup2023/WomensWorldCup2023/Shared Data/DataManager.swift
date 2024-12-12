@@ -8,9 +8,22 @@
 import Foundation
 
 protocol DataManager {
-    var errorMessage: String? { get }
+    var countriesErrorMessage: String? { get }
+    var matchesErrorMessage: String? { get }
+    var stadiumsErrorMessage: String? { get }
+    var groupsErrorMessage: String? { get }
 
     var countries: [Country] { get }
+    var matches: [Match] { get }
+    var stadiums: [Stadium] { get }
+    var groups: [Group] { get }
 
-    func getCountries()
+    func getData()
+}
+
+extension DataManager {
+    var countriesPath: String { "countries" }
+    var matchesPath: String { "matches" }
+    var stadiumsPath: String { "stadiums" }
+    var groupsPath: String { "groups" }
 }

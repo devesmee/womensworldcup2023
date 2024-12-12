@@ -6,17 +6,10 @@
 //
 
 import Foundation
-import Observation
 
-@Observable class Favouritable: Identifiable, Hashable {
-    let id = UUID()
-    var isFavourite = false
-    
-    static func == (lhs: Favouritable, rhs: Favouritable) -> Bool {
-        return lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
+protocol Favouritable: Identifiable, Hashable {
+    var id: UUID { get }
+    var favourited: Bool { get }
+
+    static func == (lhs: Self, rhs: Self) -> Bool
 }

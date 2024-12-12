@@ -5,15 +5,17 @@
 //  Created by devesmee on 08/01/2024.
 //
 
+import SwiftData
 import SwiftUI
 
 struct TeamDetailView: View {
-    @Environment(FavouritesTracker.self) private var favourites
+    @Environment(\.modelContext) private var context
+    @Query private var favouriteTeams: [Country]
     let team: Country
 
     var body: some View {
-        if favourites.teams.contains(where: { $0.name == team.name }) {
-            team.isFavourite = true
+        if favouriteTeams.contains(where: { $0.name == team.name }) {
+            team.favourited = true
         }
 
         return VStack {
@@ -34,7 +36,13 @@ struct TeamDetailView: View {
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
             ToolbarFavouriteButton(favouritable: team) {
-                favourites.toggleFavourite(for: team)
+                team.favourited.toggle()
+                if favouriteTeams.firstIndex(where: { $0.name == team.name }) != nil {
+                    context.delete(team)
+                } else {
+                    context.insert(team)
+                }
+                try? context.save()
             }
         }
     }
@@ -49,5 +57,4 @@ struct TeamDetailView: View {
             points: 1
         )
     )
-    .environment(FavouritesTracker())
 }

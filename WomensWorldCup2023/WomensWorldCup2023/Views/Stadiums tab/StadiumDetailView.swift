@@ -5,19 +5,22 @@
 //  Created by devesmee on 23/06/2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct StadiumDetailView: View {
-    @Environment(FavouritesTracker.self) private var favourites
+    @Environment(\.modelContext) private var context
+    @Query private var favouriteStadiums: [Stadium]
     let stadium: Stadium
     private var matches: [Match] {
         return stadium.matches
     }
 
     var body: some View {
-        if favourites.stadiums.contains(where: { $0.name == stadium.name }) {
-            stadium.isFavourite = true
+        if favouriteStadiums.contains(where: { $0.name == stadium.name }) {
+            stadium.favourited = true
         }
+
         return VStack(spacing: 0) {
             StadiumInfo(stadium: stadium)
 
@@ -186,7 +189,14 @@ struct StadiumDetailView: View {
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
             ToolbarFavouriteButton(favouritable: stadium) {
-                favourites.toggleFavourite(for: stadium)
+                stadium.favourited.toggle()
+
+                if favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) != nil {
+                    context.delete(stadium)
+                } else {
+                    context.insert(stadium)
+                }
+                try? context.save()
             }
         }
     }
@@ -210,5 +220,4 @@ struct StadiumDetailView: View {
     )
 
     return StadiumDetailView(stadium: exampleStadium)
-            .environment(FavouritesTracker())
 }

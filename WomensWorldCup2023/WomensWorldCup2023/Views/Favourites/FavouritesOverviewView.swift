@@ -5,10 +5,12 @@
 //  Created by devesmee on 15/11/2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct FavouritesOverviewView: View {
-    @Environment(FavouritesTracker.self) private var favourites
+    @Query private var favouriteStadiums: [Stadium]
+    @Query private var favouriteTeams: [Country]
     // TODO: remove this hardcoded data and replace it by accessing the user's data
     private let favouriteMatches: [Match] = [
         Match(
@@ -32,11 +34,11 @@ struct FavouritesOverviewView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                FavouriteTeamsView(teams: favourites.teams)
+                FavouriteTeamsView(teams: favouriteTeams)
                     .cornerRadius(20)
                     .padding([.horizontal, .bottom])
 
-                FavouriteStadiumsView(stadiums: favourites.stadiums)
+                FavouriteStadiumsView(stadiums: favouriteStadiums)
                     .cornerRadius(20)
                     .padding([.horizontal, .bottom])
 
@@ -53,5 +55,4 @@ struct FavouritesOverviewView: View {
 
 #Preview {
     FavouritesOverviewView()
-        .environment(FavouritesTracker())
 }

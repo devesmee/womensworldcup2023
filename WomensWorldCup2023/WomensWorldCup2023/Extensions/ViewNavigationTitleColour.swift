@@ -12,7 +12,7 @@ extension View {
 
     func navigationBarTitleTextColor(_ color: Color) -> some View {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(color)]
-            
+
        return self
     }
 }

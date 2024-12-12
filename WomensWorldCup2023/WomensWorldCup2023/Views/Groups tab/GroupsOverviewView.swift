@@ -8,30 +8,35 @@
 import SwiftUI
 
 struct GroupsOverviewView: View {
-    private var groups: [Group] = []
+    #if FIREBASE
+    @Environment(FirebaseManager.self) private var dataManager
+    #else
+    @Environment(JSONManager.self) private var dataManager
+    #endif
 
     var body: some View {
         NavigationStack {
-            List(groups, id: \.groupName) { group in
-                GroupView(group: group)
-                    .cornerRadius(20)
-                    .listRowBackground(Color("Yellow"))
-                    .listRowSeparator(.hidden)
+            ZStack {
+                if let errorMessage = dataManager.groupsErrorMessage {
+                    VStack {
+                        Text(errorMessage)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        Spacer()
+                    }
+                    .background(Color("Yellow"))
+                } else {
+                    List(dataManager.groups, id: \.groupName) { group in
+                        GroupView(group: group)
+                            .cornerRadius(20)
+                            .listRowBackground(Color("Yellow"))
+                            .listRowSeparator(.hidden)
+                    }
+                    .listStyle(.plain)
+                }
             }
-            .listStyle(.plain)
             .background(Color("Yellow"))
             .navigationTitle("Groups")
             .navigationBarTitleTextColor(Color("Blue"))
-        }
-    }
-
-    init() {
-        self.loadGroupsData()
-    }
-
-    private mutating func loadGroupsData() {
-        if let decodedGroups = [Group].loadData(resource: "groups") {
-            self.groups = decodedGroups.sortedByAlphabet
         }
     }
 }
