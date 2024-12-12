@@ -12,6 +12,7 @@ import Foundation
     var errorMessage: String?
     
     var countries: [Country] = []
+    var matches: [Match] = []
     
     func getCountries() {
         guard let decodedTeams = [Country].loadData(resource: "countries") else {
@@ -20,6 +21,15 @@ import Foundation
         }
 
         self.countries = decodedTeams.sortedByAlphabet
+    }
+    
+    func getMatches() {
+        guard let decodedTeams = [Match].loadData(resource: "matches") else {
+            self.errorMessage = "Error while retrieving matches"
+            return
+        }
+
+        self.matches = decodedTeams.sortedByDate
     }
 }
 
