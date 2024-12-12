@@ -19,7 +19,14 @@ import Foundation
     var stadiums = [Stadium]()
     var groups = [Group]()
     
-    func getCountries() {
+    func getData() {
+        getCountries()
+        getMatches()
+        getStadiums()
+        getGroups()
+    }
+    
+    private func getCountries() {
         guard let decodedTeams = [Country].loadData(resource: countriesPath) else {
             self.countriesErrorMessage = "Could not retrieve teams, please try again later"
             return
@@ -28,7 +35,7 @@ import Foundation
         self.countries = decodedTeams.sortedByAlphabet
     }
     
-    func getMatches() {
+    private func getMatches() {
         guard let decodedMatches = [Match].loadData(resource: matchesPath) else {
             self.matchesErrorMessage = "Could not retrieve matches, please try again later"
             return
@@ -37,7 +44,7 @@ import Foundation
         self.matches = decodedMatches.sortedByDate
     }
     
-    func getStadiums() {
+    private func getStadiums() {
         guard let decodedStadiums = [Stadium].loadData(resource: stadiumsPath) else {
             self.stadiumsErrorMessage = "Could not retrieve stadiums, please try again later"
             return
@@ -46,7 +53,7 @@ import Foundation
         self.stadiums = decodedStadiums
     }
     
-    func getGroups() {
+    private func getGroups() {
         guard let decodedGroups = [Group].loadData(resource: groupsPath) else {
             self.groupsErrorMessage = "Could not retrieve groups, please try again later"
             return

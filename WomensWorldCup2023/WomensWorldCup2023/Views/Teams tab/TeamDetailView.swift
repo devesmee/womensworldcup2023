@@ -14,6 +14,10 @@ struct TeamDetailView: View {
     let team: Country
 
     var body: some View {
+        if favouriteTeams.contains(where: { $0.name == team.name }) {
+            team.favourited = true
+        }
+
         return VStack {
             VStack(alignment: .center) {
                 Image(team.name)
@@ -32,12 +36,12 @@ struct TeamDetailView: View {
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
             ToolbarFavouriteButton(favouritable: team) {
+                team.favourited.toggle()
                 if favouriteTeams.firstIndex(where: { $0.name == team.name }) != nil {
                     context.delete(team)
                 } else {
                     context.insert(team)
                 }
-                team.favourited.toggle()
                 try? context.save()
             }
         }

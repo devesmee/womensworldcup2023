@@ -18,10 +18,7 @@ protocol DataManager {
     var stadiums: [Stadium] { get }
     var groups: [Group] { get }
 
-    func getCountries()
-    func getMatches()
-    func getStadiums()
-    func getGroups()
+    func getData()
 }
 
 extension DataManager {

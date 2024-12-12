@@ -189,12 +189,14 @@ struct StadiumDetailView: View {
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
             ToolbarFavouriteButton(favouritable: stadium) {
-                if let index = favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) {
+                stadium.favourited.toggle()
+                
+                if favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) != nil {
                     context.delete(stadium)
                 } else {
                     context.insert(stadium)
                 }
-                stadium.favourited.toggle()
+                try? context.save()
             }
         }
     }

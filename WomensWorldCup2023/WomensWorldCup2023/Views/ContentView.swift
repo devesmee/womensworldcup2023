@@ -22,15 +22,9 @@ struct ContentView: View {
         UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         
         #if FIREBASE
-        firebaseManager.getCountries()
-        firebaseManager.getMatches()
-        firebaseManager.getStadiums()
-        firebaseManager.getGroups()
+        firebaseManager.getData()
         #else
-        jsonManager.getCountries()
-        jsonManager.getMatches()
-        jsonManager.getStadiums()
-        jsonManager.getGroups()
+        jsonManager.getData()
         #endif
     }
 
