@@ -22,16 +22,8 @@ protocol DataManager {
 }
 
 extension DataManager {
-    var countriesPath: String {
-        get { "countries" }
-    }
-    var matchesPath: String {
-        get { "matches" }
-    }
-    var stadiumsPath: String {
-        get { "stadiums" }
-    }
-    var groupsPath: String {
-        get { "groups" }
-    }
+    var countriesPath: String { "countries" }
+    var matchesPath: String { "matches" }
+    var stadiumsPath: String { "stadiums" }
+    var groupsPath: String { "groups" }
 }

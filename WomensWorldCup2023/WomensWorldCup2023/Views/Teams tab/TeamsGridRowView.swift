@@ -5,12 +5,11 @@
 //  Created by devesmee on 11/03/2024.
 //
 
-
 import SwiftUI
 
 struct TeamsGridRowView: View {
     let countries: [Country]
-    
+
     var body: some View {
         ForEach(countries) { team in
             NavigationLink(value: team) {

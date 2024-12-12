@@ -10,16 +10,16 @@ import CoreLocation
 import SwiftData
 
 @Model class Stadium: Favouritable, Codable {
-    let id = UUID()
-    let name: String
-    let city: String
+    private(set) var id = UUID()
+    private(set) var name: String
+    private(set) var city: String
     @Transient var favourited = false
-    private let latitude: Double
-    private let longitude: Double
+    private var latitude: Double
+    private var longitude: Double
     @Transient var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
-    let matches: [Match]
+    private(set) var matches: [Match]
 
     private enum CodingKeys: CodingKey {
         case name, city, latitude, longitude, matches
@@ -33,7 +33,7 @@ import SwiftData
         longitude = try container.decode(Double.self, forKey: .longitude)
         matches = try container.decode([Match].self, forKey: .matches)
     }
-    
+
     func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
@@ -50,7 +50,7 @@ import SwiftData
         self.longitude = longitude
         self.matches = matches
     }
-    
+
     static func == (lhs: Stadium, rhs: Stadium) -> Bool {
         return lhs.id == rhs.id
     }

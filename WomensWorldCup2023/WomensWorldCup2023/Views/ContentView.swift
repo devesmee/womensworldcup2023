@@ -16,11 +16,11 @@ struct ContentView: View {
     #endif
 
     init() {
-        
+
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithDefaultBackground()
         UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
-        
+
         #if FIREBASE
         firebaseManager.getData()
         #else

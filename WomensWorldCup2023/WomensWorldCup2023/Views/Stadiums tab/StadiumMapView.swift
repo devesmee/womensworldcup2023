@@ -62,7 +62,7 @@ struct StadiumMapView: View {
             .navigationBarTitleTextColor(Color("Blue"))
         }
     }
-    
+
     private func resetMapRegion() {
         mapPosition = MapCameraPosition.automatic
     }

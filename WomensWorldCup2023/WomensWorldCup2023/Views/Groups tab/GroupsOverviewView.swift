@@ -24,7 +24,7 @@ struct GroupsOverviewView: View {
                         Spacer()
                     }
                     .background(Color("Yellow"))
-                } else  {
+                } else {
                     List(dataManager.groups, id: \.groupName) { group in
                         GroupView(group: group)
                             .cornerRadius(20)

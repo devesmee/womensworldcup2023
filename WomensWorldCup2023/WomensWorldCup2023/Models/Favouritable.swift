@@ -10,6 +10,6 @@ import Foundation
 protocol Favouritable: Identifiable, Hashable {
     var id: UUID { get }
     var favourited: Bool { get }
-    
+
     static func == (lhs: Self, rhs: Self) -> Bool
 }

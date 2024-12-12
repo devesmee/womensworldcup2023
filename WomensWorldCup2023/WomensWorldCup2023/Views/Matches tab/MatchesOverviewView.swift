@@ -13,7 +13,7 @@ struct MatchesOverviewView: View {
     #else
     @Environment(JSONManager.self) private var dataManager
     #endif
-    
+
     @State private var selectedDate: Date?
 
     var body: some View {

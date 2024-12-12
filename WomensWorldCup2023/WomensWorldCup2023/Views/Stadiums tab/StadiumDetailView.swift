@@ -190,7 +190,7 @@ struct StadiumDetailView: View {
         .toolbar {
             ToolbarFavouriteButton(favouritable: stadium) {
                 stadium.favourited.toggle()
-                
+
                 if favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) != nil {
                     context.delete(stadium)
                 } else {
