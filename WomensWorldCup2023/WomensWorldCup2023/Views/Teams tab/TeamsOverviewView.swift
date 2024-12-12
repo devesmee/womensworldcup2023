@@ -21,7 +21,7 @@ struct TeamsOverviewView: View {
                 if let errorMessage = dataManager.countriesErrorMessage {
                     Text(errorMessage)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                } else  {
+                } else {
                     Grid {
                         SwiftUI.Group {
                              if dataManager.countries.count >= 3 {

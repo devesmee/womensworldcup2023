@@ -11,18 +11,16 @@ import FirebaseDatabase
 
 @Observable class FirebaseManager: DataManager {
     private let databaseReference = Database.database().reference()
-
-    private let countriesPath = "countries"
-    private let matchesPath = "matches"
-    private let stadiumsPath = "stadiums"
     
     var countriesErrorMessage: String?
     var matchesErrorMessage: String?
     var stadiumsErrorMessage: String?
+    var groupsErrorMessage: String?
 
     var countries = [Country]()
     var matches = [Match]()
     var stadiums = [Stadium]()
+    var groups = [Group]()
     
     func getCountries() {
         databaseReference.child(countriesPath).observeSingleEvent(of: .value, with: { snapshot in
@@ -59,7 +57,7 @@ import FirebaseDatabase
     func getStadiums() {
         databaseReference.child(stadiumsPath).observeSingleEvent(of: .value, with: { snapshot in
             guard let stadiums = try? snapshot.data(as: [Stadium].self) else {
-                self.matchesErrorMessage = "Could not retrieve stadiums, please try again later"
+                self.stadiumsErrorMessage = "Could not retrieve stadiums, please try again later"
                 return
             }
             
@@ -69,6 +67,22 @@ import FirebaseDatabase
         }, withCancel: { error in
             print(error.localizedDescription)
             self.stadiumsErrorMessage = "Could not retrieve stadiums, please try again later"
+        })
+    }
+    
+    func getGroups() {
+        databaseReference.child(groupsPath).observeSingleEvent(of: .value, with: { snapshot in
+            guard let unsortedGroups = try? snapshot.data(as: [Group].self) else {
+                self.groupsErrorMessage = "Could not retrieve groups, please try again later"
+                return
+            }
+            
+            self.groupsErrorMessage = unsortedGroups.isEmpty ? "No groups found" : nil
+            
+            self.groups = unsortedGroups.sortedByAlphabet
+        }, withCancel: { error in
+            print(error.localizedDescription)
+            self.groupsErrorMessage = "Could not retrieve groups, please try again later"
         })
     }
 }

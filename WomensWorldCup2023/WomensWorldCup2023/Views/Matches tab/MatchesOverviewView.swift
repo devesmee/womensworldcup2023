@@ -25,7 +25,7 @@ struct MatchesOverviewView: View {
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                         Spacer()
                     }
-                } else  {
+                } else {
                     DateScrollbarView(dates: dataManager.matches.sortedUniqueDates, selectedDate: $selectedDate)
                         .padding(.horizontal)
                     ScrollViewReader { scrollReader in

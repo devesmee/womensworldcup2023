@@ -27,7 +27,7 @@ struct StadiumMapView: View {
                         Spacer()
                     }
                     .background(Color("Yellow"))
-                } else  {
+                } else {
                     Map(position: $mapPosition) {
                         ForEach(dataManager.stadiums) { stadium in
                             Annotation(stadium.name, coordinate: stadium.coordinate) {

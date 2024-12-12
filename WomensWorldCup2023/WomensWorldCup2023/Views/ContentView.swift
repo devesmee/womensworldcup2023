@@ -25,10 +25,12 @@ struct ContentView: View {
         firebaseManager.getCountries()
         firebaseManager.getMatches()
         firebaseManager.getStadiums()
+        firebaseManager.getGroups()
         #else
         jsonManager.getCountries()
         jsonManager.getMatches()
         jsonManager.getStadiums()
+        jsonManager.getGroups()
         #endif
     }
 
