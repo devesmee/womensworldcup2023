@@ -11,9 +11,11 @@ import Foundation
     
     var countriesErrorMessage: String?
     var matchesErrorMessage: String?
+    var stadiumsErrorMessage: String?
     
-    var countries: [Country] = []
-    var matches: [Match] = []
+    var countries = [Country]()
+    var matches = [Match]()
+    var stadiums = [Stadium]()
     
     func getCountries() {
         guard let decodedTeams = [Country].loadData(resource: "countries") else {
@@ -25,12 +27,21 @@ import Foundation
     }
     
     func getMatches() {
-        guard let decodedTeams = [Match].loadData(resource: "matches") else {
+        guard let decodedMatches = [Match].loadData(resource: "matches") else {
             self.matchesErrorMessage = "Could not retrieve matches, please try again later"
             return
         }
 
-        self.matches = decodedTeams.sortedByDate
+        self.matches = decodedMatches.sortedByDate
+    }
+    
+    func getStadiums() {
+        guard let decodedStadiums = [Stadium].loadData(resource: "stadiums") else {
+            self.stadiumsErrorMessage = "Could not retrieve stadiums, please try again later"
+            return
+        }
+
+        self.stadiums = decodedStadiums
     }
 }
 

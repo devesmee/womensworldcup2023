@@ -14,12 +14,15 @@ import FirebaseDatabase
 
     private let countriesPath = "countries"
     private let matchesPath = "matches"
+    private let stadiumsPath = "stadiums"
     
     var countriesErrorMessage: String?
     var matchesErrorMessage: String?
+    var stadiumsErrorMessage: String?
 
-    var countries: [Country] = []
-    var matches: [Match] = []
+    var countries = [Country]()
+    var matches = [Match]()
+    var stadiums = [Stadium]()
     
     func getCountries() {
         databaseReference.child(countriesPath).observeSingleEvent(of: .value, with: { snapshot in
@@ -50,6 +53,22 @@ import FirebaseDatabase
         }, withCancel: { error in
             print(error.localizedDescription)
             self.matchesErrorMessage = "Could not retrieve matches, please try again later"
+        })
+    }
+    
+    func getStadiums() {
+        databaseReference.child(stadiumsPath).observeSingleEvent(of: .value, with: { snapshot in
+            guard let stadiums = try? snapshot.data(as: [Stadium].self) else {
+                self.matchesErrorMessage = "Could not retrieve stadiums, please try again later"
+                return
+            }
+            
+            self.stadiumsErrorMessage = stadiums.isEmpty ? "No stadiums found" : nil
+            
+            self.stadiums = stadiums
+        }, withCancel: { error in
+            print(error.localizedDescription)
+            self.stadiumsErrorMessage = "Could not retrieve stadiums, please try again later"
         })
     }
 }

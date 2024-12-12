@@ -24,9 +24,11 @@ struct ContentView: View {
         #if FIREBASE
         firebaseManager.getCountries()
         firebaseManager.getMatches()
+        firebaseManager.getStadiums()
         #else
         jsonManager.getCountries()
         jsonManager.getMatches()
+        jsonManager.getStadiums()
         #endif
     }
 
