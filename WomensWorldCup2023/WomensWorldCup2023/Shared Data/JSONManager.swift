@@ -9,14 +9,15 @@ import Foundation
 
 @Observable class JSONManager: DataManager {
     
-    var errorMessage: String?
+    var countriesErrorMessage: String?
+    var matchesErrorMessage: String?
     
     var countries: [Country] = []
     var matches: [Match] = []
     
     func getCountries() {
         guard let decodedTeams = [Country].loadData(resource: "countries") else {
-            self.errorMessage = "Error while retrieving teams"
+            self.countriesErrorMessage = "Could not retrieve teams, please try again later"
             return
         }
 
@@ -25,7 +26,7 @@ import Foundation
     
     func getMatches() {
         guard let decodedTeams = [Match].loadData(resource: "matches") else {
-            self.errorMessage = "Error while retrieving matches"
+            self.matchesErrorMessage = "Could not retrieve matches, please try again later"
             return
         }
 

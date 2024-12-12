@@ -18,7 +18,7 @@ struct TeamsOverviewView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ScrollView {
-                if let errorMessage = dataManager.errorMessage {
+                if let errorMessage = dataManager.countriesErrorMessage {
                     Text(errorMessage)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 } else  {

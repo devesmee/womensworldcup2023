@@ -8,7 +8,8 @@
 import Foundation
 
 protocol DataManager {
-    var errorMessage: String? { get }
+    var countriesErrorMessage: String? { get }
+    var matchesErrorMessage: String? { get }
 
     var countries: [Country] { get }
     var matches: [Match] { get }

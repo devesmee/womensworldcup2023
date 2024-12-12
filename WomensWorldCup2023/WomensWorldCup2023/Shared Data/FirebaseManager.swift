@@ -15,7 +15,8 @@ import FirebaseDatabase
     private let countriesPath = "countries"
     private let matchesPath = "matches"
     
-    var errorMessage: String?
+    var countriesErrorMessage: String?
+    var matchesErrorMessage: String?
 
     var countries: [Country] = []
     var matches: [Match] = []
@@ -23,32 +24,32 @@ import FirebaseDatabase
     func getCountries() {
         databaseReference.child(countriesPath).observeSingleEvent(of: .value, with: { snapshot in
             guard let unsortedCountries = try? snapshot.data(as: [Country].self) else {
-                self.errorMessage = "Error while retrieving teams"
+                self.countriesErrorMessage = "Could not retrieve teams, please try again later"
                 return
             }
             
-            self.errorMessage = unsortedCountries.isEmpty ? "No teams found" : nil
+            self.countriesErrorMessage = unsortedCountries.isEmpty ? "No teams found" : nil
             
             self.countries = unsortedCountries.sortedByAlphabet
         }, withCancel: { error in
             print(error.localizedDescription)
-            self.errorMessage = "Error while retrieving teams"
+            self.countriesErrorMessage = "Could not retrieve teams, please try again later"
         })
     }
     
     func getMatches() {
         databaseReference.child(matchesPath).observeSingleEvent(of: .value, with: { snapshot in
             guard let unsortedMatches = try? snapshot.data(as: [Match].self) else {
-                self.errorMessage = "Error while retrieving matches"
+                self.matchesErrorMessage = "Could not retrieve matches, please try again later"
                 return
             }
             
-            self.errorMessage = unsortedMatches.isEmpty ? "No matches found" : nil
+            self.matchesErrorMessage = unsortedMatches.isEmpty ? "No matches found" : nil
             
             self.matches = unsortedMatches.sortedByDate
         }, withCancel: { error in
             print(error.localizedDescription)
-            self.errorMessage = "Error while retrieving matches"
+            self.matchesErrorMessage = "Could not retrieve matches, please try again later"
         })
     }
 }
