@@ -34,6 +34,7 @@ struct StadiumRowView: View {
 
 #Preview {
     let exampleMatch = Match(
+        abbreviation: "NZLNOR",
         date: Date(),
         homeTeam: CountryEnum.newZealand,
         awayTeam: CountryEnum.norway,

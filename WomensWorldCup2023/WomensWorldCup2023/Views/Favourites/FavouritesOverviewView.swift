@@ -11,25 +11,7 @@ import SwiftUI
 struct FavouritesOverviewView: View {
     @Query private var favouriteStadiums: [Stadium]
     @Query private var favouriteTeams: [Country]
-    // TODO: remove this hardcoded data and replace it by accessing the user's data
-    private let favouriteMatches: [Match] = [
-        Match(
-            date: Date(),
-            homeTeam: CountryEnum.newZealand,
-            awayTeam: CountryEnum.norway,
-            score: "1 - 0",
-            tournamentStage: .groupStage,
-            group: .groupA
-        ),
-        Match(
-            date: Date(),
-            homeTeam: CountryEnum.australia,
-            awayTeam: CountryEnum.ireland,
-            score: "1 - 0",
-            tournamentStage: .groupStage,
-            group: .groupB
-        )
-    ]
+    @Query private var favouriteMatches: [Match]
 
     var body: some View {
         NavigationStack {

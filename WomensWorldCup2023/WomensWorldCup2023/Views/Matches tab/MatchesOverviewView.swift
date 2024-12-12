@@ -51,6 +51,9 @@ struct MatchesOverviewView: View {
                     .background(Color("Yellow"))
                 }
             }
+            .navigationDestination(for: Match.self) { match in
+                MatchDetailView(match: match)
+            }
             .background(Color("Yellow"))
             .navigationTitle("Matches")
             .navigationBarTitleTextColor(Color("Blue"))

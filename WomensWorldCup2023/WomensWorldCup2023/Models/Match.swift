@@ -6,17 +6,21 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Match: Identifiable, Codable {
-    let id = UUID()
-    let date: Date
-    let homeTeam: CountryEnum
-    let awayTeam: CountryEnum
-    let score: String
-    let tournamentStage: TournamentStage
-    let group: GroupEnum?
+@Model class Match: Favouritable, Codable {
+    private(set) var id = UUID()
+    private(set) var abbreviation: String
+    private(set) var date: Date
+    private(set) var homeTeam: CountryEnum
+    private(set) var awayTeam: CountryEnum
+    private(set) var score: String
+    private(set) var tournamentStage: TournamentStage
+    private(set) var group: GroupEnum?
+    @Transient var favourited = false
 
     init(
+        abbreviation: String,
         date: Date,
         homeTeam: CountryEnum,
         awayTeam: CountryEnum,
@@ -24,6 +28,7 @@ struct Match: Identifiable, Codable {
         tournamentStage: TournamentStage,
         group: GroupEnum? = nil
     ) {
+        self.abbreviation = abbreviation
         self.date = date
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam
@@ -33,7 +38,7 @@ struct Match: Identifiable, Codable {
     }
 
     enum CodingKeys: CodingKey {
-        case id
+        case abbreviation
         case date
         case homeTeam
         case awayTeam
@@ -42,9 +47,11 @@ struct Match: Identifiable, Codable {
         case group
     }
 
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
+        self.abbreviation = try container.decode(String.self, forKey: .abbreviation)
+        
         let dateString = try container.decode(String.self, forKey: .date)
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
@@ -60,7 +67,7 @@ struct Match: Identifiable, Codable {
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(self.id, forKey: .id)
+        try container.encode(self.abbreviation, forKey: .abbreviation)
         try container.encode(self.homeTeam, forKey: .homeTeam)
         try container.encode(self.awayTeam, forKey: .awayTeam)
         try container.encode(self.score, forKey: .score)

@@ -25,13 +25,15 @@ struct MatchDateSectionView: View {
             .background(Color("Pink"))
 
             ForEach(matches) { match in
-                MatchListRow(
-                    match: match,
-                    showDate: false,
-                    showTournamentStage: true,
-                    backgroundColor: Color("Yellow")
-                )
-                .padding(.bottom)
+                NavigationLink(value: match) {
+                    MatchListRow(
+                        match: match,
+                        showDate: false,
+                        showTournamentStage: true,
+                        backgroundColor: Color("Yellow")
+                    )
+                    .padding(.bottom)
+                }
             }
             .padding(.horizontal)
         }
@@ -43,7 +45,7 @@ struct MatchDateSectionView: View {
     MatchDateSectionView(
         date: Date(),
         matches: [
-            Match(date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)
+            Match(abbreviation: "ArgAus", date: Date(), homeTeam: .argentina, awayTeam: .australia, score: "1-1", tournamentStage: .final)
         ]
     )
 }

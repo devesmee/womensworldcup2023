@@ -12,49 +12,52 @@ struct FavouriteStadiumsView: View {
     @State private var isExpanded = false
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack {
-                Text("Stadiums")
-                    .font(.title2)
-                    .bold()
-                Spacer()
-                Button {
-                    expandContent()
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .resizable()
-                        .frame(
-                            width: 12,
-                            height: 18
-                        )
-                        .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
-                        .foregroundColor(Color("Yellow"))
+            VStack(spacing: 0) {
+                HStack {
+                    Text("Stadiums")
+                        .font(.title2)
+                        .bold()
+                    Spacer()
+                    Button {
+                        expandContent()
+                    } label: {
+                        Image(systemName: "chevron.right")
+                            .resizable()
+                            .frame(
+                                width: 12,
+                                height: 18
+                            )
+                            .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
+                            .foregroundColor(Color("Yellow"))
+                    }
                 }
-            }
-            .contentShape(Rectangle())
-            .padding(.all)
-            .onTapGesture {
-                expandContent()
-            }
-
-            if isExpanded {
-                VStack {
-                    if stadiums.isEmpty {
-                        Text("You have no favourite stadiums yet.")
-                    } else {
-                        ForEach(stadiums) { stadium in
-                            NavigationLink(destination: StadiumDetailView(stadium: stadium)) {
-                                StadiumRowView(stadium: stadium)
-                                    .padding([.top, .horizontal])
+                .contentShape(Rectangle())
+                .padding(.all)
+                .onTapGesture {
+                    expandContent()
+                }
+                
+                if isExpanded {
+                    VStack {
+                        if stadiums.isEmpty {
+                            Text("You have no favourite stadiums yet.")
+                        } else {
+                            ForEach(stadiums) { stadium in
+                                NavigationLink(value: stadium) {
+                                    StadiumRowView(stadium: stadium)
+                                        .padding([.top, .horizontal])
+                                }
                             }
                         }
                     }
+                    .padding(.bottom)
                 }
-                .padding(.bottom)
             }
+            .foregroundColor(Color("Yellow"))
+            .background(Color("Orange"))
+        .navigationDestination(for: Stadium.self) { stadium in
+            StadiumDetailView(stadium: stadium)
         }
-        .foregroundColor(Color("Yellow"))
-        .background(Color("Orange"))
     }
 
     private func expandContent() {
@@ -66,6 +69,7 @@ struct FavouriteStadiumsView: View {
 
 #Preview {
     let exampleMatch = Match(
+        abbreviation: "NZLNOR",
         date: Date(),
         homeTeam: CountryEnum.newZealand,
         awayTeam: CountryEnum.norway,

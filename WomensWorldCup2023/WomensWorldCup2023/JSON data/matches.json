@@ -1,5 +1,6 @@
 [
     {
+        "abbreviation": "NZLNOR",
         "date" : "20-07-2023",
         "homeTeam" : "New Zealand",
         "awayTeam" : "Norway",
@@ -8,6 +9,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "USAVIE",
         "date" : "22-07-2023",
         "homeTeam" : "USA",
         "awayTeam" : "Vietnam",
@@ -16,6 +18,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "ITAARG",
         "date" : "24-07-2023",
         "homeTeam" : "Italy",
         "awayTeam" : "Argentina",
@@ -24,6 +27,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "ESPZAM",
         "date" : "26-07-2023",
         "homeTeam" : "Spain",
         "awayTeam" : "Zambia",
@@ -32,6 +36,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "FRABRA",
         "date" : "29-07-2023",
         "homeTeam" : "France",
         "awayTeam" : "Brazil",
@@ -40,6 +45,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "NORPHI",
         "date" : "30-07-2023",
         "homeTeam" : "Norway",
         "awayTeam" : "Philippines",
@@ -48,6 +54,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "PORUSA",
         "date" : "01-08-2023",
         "homeTeam" : "Portugal",
         "awayTeam" : "USA",
@@ -56,6 +63,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "SUIESP",
         "date" : "05-08-2023",
         "homeTeam" : "Switzerland",
         "awayTeam" : "Spain",
@@ -63,6 +71,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "JPNSWE",
         "date" : "11-08-2023",
         "homeTeam" : "Japan",
         "awayTeam" : "Sweden",
@@ -70,6 +79,7 @@
         "tournamentStage" : "Quarter final"
     },
     {
+        "abbreviation": "ESPSWE",
         "date" : "15-08-2023",
         "homeTeam" : "Spain",
         "awayTeam" : "Sweden",
@@ -77,6 +87,7 @@
         "tournamentStage" : "Semi final"
     },
     {
+        "abbreviation": "ESPCRC",
         "date" : "21-07-2023",
         "homeTeam" : "Spain",
         "awayTeam" : "Costa Rica",
@@ -85,6 +96,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "SWERSA",
         "date" : "23-07-2023",
         "homeTeam" : "Sweden",
         "awayTeam" : "South Africa",
@@ -93,6 +105,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "NZLPHI",
         "date" : "25-07-2023",
         "homeTeam" : "New Zealand",
         "awayTeam" : "Philippines",
@@ -101,6 +114,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "USANED",
         "date" : "27-07-2023",
         "homeTeam" : "USA",
         "awayTeam" : "Netherlands",
@@ -109,6 +123,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "SWEITA",
         "date" : "29-07-2023",
         "homeTeam" : "Sweden",
         "awayTeam" : "Italy",
@@ -117,6 +132,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "JPNESP",
         "date" : "31-07-2023",
         "homeTeam" : "Japan",
         "awayTeam" : "Spain",
@@ -125,6 +141,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "RSAITA",
         "date" : "02-08-2023",
         "homeTeam" : "South Africa",
         "awayTeam" : "Italy",
@@ -133,6 +150,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "JPNNOR",
         "date" : "05-08-2023",
         "homeTeam" : "Japan",
         "awayTeam" : "Norway",
@@ -140,6 +158,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "ESPNED",
         "date" : "11-08-2023",
         "homeTeam" : "Spain",
         "awayTeam" : "Netherlands",
@@ -147,6 +166,7 @@
         "tournamentStage" : "Quarter final"
     },
     {
+        "abbreviation": "ZAMJPN",
         "date" : "22-07-2023",
         "homeTeam" : "Zambia",
         "awayTeam" : "Japan",
@@ -155,6 +175,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "SUINOR",
         "date" : "25-07-2023",
         "homeTeam" : "Switzerland",
         "awayTeam" : "Norway",
@@ -163,6 +184,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "PORVIE",
         "date" : "27-07-2023",
         "homeTeam" : "Portugal",
         "awayTeam" : "Vietnam",
@@ -171,6 +193,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "CRCZAM",
         "date" : "31-07-2023",
         "homeTeam" : "Costa Rica",
         "awayTeam" : "Zambia",
@@ -179,6 +202,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "ARGSWE",
         "date" : "02-08-2023",
         "homeTeam" : "Argentina",
         "awayTeam" : "Sweden",
@@ -187,6 +211,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "PHISUI",
         "date" : "21-07-2023",
         "homeTeam" : "Philippines",
         "awayTeam" : "Switzerland",
@@ -195,6 +220,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "NEDPOR",
         "date" : "23-07-2023",
         "homeTeam" : "Netherlands",
         "awayTeam" : "Portugal",
@@ -203,6 +229,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "JPNCRC",
         "date" : "26-07-2023",
         "homeTeam" : "Japan",
         "awayTeam" : "Costa Rica",
@@ -211,6 +238,7 @@
         "group" : "C"
     },
     {
+        "abbreviation": "ARGRSA",
         "date" : "28-07-2023",
         "homeTeam" : "Argentina",
         "awayTeam" : "South Africa",
@@ -219,6 +247,7 @@
         "group" : "G"
     },
     {
+        "abbreviation": "SUINZL",
         "date" : "30-07-2023",
         "homeTeam" : "Switzerland",
         "awayTeam" : "New Zealand",
@@ -227,6 +256,7 @@
         "group" : "A"
     },
     {
+        "abbreviation": "VIENED",
         "date" : "01-08-2023",
         "homeTeam" : "Vietnam",
         "awayTeam" : "Netherlands",
@@ -235,6 +265,7 @@
         "group" : "E"
     },
     {
+        "abbreviation": "FRAJAM",
         "date" : "23-07-2023",
         "homeTeam" : "France",
         "awayTeam" : "Jamaica",
@@ -243,6 +274,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "COLKOR",
         "date" : "25-07-2023",
         "homeTeam" : "Colombia",
         "awayTeam" : "Korea Republic",
@@ -251,6 +283,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "ENGDEN",
         "date" : "28-07-2023",
         "homeTeam" : "England",
         "awayTeam" : "Denmark",
@@ -259,6 +292,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "GERCOL",
         "date" : "30-07-2023",
         "homeTeam" : "Germany",
         "awayTeam" : "Colombia",
@@ -267,6 +301,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "PANFRA",
         "date" : "02-08-2023",
         "homeTeam" : "Panama",
         "awayTeam" : "France",
@@ -275,6 +310,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "NEDRSA",
         "date" : "06-08-2023",
         "homeTeam" : "Netherlands",
         "awayTeam" : "South Africa",
@@ -282,6 +318,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "AUSIRL",
         "date" : "20-07-2023",
         "homeTeam" : "Australia",
         "awayTeam" : "Republic of Ireland",
@@ -290,6 +327,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "AUSDEN",
         "date" : "07-08-2023",
         "homeTeam" : "Australia",
         "awayTeam" : "Denmark",
@@ -297,6 +335,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "ENGCOL",
         "date" : "12-08-2023",
         "homeTeam" : "England",
         "awayTeam" : "Colombia",
@@ -304,6 +343,7 @@
         "tournamentStage" : "Quarter final"
     },
     {
+        "abbreviation": "AUSENG",
         "date" : "16-08-2023",
         "homeTeam" : "Australia",
         "awayTeam" : "England",
@@ -311,6 +351,7 @@
         "tournamentStage" : "Semi final"
     },
     {
+        "abbreviation": "ESPENG",
         "date" : "20-08-2023",
         "homeTeam" : "Spain",
         "awayTeam" : "England",
@@ -318,6 +359,7 @@
         "tournamentStage" : "Final"
     },
     {
+        "abbreviation": "DENCHN",
         "date" : "22-07-2023",
         "homeTeam" : "Denmark",
         "awayTeam" : "China PR",
@@ -326,6 +368,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "CANIRL",
         "date" : "26-07-2023",
         "homeTeam" : "Canada",
         "awayTeam" : "Republic of Ireland",
@@ -334,6 +377,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "PANJAM",
         "date" : "29-07-2023",
         "homeTeam" : "Panama",
         "awayTeam" : "Jamaica",
@@ -342,6 +386,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "HAIDEN",
         "date" : "01-08-2023",
         "homeTeam" : "Haiti",
         "awayTeam" : "Denmark",
@@ -350,6 +395,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "MARCOL",
         "date" : "03-08-2023",
         "homeTeam" : "Morocco",
         "awayTeam" : "Colombia",
@@ -358,6 +404,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "NGACAN",
         "date" : "21-07-2023",
         "homeTeam" : "Nigeria",
         "awayTeam" : "Canada",
@@ -366,6 +413,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "GERMAR",
         "date" : "24-07-2023",
         "homeTeam" : "Germany",
         "awayTeam" : "Morocco",
@@ -374,6 +422,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "CANAUS",
         "date" : "31-07-2023",
         "homeTeam" : "Canada",
         "awayTeam" : "Australia",
@@ -382,6 +431,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "JAMBRA",
         "date" : "02-08-2023",
         "homeTeam" : "Jamaica",
         "awayTeam" : "Brazil",
@@ -390,6 +440,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "SWEUSA",
         "date" : "06-08-2023",
         "homeTeam" : "Sweden",
         "awayTeam" : "USA",
@@ -397,6 +448,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "COLJAM",
         "date" : "08-08-2023",
         "homeTeam" : "Colombia",
         "awayTeam" : "Jamaica",
@@ -404,6 +456,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "BRAPAN",
         "date" : "24-07-2023",
         "homeTeam" : "Brazil",
         "awayTeam" : "Panama",
@@ -412,6 +465,7 @@
         "group" : "F"
     },
     {
+        "abbreviation": "CHNHAI",
         "date" : "28-07-2023",
         "homeTeam" : "China PR",
         "awayTeam" : "Haiti",
@@ -420,6 +474,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "KORMAR",
         "date" : "30-07-2023",
         "homeTeam" : "Korea Republic",
         "awayTeam" : "Morocco",
@@ -428,6 +483,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "CHNENG",
         "date" : "01-08-2023",
         "homeTeam" : "China PR",
         "awayTeam" : "England",
@@ -436,6 +492,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "FRAMAR",
         "date" : "08-08-2023",
         "homeTeam" : "France",
         "awayTeam" : "Morocco",
@@ -443,6 +500,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "ENGHAI",
         "date" : "22-07-2023",
         "homeTeam" : "England",
         "awayTeam" : "Haiti",
@@ -451,6 +509,7 @@
         "group" : "D"
     },
     {
+        "abbreviation": "AUSNGA",
         "date" : "27-07-2023",
         "homeTeam" : "Australia",
         "awayTeam" : "Nigeria",
@@ -459,6 +518,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "IRLNGA",
         "date" : "31-07-2023",
         "homeTeam" : "Republic of Ireland",
         "awayTeam" : "Nigeria",
@@ -467,6 +527,7 @@
         "group" : "B"
     },
     {
+        "abbreviation": "KORGER",
         "date" : "03-08-2023",
         "homeTeam" : "Korea Republic",
         "awayTeam" : "Germany",
@@ -475,6 +536,7 @@
         "group" : "H"
     },
     {
+        "abbreviation": "ENGNGA",
         "date" : "07-08-2023",
         "homeTeam" : "England",
         "awayTeam" : "Nigeria",
@@ -482,6 +544,7 @@
         "tournamentStage" : "Round of 16"
     },
     {
+        "abbreviation": "AUSFRA",
         "date" : "12-08-2023",
         "homeTeam" : "Australia",
         "awayTeam" : "France",
@@ -489,6 +552,7 @@
         "tournamentStage" : "Quarter final"
     },
     {
+        "abbreviation": "SWEAUS",
         "date" : "19-08-2023",
         "homeTeam" : "Sweden",
         "awayTeam" : "Australia",

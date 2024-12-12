@@ -12,52 +12,57 @@ struct FavouriteMatchesView: View {
     @State private var isExpanded = false
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack {
-                Text("Matches")
-                    .font(.title2)
-                    .bold()
-                Spacer()
-                Button {
-                    expandContent()
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .resizable()
-                        .frame(
-                            width: 12,
-                            height: 18
-                        )
-                        .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
-                        .foregroundColor(Color("Yellow"))
-                }
-            }
-            .contentShape(Rectangle())
-            .padding(.all)
-            .onTapGesture {
-                expandContent()
-            }
-
-            if isExpanded {
-                VStack {
-                    if matches.isEmpty {
-                        Text("You have no favourite matches yet.")
-                    } else {
-                        ForEach(matches) { match in
-                            MatchListRow(
-                                match: match,
-                                showDate: true,
-                                showTournamentStage: true,
-                                backgroundColor: Color("Blue")
+            VStack(spacing: 0) {
+                HStack {
+                    Text("Matches")
+                        .font(.title2)
+                        .bold()
+                    Spacer()
+                    Button {
+                        expandContent()
+                    } label: {
+                        Image(systemName: "chevron.right")
+                            .resizable()
+                            .frame(
+                                width: 12,
+                                height: 18
                             )
-                            .padding([.top, .horizontal])
-                        }
+                            .rotationEffect(isExpanded ? Angle(degrees: 90) : Angle(degrees: 0))
+                            .foregroundColor(Color("Yellow"))
                     }
                 }
-                .padding(.bottom)
+                .contentShape(Rectangle())
+                .padding(.all)
+                .onTapGesture {
+                    expandContent()
+                }
+                
+                if isExpanded {
+                    VStack {
+                        if matches.isEmpty {
+                            Text("You have no favourite matches yet.")
+                        } else {
+                            ForEach(matches) { match in
+                                NavigationLink(value: match) {
+                                    MatchListRow(
+                                        match: match,
+                                        showDate: true,
+                                        showTournamentStage: true,
+                                        backgroundColor: Color("Blue")
+                                    )
+                                    .padding([.top, .horizontal])
+                                }
+                            }
+                        }
+                    }
+                    .padding(.bottom)
+                }
             }
+            .foregroundColor(Color("Yellow"))
+            .background(Color("Blue"))
+        .navigationDestination(for: Match.self) { match in
+            MatchDetailView(match: match)
         }
-        .foregroundColor(Color("Yellow"))
-        .background(Color("Blue"))
     }
 
     private func expandContent() {
@@ -69,6 +74,7 @@ struct FavouriteMatchesView: View {
 
 #Preview {
     let exampleMatch = Match(
+        abbreviation: "NZLNOR",
         date: Date(),
         homeTeam: CountryEnum.newZealand,
         awayTeam: CountryEnum.norway,
