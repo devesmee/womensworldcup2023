@@ -25,15 +25,12 @@ struct MatchDateSectionView: View {
             .background(Color("Pink"))
 
             ForEach(matches) { match in
-                NavigationLink(value: match) {
                     MatchListRow(
                         match: match,
                         showDate: false,
-                        showTournamentStage: true,
-                        backgroundColor: Color("Yellow")
+                        showTournamentStage: true
                     )
                     .padding(.bottom)
-                }
             }
             .padding(.horizontal)
         }

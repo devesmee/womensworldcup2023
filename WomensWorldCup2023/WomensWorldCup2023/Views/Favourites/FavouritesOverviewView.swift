@@ -9,12 +9,14 @@ import SwiftData
 import SwiftUI
 
 struct FavouritesOverviewView: View {
-    @Query private var favouriteStadiums: [Stadium]
-    @Query private var favouriteTeams: [Country]
-    @Query private var favouriteMatches: [Match]
+    @Query(sort: \Country.name) private var favouriteTeams: [Country]
+    @Query(sort: \Stadium.name) private var favouriteStadiums: [Stadium]
+    @Query(sort: \Match.date) private var favouriteMatches: [Match]
+    
+    @State private var path = NavigationPath()
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView(.vertical) {
                 FavouriteTeamsView(teams: favouriteTeams)
                     .cornerRadius(20)
@@ -31,6 +33,15 @@ struct FavouritesOverviewView: View {
             .background(Color("Yellow"))
             .navigationTitle("Favourites")
             .navigationBarTitleTextColor(Color("Blue"))
+            .navigationDestination(for: Country.self) { country in
+                TeamDetailView(team: country)
+            }
+            .navigationDestination(for: Stadium.self) { stadium in
+                StadiumDetailView(stadium: stadium)
+            }
+            .navigationDestination(for: Match.self) { match in
+                MatchDetailView(match: match)
+            }
         }
     }
 }

@@ -15,7 +15,6 @@ struct TeamsGridRowView: View {
             NavigationLink(value: team) {
                 TeamItemView(countryName: team.name)
             }
-            .foregroundColor(.black)
         }
         .padding([.leading, .trailing])
     }

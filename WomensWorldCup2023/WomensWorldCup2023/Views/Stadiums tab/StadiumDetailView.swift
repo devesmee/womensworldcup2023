@@ -13,7 +13,7 @@ struct StadiumDetailView: View {
     @Query private var favouriteStadiums: [Stadium]
     let stadium: Stadium
     private var matches: [Match] {
-        return stadium.matches
+        return stadium.matches.sortedByDate
     }
 
     var body: some View {
@@ -44,8 +44,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -70,8 +69,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -96,8 +94,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -122,8 +119,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -148,8 +144,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -174,8 +169,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -196,7 +190,6 @@ struct StadiumDetailView: View {
                 } else {
                     context.insert(stadium)
                 }
-                try? context.save()
             }
         }
     }

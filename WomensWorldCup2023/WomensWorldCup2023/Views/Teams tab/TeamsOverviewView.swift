@@ -13,7 +13,7 @@ struct TeamsOverviewView: View {
     #else
     @Environment(JSONManager.self) private var dataManager
     #endif
-    @State private var path: [Country] = []
+    @State private var path = NavigationPath()
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -96,12 +96,12 @@ struct TeamsOverviewView: View {
                     .padding([.top, .bottom])
                 }
             }
-            .navigationDestination(for: Country.self) { team in
-                TeamDetailView(team: team)
-            }
             .background(Color("Yellow"))
             .navigationTitle("Teams")
             .navigationBarTitleTextColor(Color("Blue"))
+            .navigationDestination(for: Country.self) { team in
+                TeamDetailView(team: team)
+            }
         }
     }
 }

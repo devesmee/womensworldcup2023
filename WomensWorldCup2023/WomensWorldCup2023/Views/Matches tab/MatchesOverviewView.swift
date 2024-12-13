@@ -15,9 +15,10 @@ struct MatchesOverviewView: View {
     #endif
 
     @State private var selectedDate: Date?
+    @State private var path = NavigationPath()
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             VStack {
                 if let errorMessage = dataManager.matchesErrorMessage {
                     VStack {
@@ -51,12 +52,12 @@ struct MatchesOverviewView: View {
                     .background(Color("Yellow"))
                 }
             }
-            .navigationDestination(for: Match.self) { match in
-                MatchDetailView(match: match)
-            }
             .background(Color("Yellow"))
             .navigationTitle("Matches")
             .navigationBarTitleTextColor(Color("Blue"))
+            .navigationDestination(for: Match.self) { match in
+                MatchDetailView(match: match)
+            }
         }
         .onAppear {
             self.selectedDate = dataManager.matches.sortedUniqueDates.first

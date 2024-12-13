@@ -22,12 +22,12 @@ struct MatchDetailView: View {
             MatchListRow(
                 match: match,
                 showDate: true,
-                showTournamentStage: true,
-                backgroundColor: Color("Yellow")
+                showTournamentStage: true
             )
             Spacer()
         }
         .padding(.horizontal)
+        .foregroundColor(.black)
         .background(Color("Yellow"))
         .navigationBarTitle("", displayMode: .inline)
         .toolbar {
@@ -38,7 +38,6 @@ struct MatchDetailView: View {
                 } else {
                     context.insert(match)
                 }
-                try? context.save()
             }
         }
     }

@@ -42,7 +42,6 @@ struct TeamDetailView: View {
                 } else {
                     context.insert(team)
                 }
-                try? context.save()
             }
         }
     }

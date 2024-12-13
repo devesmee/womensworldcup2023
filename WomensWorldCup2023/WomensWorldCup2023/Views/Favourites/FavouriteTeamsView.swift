@@ -55,9 +55,6 @@ struct FavouriteTeamsView: View {
             }
             .foregroundColor(Color("Yellow"))
             .background(Color("Green"))
-        .navigationDestination(for: Country.self) { team in
-            TeamDetailView(team: team)
-        }
     }
 
     private func expandContent() {
