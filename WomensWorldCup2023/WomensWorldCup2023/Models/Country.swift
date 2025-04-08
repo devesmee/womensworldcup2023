@@ -6,49 +6,51 @@
 //
 
 import Foundation
-import SwiftData
+import Observation
 
-@Model class Country: Favouritable, Codable {
+@Observable class Country: Favouritable, Codable {
     private(set) var id = UUID()
     private(set) var country: CountryEnum
     var favourited = false
     private(set) var matchesPlayed: Int
     private(set) var goalDifference: Int
     private(set) var points: Int
-    private(set) var name: String
+    var name: String {
+        return country.rawValue
+    }
 
     private enum CodingKeys: CodingKey {
-        case country, matchesPlayed, goalDifference, points, name
+        case country, matchesPlayed, goalDifference, points
     }
 
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        let countryEnum = try container.decode(CountryEnum.self, forKey: .country)
-        country = countryEnum
-        name = countryEnum.rawValue
-        matchesPlayed = try container.decode(Int.self, forKey: .matchesPlayed)
-        goalDifference = try container.decode(Int.self, forKey: .goalDifference)
-        points = try container.decode(Int.self, forKey: .points)
-    }
-
-    func encode(to encoder: any Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(country, forKey: .country)
-        try container.encode(name, forKey: .name)
-        try container.encode(matchesPlayed, forKey: .matchesPlayed)
-        try container.encode(goalDifference, forKey: .goalDifference)
-        try container.encode(points, forKey: .points)
-    }
+   required init(from decoder: Decoder) throws {
+       let container = try decoder.container(keyedBy: CodingKeys.self)
+       country = try container.decode(CountryEnum.self, forKey: .country)
+       matchesPlayed = try container.decode(Int.self, forKey: .matchesPlayed)
+       goalDifference = try container.decode(Int.self, forKey: .goalDifference)
+       points = try container.decode(Int.self, forKey: .points)
+   }
+   
+   func encode(to encoder: any Encoder) throws {
+       var container = encoder.container(keyedBy: CodingKeys.self)
+       try container.encode(country, forKey: .country)
+       try container.encode(matchesPlayed, forKey: .matchesPlayed)
+       try container.encode(goalDifference, forKey: .goalDifference)
+       try container.encode(points, forKey: .points)
+   }
 
     init(country: CountryEnum, matchesPlayed: Int, goalDifference: Int, points: Int) {
         self.country = country
         self.matchesPlayed = matchesPlayed
         self.goalDifference = goalDifference
         self.points = points
-        self.name = country.rawValue
     }
 
     static func == (lhs: Country, rhs: Country) -> Bool {
         return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }

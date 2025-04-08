@@ -56,6 +56,7 @@
 		BFC82C7F2B05041A006D38AC /* FavouriteStadiumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */; };
 		BFC82C812B05047F006D38AC /* StadiumRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C802B05047F006D38AC /* StadiumRowView.swift */; };
 		BFC82C832B0507AC006D38AC /* FavouriteMatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */; };
+		BFCCFDD22DA519F900F98C13 /* ArrayRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */; };
 		BFE669082B9F5714008D7BE8 /* TeamsGridRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStadiumsView.swift; sourceTree = "<group>"; };
 		BFC82C802B05047F006D38AC /* StadiumRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumRowView.swift; sourceTree = "<group>"; };
 		BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMatchesView.swift; sourceTree = "<group>"; };
+		BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRawRepresentable.swift; sourceTree = "<group>"; };
 		BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGridRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +199,7 @@
 		7B23E3D82A45B27C00267C59 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */,
 				7B23E3D92A45B28500267C59 /* MatchArray.swift */,
 				7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */,
 				7BFA38612A7D288100440F31 /* GroupArray.swift */,
@@ -396,6 +399,7 @@
 				7B23E3D12A45B17F00267C59 /* StadiumMapView.swift in Sources */,
 				BFC82C812B05047F006D38AC /* StadiumRowView.swift in Sources */,
 				7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */,
+				BFCCFDD22DA519F900F98C13 /* ArrayRawRepresentable.swift in Sources */,
 				BF4A1E802D0B224800BD9F06 /* MatchDetailView.swift in Sources */,
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,
 				7B20D6F22A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift in Sources */,

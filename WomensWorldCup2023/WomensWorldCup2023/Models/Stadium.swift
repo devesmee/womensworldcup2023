@@ -7,16 +7,16 @@
 
 import Foundation
 import CoreLocation
-import SwiftData
+import Observation
 
-@Model class Stadium: Favouritable, Codable {
+@Observable class Stadium: Favouritable, Codable {
     private(set) var id = UUID()
     private(set) var name: String
     private(set) var city: String
-    @Transient var favourited = false
+    var favourited = false
     private var latitude: Double
     private var longitude: Double
-    @Transient var coordinate: CLLocationCoordinate2D {
+    var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     private(set) var matches: [Match]
@@ -53,5 +53,9 @@ import SwiftData
 
     static func == (lhs: Stadium, rhs: Stadium) -> Bool {
         return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }

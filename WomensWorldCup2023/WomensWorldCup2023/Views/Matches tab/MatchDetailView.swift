@@ -5,12 +5,10 @@
 //  Created by devesmee on 12/12/2024.
 //
 
-import SwiftData
 import SwiftUI
 
 struct MatchDetailView: View {
-    @Environment(\.modelContext) private var context
-    @Query private var favouriteMatches: [Match]
+    @AppStorage("favouriteMatches") var favouriteMatches = [Match]()
     let match: Match
 
     var body: some View {
@@ -33,10 +31,10 @@ struct MatchDetailView: View {
         .toolbar {
             ToolbarFavouriteButton(favouritable: match) {
                 match.favourited.toggle()
-                if favouriteMatches.firstIndex(where: { $0.abbreviation == match.abbreviation }) != nil {
-                    context.delete(match)
+                if let index = favouriteMatches.firstIndex(where: { $0.abbreviation == match.abbreviation }) {
+                    favouriteMatches.remove(at: index)
                 } else {
-                    context.insert(match)
+                    favouriteMatches.append(match)
                 }
             }
         }

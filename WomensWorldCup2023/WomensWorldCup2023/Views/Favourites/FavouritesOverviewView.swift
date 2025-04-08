@@ -5,13 +5,12 @@
 //  Created by devesmee on 15/11/2023.
 //
 
-import SwiftData
 import SwiftUI
 
 struct FavouritesOverviewView: View {
-    @Query(sort: \Country.name) private var favouriteTeams: [Country]
-    @Query(sort: \Stadium.name) private var favouriteStadiums: [Stadium]
-    @Query(sort: \Match.date) private var favouriteMatches: [Match]
+    @AppStorage("favouriteTeams") var favouriteTeams = [Country]()
+    @AppStorage("favouriteStadiums") var favouriteStadiums = [Stadium]()
+    @AppStorage("favouriteMatches") var favouriteMatches = [Match]()
     
     @State private var path = NavigationPath()
 
