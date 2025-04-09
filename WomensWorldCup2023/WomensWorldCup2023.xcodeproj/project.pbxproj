@@ -191,7 +191,7 @@
 				7B32AD102A558E5100C1EFFD /* Groups tab */,
 				7B32AD162A55B1E900C1EFFD /* Teams tab */,
 				7B32AD0F2A558E4100C1EFFD /* Stadiums tab */,
-				BFC82C742B04F609006D38AC /* Favourites */,
+				BFC82C742B04F609006D38AC /* Favourites tab */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			path = "Shared Data";
 			sourceTree = "<group>";
 		};
-		BFC82C742B04F609006D38AC /* Favourites */ = {
+		BFC82C742B04F609006D38AC /* Favourites tab */ = {
 			isa = PBXGroup;
 			children = (
 				BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */,
@@ -293,7 +293,7 @@
 				BFC82C802B05047F006D38AC /* StadiumRowView.swift */,
 				BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */,
 			);
-			path = Favourites;
+			path = "Favourites tab";
 			sourceTree = "<group>";
 		};
 		BFC82C772B04FA17006D38AC /* Reusable views */ = {

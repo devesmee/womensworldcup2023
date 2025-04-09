@@ -56,7 +56,7 @@ extension Array where Element == Match {
         return uniqueDates
     }
 
-    func forDate(date: Date) -> [Match] {
+    func forDate(_ date: Date) -> [Match] {
         self.filter({ $0.date == date })
     }
 }

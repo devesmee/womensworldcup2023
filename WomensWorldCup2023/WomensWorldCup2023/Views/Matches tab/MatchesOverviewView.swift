@@ -32,7 +32,7 @@ struct MatchesOverviewView: View {
                     ScrollViewReader { scrollReader in
                         List {
                             ForEach(dataManager.matches.sortedUniqueDates, id: \.timeIntervalSince1970) { date in
-                                MatchDateSectionView(date: date, matches: dataManager.matches.forDate( date: date))
+                                MatchDateSectionView(date: date, matches: dataManager.matches.forDate(date))
                                     .id(date)
                                     .listRowInsets(EdgeInsets(
                                         top: 0,
