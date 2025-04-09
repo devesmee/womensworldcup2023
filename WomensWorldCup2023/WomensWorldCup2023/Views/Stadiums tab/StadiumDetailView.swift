@@ -5,15 +5,13 @@
 //  Created by devesmee on 23/06/2023.
 //
 
-import SwiftData
 import SwiftUI
 
 struct StadiumDetailView: View {
-    @Environment(\.modelContext) private var context
-    @Query private var favouriteStadiums: [Stadium]
+    @AppStorage("favouriteStadiums") var favouriteStadiums = [Stadium]()
     let stadium: Stadium
     private var matches: [Match] {
-        return stadium.matches
+        return stadium.matches.sortedByDate
     }
 
     var body: some View {
@@ -44,8 +42,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -70,8 +67,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -96,8 +92,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -122,8 +117,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -148,8 +142,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -174,8 +167,7 @@ struct StadiumDetailView: View {
                             MatchListRow(
                                 match: match,
                                 showDate: true,
-                                showTournamentStage: false,
-                                backgroundColor: Color("Yellow")
+                                showTournamentStage: false
                             )
                         }
                     }
@@ -191,12 +183,11 @@ struct StadiumDetailView: View {
             ToolbarFavouriteButton(favouritable: stadium) {
                 stadium.favourited.toggle()
 
-                if favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) != nil {
-                    context.delete(stadium)
+                if let index = favouriteStadiums.firstIndex(where: { $0.name == stadium.name }) {
+                    favouriteStadiums.remove(at: index)
                 } else {
-                    context.insert(stadium)
+                    favouriteStadiums.append(stadium)
                 }
-                try? context.save()
             }
         }
     }

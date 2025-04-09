@@ -26,7 +26,7 @@ Users can navigate the map and view all stadiums which were used during the Wome
 When clicking on a stadium, users will see details of the specific stadium, as well as the matches which were played there. You can always automatically direct a route to the stadium via Apple Maps by clicking on the car icon.
 
 ### Favourites
-Users can favourite a stadium or team to easily view its detailed info.
+Users can favourite a stadium, team or match to easily view its detailed info.
 
 ## ⚠️ Disclaimer ⚠️
 I am in no way affliated with FIFA or any of the teams included in this app. This app was built purely for personal purposes and to gain more experience building apps with SwiftUI. I do not own any of the images and all credit goes to their respective owners.

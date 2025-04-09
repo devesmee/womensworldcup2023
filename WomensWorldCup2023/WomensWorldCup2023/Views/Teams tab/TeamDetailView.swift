@@ -5,19 +5,17 @@
 //  Created by devesmee on 08/01/2024.
 //
 
-import SwiftData
 import SwiftUI
 
 struct TeamDetailView: View {
-    @Environment(\.modelContext) private var context
-    @Query private var favouriteTeams: [Country]
+    @AppStorage("favouriteTeams") var favouriteTeams = [Country]()
     let team: Country
 
     var body: some View {
         if favouriteTeams.contains(where: { $0.name == team.name }) {
             team.favourited = true
         }
-
+        
         return VStack {
             VStack(alignment: .center) {
                 Image(team.name)
@@ -37,12 +35,11 @@ struct TeamDetailView: View {
         .toolbar {
             ToolbarFavouriteButton(favouritable: team) {
                 team.favourited.toggle()
-                if favouriteTeams.firstIndex(where: { $0.name == team.name }) != nil {
-                    context.delete(team)
+                if let index = favouriteTeams.firstIndex(where: { $0.name == team.name }) {
+                    favouriteTeams.remove(at: index)
                 } else {
-                    context.insert(team)
+                    favouriteTeams.append(team)
                 }
-                try? context.save()
             }
         }
     }

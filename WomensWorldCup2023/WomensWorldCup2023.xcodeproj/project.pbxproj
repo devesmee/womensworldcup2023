@@ -45,6 +45,7 @@
 		BF1E463C2BADC83800AA4B00 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */; };
 		BF48DAB52B45A572009D55FC /* DecodableLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */; };
 		BF48DABA2B45AA1B009D55FC /* Favouritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48DAB92B45AA1B009D55FC /* Favouritable.swift */; };
+		BF4A1E802D0B224800BD9F06 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4A1E7F2D0B224800BD9F06 /* MatchDetailView.swift */; };
 		BF4C04BE2B4C0587009B799F /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */; };
 		BF71C6E42B9B263400AC0361 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BF71C6E32B9B263400AC0361 /* FirebaseDatabase */; };
 		BF71C6EE2B9B564B00AC0361 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */; };
@@ -55,6 +56,7 @@
 		BFC82C7F2B05041A006D38AC /* FavouriteStadiumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */; };
 		BFC82C812B05047F006D38AC /* StadiumRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C802B05047F006D38AC /* StadiumRowView.swift */; };
 		BFC82C832B0507AC006D38AC /* FavouriteMatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */; };
+		BFCCFDD22DA519F900F98C13 /* ArrayRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */; };
 		BFE669082B9F5714008D7BE8 /* TeamsGridRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,7 @@
 		BF1E45F72BADC33F00AA4B00 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		BF48DAB42B45A572009D55FC /* DecodableLoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableLoadData.swift; sourceTree = "<group>"; };
 		BF48DAB92B45AA1B009D55FC /* Favouritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favouritable.swift; sourceTree = "<group>"; };
+		BF4A1E7F2D0B224800BD9F06 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 		BF4C04BD2B4C0587009B799F /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		BF71C6ED2B9B564B00AC0361 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesOverviewView.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		BFC82C7E2B05041A006D38AC /* FavouriteStadiumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStadiumsView.swift; sourceTree = "<group>"; };
 		BFC82C802B05047F006D38AC /* StadiumRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumRowView.swift; sourceTree = "<group>"; };
 		BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMatchesView.swift; sourceTree = "<group>"; };
+		BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRawRepresentable.swift; sourceTree = "<group>"; };
 		BFE669072B9F5714008D7BE8 /* TeamsGridRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsGridRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,7 +191,7 @@
 				7B32AD102A558E5100C1EFFD /* Groups tab */,
 				7B32AD162A55B1E900C1EFFD /* Teams tab */,
 				7B32AD0F2A558E4100C1EFFD /* Stadiums tab */,
-				BFC82C742B04F609006D38AC /* Favourites */,
+				BFC82C742B04F609006D38AC /* Favourites tab */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +199,7 @@
 		7B23E3D82A45B27C00267C59 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BFCCFDD12DA519F300F98C13 /* ArrayRawRepresentable.swift */,
 				7B23E3D92A45B28500267C59 /* MatchArray.swift */,
 				7B32AD1F2A55B84900C1EFFD /* CountryArray.swift */,
 				7BFA38612A7D288100440F31 /* GroupArray.swift */,
@@ -223,6 +228,7 @@
 				7B20D6F32A98DC9300DDB1C9 /* DateScrollbarView.swift */,
 				7BF371C12A9F55E800FA7E3B /* DateScrollbarItemView.swift */,
 				7BF371C32A9F615000FA7E3B /* MatchDateSectionView.swift */,
+				BF4A1E7F2D0B224800BD9F06 /* MatchDetailView.swift */,
 			);
 			path = "Matches tab";
 			sourceTree = "<group>";
@@ -277,7 +283,7 @@
 			path = "Shared Data";
 			sourceTree = "<group>";
 		};
-		BFC82C742B04F609006D38AC /* Favourites */ = {
+		BFC82C742B04F609006D38AC /* Favourites tab */ = {
 			isa = PBXGroup;
 			children = (
 				BFC82C752B04F650006D38AC /* FavouritesOverviewView.swift */,
@@ -287,7 +293,7 @@
 				BFC82C802B05047F006D38AC /* StadiumRowView.swift */,
 				BFC82C822B0507AC006D38AC /* FavouriteMatchesView.swift */,
 			);
-			path = Favourites;
+			path = "Favourites tab";
 			sourceTree = "<group>";
 		};
 		BFC82C772B04FA17006D38AC /* Reusable views */ = {
@@ -393,6 +399,8 @@
 				7B23E3D12A45B17F00267C59 /* StadiumMapView.swift in Sources */,
 				BFC82C812B05047F006D38AC /* StadiumRowView.swift in Sources */,
 				7BFA38602A7D27A400440F31 /* GroupView.swift in Sources */,
+				BFCCFDD22DA519F900F98C13 /* ArrayRawRepresentable.swift in Sources */,
+				BF4A1E802D0B224800BD9F06 /* MatchDetailView.swift in Sources */,
 				7B32AD0D2A558E2200C1EFFD /* MatchesOverviewView.swift in Sources */,
 				7B20D6F22A98CFA400DDB1C9 /* ViewNavigationTitleColour.swift in Sources */,
 				7B32AD0B2A558DBB00C1EFFD /* ContentView.swift in Sources */,

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import SwiftData
+import Observation
 
-@Model class Match: Favouritable, Codable {
+@Observable class Match: Favouritable, Codable {
     private(set) var id = UUID()
     private(set) var abbreviation: String
     private(set) var date: Date
@@ -17,7 +17,7 @@ import SwiftData
     private(set) var score: String
     private(set) var tournamentStage: TournamentStage
     private(set) var group: GroupEnum?
-    @Transient var favourited = false
+    var favourited = false
 
     init(
         abbreviation: String,
@@ -79,5 +79,13 @@ import SwiftData
         formatter.timeZone = TimeZone(abbreviation: "UTC")
         let formattedDate = formatter.string(from: self.date)
         try container.encode(formattedDate, forKey: .date)
+    }
+    
+    static func == (lhs: Match, rhs: Match) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }

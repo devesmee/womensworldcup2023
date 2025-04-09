@@ -15,7 +15,7 @@ struct StadiumMapView: View {
     @Environment(JSONManager.self) private var dataManager
     #endif
     @State private var mapPosition = MapCameraPosition.automatic
-    @State private var path: [Stadium] = []
+    @State private var path = NavigationPath()
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -54,12 +54,15 @@ struct StadiumMapView: View {
                     .padding(10)
                 }
             }
-            .navigationDestination(for: Stadium.self) { stadium in
-                StadiumDetailView(stadium: stadium)
-            }
             .toolbarBackground(Color("Yellow"))
             .navigationTitle("Stadiums")
             .navigationBarTitleTextColor(Color("Blue"))
+            .navigationDestination(for: Stadium.self) { stadium in
+                StadiumDetailView(stadium: stadium)
+            }
+            .navigationDestination(for: Match.self) { match in
+                MatchDetailView(match: match)
+            }
         }
     }
 

@@ -12,32 +12,25 @@ struct MatchDateSectionView: View {
     let matches: [Match]
 
     var body: some View {
-        VStack(spacing: 10) {
-            HStack {
-                Text(date.dayMonthYear)
-                    .font(.title2)
-                    .bold()
-                    .padding(.leading)
-                    .foregroundColor(Color("Yellow"))
-                Spacer()
-            }
-            .padding(.vertical)
-            .background(Color("Pink"))
-
-            ForEach(matches) { match in
-                NavigationLink(value: match) {
-                    MatchListRow(
-                        match: match,
-                        showDate: false,
-                        showTournamentStage: true,
-                        backgroundColor: Color("Yellow")
-                    )
-                    .padding(.bottom)
-                }
-            }
-            .padding(.horizontal)
+        HStack {
+            Text(date.dayMonthYear)
+                .font(.title2)
+                .bold()
+                .padding(.leading)
+                .foregroundColor(Color("Yellow"))
+            Spacer()
         }
-        .background(Color("Yellow"))
+        .padding(.vertical)
+        .background(Color("Pink"))
+
+        ForEach(matches) { match in
+                MatchListRow(
+                    match: match,
+                    showDate: false,
+                    showTournamentStage: true
+                )
+        }
+        .padding([.vertical, .horizontal])
     }
 }
 

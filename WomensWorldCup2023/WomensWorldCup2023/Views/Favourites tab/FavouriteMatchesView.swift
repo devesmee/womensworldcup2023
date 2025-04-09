@@ -48,6 +48,7 @@ struct FavouriteMatchesView: View {
                                         match: match,
                                         showDate: true,
                                         showTournamentStage: true,
+                                        foregroundColor: Color("Yellow"),
                                         backgroundColor: Color("Blue")
                                     )
                                     .padding([.top, .horizontal])
@@ -60,9 +61,6 @@ struct FavouriteMatchesView: View {
             }
             .foregroundColor(Color("Yellow"))
             .background(Color("Blue"))
-        .navigationDestination(for: Match.self) { match in
-            MatchDetailView(match: match)
-        }
     }
 
     private func expandContent() {

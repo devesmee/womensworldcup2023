@@ -55,9 +55,6 @@ struct FavouriteStadiumsView: View {
             }
             .foregroundColor(Color("Yellow"))
             .background(Color("Orange"))
-        .navigationDestination(for: Stadium.self) { stadium in
-            StadiumDetailView(stadium: stadium)
-        }
     }
 
     private func expandContent() {
